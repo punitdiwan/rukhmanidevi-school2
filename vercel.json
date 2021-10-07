@@ -1,5 +1,9 @@
 {
     "version": 2,
+    "env": {
+        "NEXT_PUBLIC_BASE_URL": "https://cms.schoolscoop.co.in",
+        "NEXT_PUBLIC_SCHOOL": "rukhmanidevi"
+    },
     "builds": [
         {
             "src": "package.json",
