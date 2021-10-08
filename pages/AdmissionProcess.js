@@ -17,7 +17,9 @@ const AdmissionProcess = () => {
                             </div>
                             <div className="col-md-12">
                                 <h4>Registration :</h4>
-                                <p>Registration is normally open throughout the year. Both NRI and resident Indian children are to be registered. Registration entails filling in the requisite <b><em><a href="assets/pdf/admissionform.pdf">“Admission Form”</a>,</em></b> remitting the registration fees and submitting the requisite documents as listed hereunder, to be deposited for registration through post/email or by hand in the School Office. (Registration Fee is mentioned in the <b><em><a href="fees.aspx">“Fee Schedule” </a></em></b>Section). </p>
+                                <p>Registration is normally open throughout the year. Both NRI and resident Indian children are to be registered. Registration entails filling in the requisite <b><em>
+                                    <a href="#">“Admission Form”</a>,</em></b> remitting the registration fees and submitting the requisite documents as listed hereunder, to be deposited for registration through post/email or by hand in the School Office. (Registration Fee is mentioned in the <b><em>
+                                    <a href="#">“Fee Schedule” </a></em></b>Section). </p>
                                 <p><b><em><u>Please note that registration does NOT guarantee admission.</u></em></b></p>
                                 <p>After registration the students applying for Classes I - VI are required to visit the Dharampur Campus, on a date scheduled by the School’s Admission Office, for an Orientation Programme and for Classes VII - IX and XI the “Boarding School Orientation” is held at the Subathu campus, on a stipulated date, as per the school calendar. (Generally, the Orientation is held during the first weekend of February).</p>
                                 <p>Please note that NRI students (seeking admission in Classes I-VII) are granted direct admission and are excused from attending the Orientation in person.</p>
@@ -114,18 +116,17 @@ const AdmissionProcess = () => {
                                 </ul>
 
                             </div>
-                            <div className="col-md-12">
+                            <div className="mb-3 col-md-12">
                                 <h4>Download Documents :</h4>
                                 <p>The following documents are available for download in PDF format. You will require Adobe Acrobat Reader for viewing and printing these documents. You can download Adobe Acrobat Reader from www.adobe.com</p>
                                 <li>1) Admission Form </li>
-                                <li>2) Medical Certificate</li>
-                                <li>3) NRI Students’ Admission Form</li>
-                                <li>4) General Rules and Regulations</li>
-                                <li>5) Clothing List</li>
-                                <li>6) Medical Consent Authorization</li>
+                                <li>2) Medical Certificate</li> 
+                                <li>3) General Rules and Regulations</li>
+                                <li>4) Clothing List</li>
+                                <li>5) Medical Consent Authorization</li>
                             </div>
                         </div>
-                        <div className="row">
+                        {/* <div className="row">
 
                             <div className="col-md-6" style={{ backgroundColor: " #e9ecef", padding: "20px" }}>
                                 <div className="row">
@@ -133,7 +134,7 @@ const AdmissionProcess = () => {
                                         <h5>Admission Form</h5>
                                     </div>
                                     <div className="col-md-5">
-                                        <a href="assets/pdf/Admission-Form.pdf" target="_blank"><button type="button" className="btn btn-primary text-center">View / Download</button></a>
+                                        <a href="assets/pdf/Admission-Form.pdf" target="_blank"><button type="button" className="text-center btn btn-primary">View / Download</button></a>
                                     </div>
                                 </div><br />
                                 <div className="row">
@@ -141,7 +142,7 @@ const AdmissionProcess = () => {
                                         <h5>Clothing List</h5>
                                     </div>
                                     <div className="col-md-5">
-                                        <a href="assets/pdf/Clothing-List-2020-21.pdf" target="_blank"><button type="button" className="btn btn-primary text-center">View / Download</button></a>
+                                        <a href="assets/pdf/Clothing-List-2020-21.pdf" target="_blank"><button type="button" className="text-center btn btn-primary">View / Download</button></a>
                                     </div>
                                 </div><br />
                                 <div className="row">
@@ -149,7 +150,7 @@ const AdmissionProcess = () => {
                                         <h5>Medical Certificate</h5>
                                     </div>
                                     <div className="col-md-5">
-                                        <a href="assets/pdf/Medical-Certificate-for_New_Admission.pdf" target="_blank"><button type="button" className="btn btn-primary text-center">View / Download</button></a>
+                                        <a href="assets/pdf/Medical-Certificate-for_New_Admission.pdf" target="_blank"><button type="button" className="text-center btn btn-primary">View / Download</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -161,7 +162,7 @@ const AdmissionProcess = () => {
                                     </div>
                                     <div className="col-md-5">
                                         <a href="assets/pdf/NRI-Students-Form.pdf" target="_blank">
-                                            <button type="button" className="btn btn-primary text-center">View / Download</button></a>
+                                            <button type="button" className="text-center btn btn-primary">View / Download</button></a>
                                     </div>
                                 </div>
                                 <br />
@@ -170,7 +171,7 @@ const AdmissionProcess = () => {
                                         <h5>General Rules &amp; Regulations</h5>
                                     </div>
                                     <div className="col-md-5">
-                                        <a href="assets/pdf/General-Rules.pdf" target="_blank"><button type="button" className="btn btn-primary text-center">View / Download</button></a>
+                                        <a href="assets/pdf/General-Rules.pdf" target="_blank"><button type="button" className="text-center btn btn-primary">View / Download</button></a>
                                     </div>
                                 </div><br />
 
@@ -179,14 +180,15 @@ const AdmissionProcess = () => {
                                         <h5>Medical Consent Authorization</h5>
                                     </div>
                                     <div className="col-md-5">
-                                        <a href="assets/pdf/Medical-Consent-Authorization.pdf" target="_blank"><button type="button" className="btn btn-primary text-center">View / Download</button></a>
+                                        <a href="assets/pdf/Medical-Consent-Authorization.pdf" target="_blank"><button type="button" className="text-center btn btn-primary">View / Download</button></a>
                                     </div>
                                 </div>
 
 
                             </div>
                         </div>
-                    </div>
+                     */}
+                     </div>
                 </div>
             </div>
         </Layout>

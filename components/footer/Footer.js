@@ -30,19 +30,31 @@ function Footer({ data_header }) {
         const isValid = formValidation();
         if (isValid) {
 
-            fetch("https://cms.schoolscoop.co.in/myapp/items/contact_form",
+            fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/contact_form`,
                 {
                     method: "POST",
                     body: JSON.stringify({ full_name: name, email, mobile, message }),
                     headers: { "Content-type": "application/json; charset=UTF-8" }
-                }).then(response => response.json()).then(json => addToast("form submitted Sucessfully", { appearance: 'success', autoDismiss: true })).catch(err => console.log(err));
+                })
+                .then((response) => {response.json()
+                    if (response.status === 200) {
+                        setName("");
+                        setEmail("");
+                        setMobile("");
+                        setMessage("");
+                    }})
+                .then(json => addToast("form submitted Sucessfully",
+                    { appearance: 'success', autoDismiss: true })
+                    
+                     
+                    
+                    )
+                .catch(err => console.log(err));
+             
         }
 
 
-        setName("");
-        setEmail("");
-        setMobile("");
-        setMessage("");
+
     }
 
     const formValidation = () => {
@@ -84,8 +96,8 @@ function Footer({ data_header }) {
             messageErr.messageEmpty = "Message is required";
             isValid = false;
         }
-        else if (message.trim().length < 100) {
-            messageErr.mobilenumbershort = "Message length should be 100 words or more";
+        else if (message.trim().length < 5) {
+            messageErr.mobilenumbershort = "Message length should be 5 words or more";
             isValid = false;
         }
         setNameErr(nameErr);
@@ -114,17 +126,17 @@ function Footer({ data_header }) {
                         <div className="col-sm-4">
                             <div style={{ paddingTop: '20px' }}>
                                 <div style={{ display: 'flex' }}>
-                                    <img src="/images/pglogo.png" alt='logo' style={{  height: "53px" }} />
+                                    <img src="/images/pglogo.png" alt='logo' style={{ height: "53px" }} />
                                     <div style={{ lineHeight: '20px' }}>
-                                        <span style={{fontSize:"19px"}}>Rukhmani Devi Public School</span><br />
+                                        <span style={{ fontSize: "19px" }}>Rukhmani Devi Public School</span><br />
                                         <span className='place'>Bhopal, Madhya Pradesh</span>
                                     </div>
                                 </div>
                                 <p>Rukhmani Devi School, established in 1991, is a Co-educational, purely residential,
-                                     English medium public school affiliated to the Central Board of Secondary Education 
-                                     (CBSE), Delhi, up to 10th and 12th Grades. Pinegrove is a Regional Member of the Round 
-                                     Square, is accredited with ISO 9001:2008 (BSI) and is a member of the 
-                                     prestigious Indian Public Schools` Conference (IPSC).</p>
+                                    English medium public school affiliated to the Central Board of Secondary Education
+                                    (CBSE), Delhi, up to 10th and 12th Grades. Pinegrove is a Regional Member of the Round
+                                    Square, is accredited with ISO 9001:2008 (BSI) and is a member of the
+                                    prestigious Indian Public Schools` Conference (IPSC).</p>
                             </div>
                         </div>
                         <div className="col-sm-4">
@@ -206,7 +218,7 @@ function Footer({ data_header }) {
             <div className='subfooter' >
                 <div className="text-center text-light ">
 
-                Rukhmani Devi School&nbsp;|&nbsp; Design & Maintained with &nbsp;&nbsp;<FontAwesomeIcon style={{ color: 'red' }} icon={faHeart} /> &nbsp;
+                    Rukhmani Devi School&nbsp;|&nbsp; Design & Maintained with &nbsp;&nbsp;<FontAwesomeIcon style={{ color: 'red' }} icon={faHeart} /> &nbsp;
                     by &nbsp;<a href='http://maitretech.com/' target="_blank"> maitretech.com</a>
 
                 </div>
