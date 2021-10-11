@@ -2,10 +2,7 @@
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css'; 
  
-const About = ({ about_data }) => {
-    
-
-    console.log(about_data)
+const About = ({ about_data }) => { 
 
     const aboutdata = [
         {

@@ -30,14 +30,14 @@ function Header() {
 
     }
 
-    const url = "https://cms.schoolscoop.co.in/myapp/items/config?fields=title,tagline,address,phone,email,mobile,logo.*";
-    const { data, error } = useSWR(url, fetcher);
-    if (error) {
-        return <div></div>
-    }
-    if (!data) {
-        return <div></div>
-    }
+    // const url = "https://cms.schoolscoop.co.in/myapp/items/config?fields=title,tagline,address,phone,email,mobile,logo.*";
+    // const { data, error } = useSWR(url, fetcher);
+    // if (error) {
+    //     return <div></div>
+    // }
+    // if (!data) {
+    //     return <div></div>
+    // }
     return (
         <div>
 
@@ -51,9 +51,9 @@ function Header() {
                                         <div className="row">
                                             <div className="p-0 col-md-3 col-sm-5 col-5 head_meadia">
                                                 <div className='logocontent d-flex justify-content-center' >
-                                                    <Link href="/"> 
-                                                    <a> 
-                                                        <img src="/images/pglogo.png" alt='logo'/>
+                                                    <Link href="/">
+                                                        <a>
+                                                            <img src="/images/pglogo.png" alt='logo' />
                                                         </a>
                                                     </Link>
                                                 </div>
@@ -61,7 +61,9 @@ function Header() {
                                             <div className="p-0 col-md-9 col-sm-7 col-7 ">
                                                 <div className='logocontent' >
                                                     <div className="school_title" style={{ lineHeight: '20px' }}>
-                                                        <span>Rukhmani Devi   Public School </span><br />
+                                                        <span style={{
+                                                            fontFamily: "curveFont" 
+                                                        }}>Rukhmani Devi   Public School </span><br />
                                                         <span className='place'>Bhopal, Madhya Pradesh</span>
                                                     </div>
                                                 </div>
@@ -176,7 +178,7 @@ function Header() {
                                                 <li><Link href='/AcademicFacilities'><a>Academic Facilities</a></Link></li>
                                                 <li><Link href='/GamesSports'><a>Games & Sports</a></Link></li>
                                                 <li><Link href='/Activities'><a>Activities</a></Link></li>
-                                                <li><Link href='/Boarding'><a>Boarding</a></Link></li>
+                                                {/* <li><Link href='/Boarding'><a>Boarding</a></Link></li> */}
                                                 {/* <li><Link href='/'><a>New Developments</a></Link></li> */}
                                             </div>
                                         </button>&ensp;|&ensp;

@@ -12,7 +12,7 @@
   "/GamesSports": "pages/GamesSports.html",
   "/LocateUs": "pages/LocateUs.html",
   "/Location": "pages/Location.html",
-  "/Mandatory": "pages/Mandatory.html",
+  "/Mandatory": "pages/Mandatory.js",
   "/Principal": "pages/Principal.js",
   "/Rules": "pages/Rules.html",
   "/TransferCertificate": "pages/TransferCertificate.html",

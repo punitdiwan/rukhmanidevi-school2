@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/layouts/Layout'
 import Link from 'next/link'
 
-const Mandatory = () => {
+const Mandatory = ({data_header}) => {
     return (
         <Layout>
             <div className="container-fluid media_top"  >
@@ -45,7 +45,7 @@ const Mandatory = () => {
                                         <tr>
                                             <td>1</td>
                                             <td>NAME OF THE SCHOOL</td>
-                                            <td>Pinegrove School</td>
+                                            <td>Rukhmani Devi Public School</td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
@@ -386,7 +386,7 @@ const Mandatory = () => {
                                         <tr>
                                             <td> 7 </td>
                                             <td> LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL </td>
-                                            <td><a href="https://www.youtube.com/watch?v=mAoH5PF0cKc" target="_blank">https://www.youtube.com/watch?v=mAoH5PF0cKc</a>  </td>
+                                            <td><a href="https://www.youtube.com/channel/UCIKlH_ibvWaviOlUTrFeQqg" target="_blank">View</a>  </td>
 
                                         </tr>
 
@@ -404,3 +404,24 @@ const Mandatory = () => {
 }
 
 export default Mandatory
+
+
+export async function getStaticProps(context) {
+
+    let data_header 
+  
+    try {
+     
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/config?fields=*,logo.data.full_url`)
+   
+      data_header = await response.json()  
+    } 
+    catch (error) {
+      data_header = false 
+    } 
+      
+    return {
+        props: {data_header },
+        revalidate: 2, // will be passed to the page component as props
+    }
+  }

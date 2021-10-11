@@ -14,6 +14,12 @@ import LocateUs from '../pages/LocateUs'
 export default function Home({data_header,slider_data,about_data,gallery_data}) {
   return (
     <div>
+      <link
+        rel="preload"
+        href="../public/Fontin_Sans_SC_45b.otf"
+        as="font"
+        crossOrigin=""
+      />
       <Layout data_header={data_header}>
         <Carouselswr slider_data={slider_data}/>
         <About about_data={about_data} />

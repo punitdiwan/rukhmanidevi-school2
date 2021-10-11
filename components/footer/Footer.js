@@ -36,27 +36,31 @@ function Footer({ data_header }) {
                     body: JSON.stringify({ full_name: name, email, mobile, message }),
                     headers: { "Content-type": "application/json; charset=UTF-8" }
                 })
-                .then((response) => {response.json()
+                .then((response) => {
+                    response.json()
                     if (response.status === 200) {
                         setName("");
                         setEmail("");
                         setMobile("");
                         setMessage("");
-                    }})
+                    }
+                })
                 .then(json => addToast("form submitted Sucessfully",
                     { appearance: 'success', autoDismiss: true })
-                    
-                     
-                    
-                    )
+
+
+
+                )
                 .catch(err => console.log(err));
-             
+
         }
 
 
 
     }
 
+console.log(data_header)
+    
     const formValidation = () => {
         const nameErr = {};
         const emailErr = {};
@@ -109,7 +113,7 @@ function Footer({ data_header }) {
 
     }
 
-    const url = "https://cms.schoolscoop.co.in/myapp/items/config?fields=title,tagline,address,phone,email,mobile,logo.*";
+    const url = `${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/config?fields=*,logo.data.full_url`;
     const { data, error } = useSWR(url, fetcher);
     if (error) {
         return <div>Error...</div>
@@ -117,6 +121,7 @@ function Footer({ data_header }) {
     if (!data) {
         return <div>No Data...</div>
     }
+    console.log(data)
 
     return (
         <div>
@@ -128,7 +133,7 @@ function Footer({ data_header }) {
                                 <div style={{ display: 'flex' }}>
                                     <img src="/images/pglogo.png" alt='logo' style={{ height: "53px" }} />
                                     <div style={{ lineHeight: '20px' }}>
-                                        <span style={{ fontSize: "19px" }}>Rukhmani Devi Public School</span><br />
+                                        <span style={{ fontSize: "19px",fontFamily: "curveFont"  }}>Rukhmani Devi Public School</span><br />
                                         <span className='place'>Bhopal, Madhya Pradesh</span>
                                     </div>
                                 </div>
@@ -144,11 +149,17 @@ function Footer({ data_header }) {
                                 <div>
 
                                     <h5><span>|&nbsp;</span><FontAwesomeIcon icon={faNetworkWired} /> Connect with us</h5>
-                                    <ul>
+                                    {/* <ul>
                                         <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;{data_header?.data ? data_header?.data[0]?.phone : "9999911111"}</a></li>
                                         <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;{data_header?.data ? data_header?.data[0]?.mobile : "999999999"}</a></li>
                                         <li><a href=''><FontAwesomeIcon icon={faEnvelopeOpenText} />&nbsp;{data_header?.data ? data_header?.data[0]?.email : "maitretech@example.com"}</a></li>
                                         <li><a href=''><FontAwesomeIcon icon={faMapMarkerAlt} />&nbsp;{data_header?.data ? data_header?.data[0]?.address : " Demo Address , Demo Address, Madhya Pradesh 111111"}</a></li>
+                                    </ul> */}
+                                    <ul>
+                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;{  data?.data[0]?.phone  }</a></li>
+                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;{  data?.data[0]?.mobile }</a></li>
+                                        <li><a href=''><FontAwesomeIcon icon={faEnvelopeOpenText} />&nbsp;{  data?.data[0]?.email }</a></li>
+                                        <li><a href=''><FontAwesomeIcon icon={faMapMarkerAlt} />&nbsp;{  data?.data[0]?.address }</a></li>
                                     </ul>
                                 </div>
 
@@ -228,3 +239,22 @@ function Footer({ data_header }) {
 }
 
 export default Footer
+
+
+
+export async function getStaticProps(context) { 
+    let data_header 
+    try { 
+        const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/config?fields=*,logo.data.full_url`)
+
+        data_header = await response.json()
+    }
+    catch (error) {
+        data_header = false
+    }
+
+    return {
+        props: { data_header },
+        revalidate: 2, // will be passed to the page component as props
+    }
+}

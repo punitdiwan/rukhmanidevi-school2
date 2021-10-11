@@ -7,6 +7,10 @@
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "curveFont";
+  src: url("../public/Fontin_Sans_SC_45b.otf");
+}
 .page-location {
   color: #0d733b;
   /* background-image: linear-gradient(to right, #ffffff , #0063a6); */
@@ -860,7 +864,7 @@ margin-top: 30px;
 }
 
 .footerbg .container .place {
-  margin-left: 10%;
+  /* margin-left: 10%; */
   color: #fff;
   font-size: 0.6rem;
   font-weight: 200;
@@ -898,10 +902,10 @@ margin-top: 30px;
   color: #fff;
 }
 
-.footerbg .contactus ul li a:hover {
+/* .footerbg .contactus ul li a:hover {
   font-weight: 500;
   margin-left: 5px;
-}
+} */
 
 .emailus {
   margin-top: 35px;

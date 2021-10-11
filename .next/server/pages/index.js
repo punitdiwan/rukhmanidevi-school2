@@ -566,7 +566,6 @@ const About = ({
 }) => {
   var _about_data$data, _about_data$data2;
 
-  console.log(about_data);
   const aboutdata = [{
     body: "about school",
     heading: "About Us",
@@ -1817,7 +1816,7 @@ const Carouselswr = ({
             role: "listbox",
             children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
               src: item === null || item === void 0 ? void 0 : (_item$image = item.image) === null || _item$image === void 0 ? void 0 : (_item$image$data = _item$image.data) === null || _item$image$data === void 0 ? void 0 : _item$image$data.full_url,
-              height: 500,
+              height: 600,
               width: 1500,
               alt: "sorry_no_img"
             })
@@ -2214,8 +2213,13 @@ function Home({
   about_data,
   gallery_data
 }) {
-  return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-    children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])(Layout["a" /* default */], {
+  return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+    children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("link", {
+      rel: "preload",
+      href: "../public/Fontin_Sans_SC_45b.otf",
+      as: "font",
+      crossOrigin: ""
+    }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])(Layout["a" /* default */], {
       data_header: data_header,
       children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(carousel_Carouselswr, {
         slider_data: slider_data
@@ -2224,7 +2228,7 @@ function Home({
       }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(newseventsection_Eventmain, {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])(schoolaccreditation_Schoolaccreditation, {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])(trust_Trust, {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])(schoolgallery_Schoolgallery, {
         gallery_data: gallery_data
       }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(LocateUs["default"], {})]
-    })
+    })]
   });
 }
 async function pages_getStaticProps(context) {
@@ -4241,21 +4245,15 @@ function Header() {
     }
 
     document.getElementById("navbar").style.float = "left";
-  }
+  } // const url = "https://cms.schoolscoop.co.in/myapp/items/config?fields=title,tagline,address,phone,email,mobile,logo.*";
+  // const { data, error } = useSWR(url, fetcher);
+  // if (error) {
+  //     return <div></div>
+  // }
+  // if (!data) {
+  //     return <div></div>
+  // }
 
-  const url = "https://cms.schoolscoop.co.in/myapp/items/config?fields=title,tagline,address,phone,email,mobile,logo.*";
-  const {
-    data,
-    error
-  } = external_swr_default()(url, Header_fetcher);
-
-  if (error) {
-    return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {});
-  }
-
-  if (!data) {
-    return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {});
-  }
 
   return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
     children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
@@ -4297,6 +4295,9 @@ function Header() {
                             lineHeight: '20px'
                           },
                           children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
+                            style: {
+                              fontFamily: "curveFont"
+                            },
                             children: "Rukhmani Devi   Public School "
                           }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
                             className: "place",
@@ -4547,13 +4548,6 @@ function Header() {
                             children: "Activities"
                           })
                         })
-                      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                          href: "/Boarding",
-                          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                            children: "Boarding"
-                          })
-                        })
                       })]
                     })]
                   }), "\u2002|\u2002"]
@@ -4641,7 +4635,7 @@ const Footer_fetcher = (...args) => fetch(...args).then(res => res.json());
 function Footer({
   data_header
 }) {
-  var _data_header$data$, _data_header$data$2, _data_header$data$3, _data_header$data$4;
+  var _data$data$, _data$data$2, _data$data$3, _data$data$4;
 
   const {
     addToast
@@ -4712,6 +4706,8 @@ function Footer({
     }
   };
 
+  console.log(data_header);
+
   const formValidation = () => {
     const nameErr = {};
     const emailErr = {};
@@ -4761,7 +4757,7 @@ function Footer({
     return isValid;
   };
 
-  const url = "https://cms.schoolscoop.co.in/myapp/items/config?fields=title,tagline,address,phone,email,mobile,logo.*";
+  const url = `${"https://cms.schoolscoop.co.in"}/${"rukhmani"}/items/config?fields=*,logo.data.full_url`;
   const {
     data,
     error
@@ -4779,6 +4775,7 @@ function Footer({
     });
   }
 
+  console.log(data);
   return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
     children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
       className: "footerbg",
@@ -4809,7 +4806,8 @@ function Footer({
                   },
                   children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
                     style: {
-                      fontSize: "19px"
+                      fontSize: "19px",
+                      fontFamily: "curveFont"
                     },
                     children: "Rukhmani Devi Public School"
                   }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
@@ -4838,28 +4836,28 @@ function Footer({
                       href: "",
                       children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(react_fontawesome_["FontAwesomeIcon"], {
                         icon: free_solid_svg_icons_["faPhone"]
-                      }), "\xA0", data_header !== null && data_header !== void 0 && data_header.data ? data_header === null || data_header === void 0 ? void 0 : (_data_header$data$ = data_header.data[0]) === null || _data_header$data$ === void 0 ? void 0 : _data_header$data$.phone : "9999911111"]
+                      }), "\xA0", data === null || data === void 0 ? void 0 : (_data$data$ = data.data[0]) === null || _data$data$ === void 0 ? void 0 : _data$data$.phone]
                     })
                   }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
                     children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("a", {
                       href: "",
                       children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(react_fontawesome_["FontAwesomeIcon"], {
                         icon: free_solid_svg_icons_["faPhone"]
-                      }), "\xA0", data_header !== null && data_header !== void 0 && data_header.data ? data_header === null || data_header === void 0 ? void 0 : (_data_header$data$2 = data_header.data[0]) === null || _data_header$data$2 === void 0 ? void 0 : _data_header$data$2.mobile : "999999999"]
+                      }), "\xA0", data === null || data === void 0 ? void 0 : (_data$data$2 = data.data[0]) === null || _data$data$2 === void 0 ? void 0 : _data$data$2.mobile]
                     })
                   }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
                     children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("a", {
                       href: "",
                       children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(react_fontawesome_["FontAwesomeIcon"], {
                         icon: free_solid_svg_icons_["faEnvelopeOpenText"]
-                      }), "\xA0", data_header !== null && data_header !== void 0 && data_header.data ? data_header === null || data_header === void 0 ? void 0 : (_data_header$data$3 = data_header.data[0]) === null || _data_header$data$3 === void 0 ? void 0 : _data_header$data$3.email : "maitretech@example.com"]
+                      }), "\xA0", data === null || data === void 0 ? void 0 : (_data$data$3 = data.data[0]) === null || _data$data$3 === void 0 ? void 0 : _data$data$3.email]
                     })
                   }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
                     children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("a", {
                       href: "",
                       children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(react_fontawesome_["FontAwesomeIcon"], {
                         icon: free_solid_svg_icons_["faMapMarkerAlt"]
-                      }), "\xA0", data_header !== null && data_header !== void 0 && data_header.data ? data_header === null || data_header === void 0 ? void 0 : (_data_header$data$4 = data_header.data[0]) === null || _data_header$data$4 === void 0 ? void 0 : _data_header$data$4.address : " Demo Address , Demo Address, Madhya Pradesh 111111"]
+                      }), "\xA0", data === null || data === void 0 ? void 0 : (_data$data$4 = data.data[0]) === null || _data$data$4 === void 0 ? void 0 : _data$data$4.address]
                     })
                   })]
                 })]
@@ -5043,6 +5041,24 @@ function Footer({
 }
 
 /* harmony default export */ var footer_Footer = (Footer);
+async function getStaticProps(context) {
+  let data_header;
+
+  try {
+    const response = await fetch(`${"https://cms.schoolscoop.co.in"}/${"rukhmani"}/items/config?fields=*,logo.data.full_url`);
+    data_header = await response.json();
+  } catch (error) {
+    data_header = false;
+  }
+
+  return {
+    props: {
+      data_header
+    },
+    revalidate: 2 // will be passed to the page component as props
+
+  };
+}
 // EXTERNAL MODULE: external "react-toast-notifications/dist/ToastProvider"
 var ToastProvider_ = __webpack_require__("n58u");
 
