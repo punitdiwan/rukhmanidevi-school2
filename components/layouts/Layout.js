@@ -11,8 +11,8 @@ const Layout = ({ children, data_header }) => {
         <div>
 
             <Head>
-                <title> Rukhmani Devi   Public School</title>
-                <link rel="icon" type="image/jpg" href="/images/pglogo.png" />
+                <title>Rukhmani Devi Public School</title>
+                <link rel="icon"  type="image/jpg" href="/images/fullogo.png"   />
             </Head>
 
             <Header />

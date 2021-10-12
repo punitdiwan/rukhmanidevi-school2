@@ -3934,11 +3934,11 @@ const Layout = ({
   return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
     children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])(head_default.a, {
       children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("title", {
-        children: " Rukhmani Devi   Public School"
+        children: "Rukhmani Devi Public School"
       }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("link", {
         rel: "icon",
         type: "image/jpg",
-        href: "/images/pglogo.png"
+        href: "/images/fullogo.png"
       })]
     }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(header_Header, {}), children, /*#__PURE__*/Object(jsx_runtime_["jsx"])(ToastProvider_["ToastProvider"], {
       children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(footer_Footer, {
