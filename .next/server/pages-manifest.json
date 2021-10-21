@@ -1,25 +1,6 @@
 {
-  "/AcademicFacilities": "pages/AcademicFacilities.html",
-  "/Activities": "pages/Activities.html",
-  "/AdmissionProcess": "pages/AdmissionProcess.html",
-  "/Boarding": "pages/Boarding.html",
-  "/Chairman": "pages/Chairman.js",
-  "/Director": "pages/Director.js",
-  "/FacilitiesIntro": "pages/FacilitiesIntro.html",
-  "/Faculty": "pages/Faculty.html",
-  "/FacultysMain": "pages/FacultysMain.js",
-  "/Gallery": "pages/Gallery.js",
-  "/GamesSports": "pages/GamesSports.html",
-  "/LocateUs": "pages/LocateUs.html",
-  "/Location": "pages/Location.html",
-  "/Mandatory": "pages/Mandatory.js",
-  "/Principal": "pages/Principal.js",
-  "/Rules": "pages/Rules.html",
-  "/TransferCertificate": "pages/TransferCertificate.html",
   "/_app": "pages/_app.js",
-  "/api/hello": "pages/api/hello.js",
-  "/": "pages/index.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/404": "pages/404.html"
+  "/": "pages/index.js"
 }
