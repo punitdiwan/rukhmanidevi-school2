@@ -40,14 +40,14 @@ const Location = () => {
                     </div>
                     <div className="row">
                         <div className="col-sm-12">
-                            Pinegrove School, Dharampur and Subathu are both located in the salubrious and pristine environment of Solan District in the Shimla ranges and are situated in the most picturesque scenery and pollution-free atmosphere of the Kasauli Hills in the State of Himachal Pradesh, in northern India. The Dharampur School is located amidst a grove of pine trees on the Dharampur-Kasauli State Highway, 3 KM off the main Kalka-Shimla National Highway (NH-22), at a height of about 5000 feet. The Subathu School is located on the banks of a brook, in the most exotic valley of Kuthar, on the Subathu-Kuthar-Kasauli Road, near Subathu at a height of about 3500 feet. Both the locations are 20 KM apart.
+                            Rukhmani Devi School, established in 1991, is a Co-educational, purely residential, English medium public school affiliated to the Central Board of Secondary Education (CBSE), Delhi, up to 10th and 12th Grades. Pinegrove is a Regional Member of the Round Square, is accredited with ISO 9001:2008 (BSI) and is a member of the prestigious Indian Public Schools` Conference (IPSC).Rukhmani Devi School, established in 1991, is a Co-educational, purely residential, English medium public school affiliated to the Central Board of Secondary Education (CBSE), Delhi, up to 10th and 12th Grades. Pinegrove is a Regional Member of the Round Square, is accredited with ISO 9001:2008 (BSI) and is a member of the prestigious Indian Public Schools` Conference (IPSC).
                         </div>
 
                         <div className="col-sm-6 then-img">
                             <img src="/images/2" style={{ width: "100%", height: "350px" }} />
                             <div className="col-sm-12">
                                 <div>
-                                    <h4 style={{ color: "#0063a6" }}><b>Area of school campus (Subathu)</b></h4>
+                                    <h4 style={{ color: "#0063a6" }}><b> Head Branch </b></h4>
                                 </div>
                                 <table class="table table-bordered table-double" style={{ overflowX: "auto", backgroundColor: "#ecf4f9" }}>
                                     <tbody>
@@ -68,7 +68,7 @@ const Location = () => {
                                     </tbody>
                                 </table>
                                 <div>
-                                    <h5><b>Area of school campus (Subathu)</b></h5>
+                                    <h5><b>Head Branch</b></h5>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" style={{ width: "16px", color: "#0a7ad1" }}>
                                             <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
@@ -111,7 +111,7 @@ const Location = () => {
 
                             <div className="col-sm-12">
                                 <div>
-                                    <h4 style={{ color: "#0063a6" }}><b>Area of school campus (Dharampur)</b></h4>
+                                    <h4 style={{ color: "#0063a6" }}><b>Main Branch</b></h4>
                                 </div>
                                 <table class="table table-bordered table-double" style={{ overflowX: "auto", backgroundColor: "#ecf4f9" }}>
                                     <tbody>
@@ -134,7 +134,7 @@ const Location = () => {
 
 
                                 <div>
-                                    <h5><b>Area of school campus (Subathu)</b></h5>
+                                    <h5><b>Main Branch</b></h5>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" style={{ width: "16px", color: "#0a7ad1" }}>
                                             <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
@@ -184,7 +184,7 @@ const Location = () => {
 
                         </div>
                         <div className="col-sm-6">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448183.73907005717!2d76.81307299667618!3d28.646677259922765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1633419934231!5m2!1sen!2sin"
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d58647.10959795074!2d77.3844673!3d23.2632986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1634807333399!5m2!1sen!2sin"
                                 style={{ width: "100%", height: "350px", border: "5px solid black", borderRadius: "10px" }} allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>

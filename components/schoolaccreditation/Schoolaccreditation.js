@@ -15,7 +15,7 @@ function Schoolaccreditation() {
         <div>
             <div className='container'>
                 <div className='accreditation'>
-                    <h3>School Accreditation</h3>
+                    {/* <h3>School Accreditation</h3> */}
                     <div className='accicon'>
                          
                         {data.data[0].acredation.map((item, i) => {

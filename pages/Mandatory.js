@@ -103,12 +103,12 @@ const Mandatory = ({data_header}) => {
                                         <tr>
                                             <td>2</td>
                                             <td>COPIES OF SOCIETIES/TRUST/COMPANY REGISTRATION/RENEWAL CERTIFICATE, AS APPLICABLE</td>
-                                            <td><a href="assets/pdf/SBT-B2-COPIES-OF-SOCIETIESTRUSTCOMPANY-REGISTRATIONRENEWAL-CERTIFICATE.pdf" target="_blank">View</a></td>
+                                            <td><a href="https://rukhmanidevi.maitretech.com/Society Ragistration.pdf" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
                                             <td>COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT./UT</td>
-                                            <td><a href="assets/pdf/SBT-B3-COPY-OF-NO-OBJECTION-CERTIFICATE.pdf" target="_blank">View</a></td>
+                                            <td><a href="https://rukhmanidevi.maitretech.com/DPI -  NOC Certificate.pdf" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
@@ -157,7 +157,7 @@ const Mandatory = ({data_header}) => {
                                         <tr>
                                             <td>1</td>
                                             <td>FEE STRUCTURE OF THE SCHOOL</td>
-                                            <td><a href="fees.aspx" target="_blank">View</a></td>
+                                            <td><a href="#" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
                                             <td>2</td>

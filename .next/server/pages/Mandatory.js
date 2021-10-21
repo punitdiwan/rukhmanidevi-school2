@@ -347,7 +347,7 @@ const Mandatory = ({
                       children: "COPIES OF SOCIETIES/TRUST/COMPANY REGISTRATION/RENEWAL CERTIFICATE, AS APPLICABLE"
                     }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("td", {
                       children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
-                        href: "assets/pdf/SBT-B2-COPIES-OF-SOCIETIESTRUSTCOMPANY-REGISTRATIONRENEWAL-CERTIFICATE.pdf",
+                        href: "https://rukhmanidevi.maitretech.com/Society Ragistration.pdf",
                         target: "_blank",
                         children: "View"
                       })
@@ -359,7 +359,7 @@ const Mandatory = ({
                       children: "COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT./UT"
                     }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("td", {
                       children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
-                        href: "assets/pdf/SBT-B3-COPY-OF-NO-OBJECTION-CERTIFICATE.pdf",
+                        href: "https://rukhmanidevi.maitretech.com/DPI -  NOC Certificate.pdf",
                         target: "_blank",
                         children: "View"
                       })
@@ -458,7 +458,7 @@ const Mandatory = ({
                       children: "FEE STRUCTURE OF THE SCHOOL"
                     }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("td", {
                       children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
-                        href: "fees.aspx",
+                        href: "#",
                         target: "_blank",
                         children: "View"
                       })
@@ -3152,7 +3152,10 @@ function Header() {
                             },
                             children: "Rukhmani Devi   Public School "
                           }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
-                            className: "place",
+                            className: "place pl-1",
+                            style: {
+                              fontFamily: "curveFont"
+                            },
                             children: "Bhopal, Madhya Pradesh"
                           })]
                         })
@@ -3558,8 +3561,6 @@ function Footer({
     }
   };
 
-  console.log(data_header);
-
   const formValidation = () => {
     const nameErr = {};
     const emailErr = {};
@@ -3627,7 +3628,6 @@ function Footer({
     });
   }
 
-  console.log(data);
   return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
     children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
       className: "footerbg",
@@ -3663,6 +3663,10 @@ function Footer({
                     },
                     children: "Rukhmani Devi Public School"
                   }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
+                    style: {
+                      fontSize: "13px",
+                      fontFamily: "curveFont"
+                    },
                     className: "place",
                     children: "Bhopal, Madhya Pradesh"
                   })]

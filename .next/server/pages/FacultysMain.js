@@ -2759,7 +2759,10 @@ function Header() {
                             },
                             children: "Rukhmani Devi   Public School "
                           }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
-                            className: "place",
+                            className: "place pl-1",
+                            style: {
+                              fontFamily: "curveFont"
+                            },
                             children: "Bhopal, Madhya Pradesh"
                           })]
                         })
@@ -3165,8 +3168,6 @@ function Footer({
     }
   };
 
-  console.log(data_header);
-
   const formValidation = () => {
     const nameErr = {};
     const emailErr = {};
@@ -3234,7 +3235,6 @@ function Footer({
     });
   }
 
-  console.log(data);
   return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
     children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
       className: "footerbg",
@@ -3270,6 +3270,10 @@ function Footer({
                     },
                     children: "Rukhmani Devi Public School"
                   }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
+                    style: {
+                      fontSize: "13px",
+                      fontFamily: "curveFont"
+                    },
                     className: "place",
                     children: "Bhopal, Madhya Pradesh"
                   })]

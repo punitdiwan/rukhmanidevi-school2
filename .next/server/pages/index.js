@@ -480,7 +480,7 @@ const LocateUs = () => {
       }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
         className: "col-sm-6",
         children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("iframe", {
-          src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448183.73907005717!2d76.81307299667618!3d28.646677259922765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1633419934231!5m2!1sen!2sin",
+          src: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d58647.10959795074!2d77.3844673!3d23.2632986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1634807333399!5m2!1sen!2sin",
           style: {
             width: "100%",
             height: "350px",
@@ -1625,7 +1625,6 @@ function Eventmain({
 
 
 
-
 const fetcher = (...args) => fetch(...args).then(res => res.json());
 
 function Schoolaccreditation() {
@@ -1650,11 +1649,9 @@ function Schoolaccreditation() {
   return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
     children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
       className: "container",
-      children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
         className: "accreditation",
-        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("h3", {
-          children: "School Accreditation"
-        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
           className: "accicon",
           children: data.data[0].acredation.map((item, i) => {
             if (item.length > 1) {
@@ -1671,7 +1668,7 @@ function Schoolaccreditation() {
               });
             }
           })
-        })]
+        })
       })
     })
   });
@@ -4300,7 +4297,10 @@ function Header() {
                             },
                             children: "Rukhmani Devi   Public School "
                           }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
-                            className: "place",
+                            className: "place pl-1",
+                            style: {
+                              fontFamily: "curveFont"
+                            },
                             children: "Bhopal, Madhya Pradesh"
                           })]
                         })
@@ -4706,8 +4706,6 @@ function Footer({
     }
   };
 
-  console.log(data_header);
-
   const formValidation = () => {
     const nameErr = {};
     const emailErr = {};
@@ -4775,7 +4773,6 @@ function Footer({
     });
   }
 
-  console.log(data);
   return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
     children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
       className: "footerbg",
@@ -4811,6 +4808,10 @@ function Footer({
                     },
                     children: "Rukhmani Devi Public School"
                   }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
+                    style: {
+                      fontSize: "13px",
+                      fontFamily: "curveFont"
+                    },
                     className: "place",
                     children: "Bhopal, Madhya Pradesh"
                   })]

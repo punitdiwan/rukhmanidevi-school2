@@ -58,8 +58,7 @@ function Footer({ data_header }) {
 
 
     }
-
-console.log(data_header)
+ 
     
     const formValidation = () => {
         const nameErr = {};
@@ -120,8 +119,7 @@ console.log(data_header)
     }
     if (!data) {
         return <div>No Data...</div>
-    }
-    console.log(data)
+    } 
 
     return (
         <div>
@@ -134,7 +132,7 @@ console.log(data_header)
                                     <img src="/images/pglogo.png" alt='logo' style={{ height: "53px" }} />
                                     <div style={{ lineHeight: '20px' }}>
                                         <span style={{ fontSize: "19px",fontFamily: "curveFont"  }}>Rukhmani Devi Public School</span><br />
-                                        <span className='place'>Bhopal, Madhya Pradesh</span>
+                                        <span style={{ fontSize: "13px",fontFamily: "curveFont"  }} className='place'>Bhopal, Madhya Pradesh</span>
                                     </div>
                                 </div>
                                 <p>Rukhmani Devi School, established in 1991, is a Co-educational, purely residential,

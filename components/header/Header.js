@@ -64,7 +64,9 @@ function Header() {
                                                         <span style={{
                                                             fontFamily: "curveFont" 
                                                         }}>Rukhmani Devi   Public School </span><br />
-                                                        <span className='place'>Bhopal, Madhya Pradesh</span>
+                                                        <span className='place pl-1'  style={{
+                                                            fontFamily: "curveFont" 
+                                                        }}>Bhopal, Madhya Pradesh</span>
                                                     </div>
                                                 </div>
                                             </div>
