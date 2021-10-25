@@ -12,27 +12,29 @@ const AdmissionProcess = () => {
 
                             <div className="col-md-12">
                                 <h4>Admission :</h4>
-                                <p><b><em>It is advised to visit the School Campus before seeking admission or registering a child for admission, </em></b> and familiarize yourself in regard to all the rules, facets, aspects and quality of the school.  </p>
-                                <p>The admission procedure starts with Registration of the child for admission. <b><em>Please note that Registration does not guarantee admission. </em></b></p>
+                                {/* <p><b><em>It is advised to visit the School Campus before seeking admission or registering a child for admission, </em></b> and familiarize yourself in regard to all the rules, facets, aspects and quality of the school.  </p> */}
+                                <p>It is advised to visit the School Campus before seeking admission or registering a child for admission, and familiarize yourself in regard to all the rules, facets, aspects and quality of the school.</p>
+                            <p></p>
                             </div>
                             <div className="col-md-12">
                                 <h4>Registration :</h4>
-                                <p>Registration is normally open throughout the year. Both NRI and resident Indian children are to be registered. Registration entails filling in the requisite <b><em>
-                                    <a href="#">“Admission Form”</a>,</em></b> remitting the registration fees and submitting the requisite documents as listed hereunder, to be deposited for registration through post/email or by hand in the School Office. (Registration Fee is mentioned in the <b><em>
-                                    <a href="#">“Fee Schedule” </a></em></b>Section). </p>
-                                <p><b><em><u>Please note that registration does NOT guarantee admission.</u></em></b></p>
-                                <p>After registration the students applying for Classes I - VI are required to visit the Dharampur Campus, on a date scheduled by the School’s Admission Office, for an Orientation Programme and for Classes VII - IX and XI the “Boarding School Orientation” is held at the Subathu campus, on a stipulated date, as per the school calendar. (Generally, the Orientation is held during the first weekend of February).</p>
-                                <p>Please note that NRI students (seeking admission in Classes I-VII) are granted direct admission and are excused from attending the Orientation in person.</p>
+                                <p>Registration is normally open throughout the year. Both NRI and resident Indian children are to be registered. Registration entails filling in the requisite  
+                                    <a href="#">“Admission Form”</a>   remitting the registration fees and submitting the requisite documents as listed hereunder, to be deposited for registration through post/email or by hand in the School Office. (Registration Fee is mentioned in the  
+                                      </p>
+                                <p><b><em><u> remitting the registration fees and submitting the requisite documents as listed hereunder, to be deposited for registration through post/email or by hand in the School Office. .</u></em></b></p>
+                                <p>Please note that registration does NOT guarantee admission.</p>
+                                <p>After registration the students are required to visit the Campus, on a date scheduled by the School’s Admission Office, for an Orientation Programme.</p>
                             </div>
                             <div className="col-md-12">
                                 <h4>Admission:</h4>
-                                <p>The list of successful candidates is declared within a week after the Orientation in the month of February and the admission needs to be accepted/ declined within a week from this declaration.</p>
-                                <p>Admissions are granted with due preference to NRIs, brothers/sisters of present Grovians, brothers/sisters/children of Old Grovians, children of serving defence personnel, war widows, Govt Employees and brilliant scholarship/free-ship students from the poorer section of society. Details of the procedure is explained hereafter.</p>
+                                <p>The list of successful candidates is declared within a week after the Orientation and the admission needs to be accepted/ declined within a week from this declaration.</p>
+                                <p>Admissions are granted with due preference to brothers/sisters of present Grovians, brothers/sisters/children of Old Grovians, children of serving defence personnel, war widows, Govt Employees and brilliant scholarship/free-ship students from the poorer section of society. Details of the procedure is explained hereafter.</p>
                             </div>
                             <div className="col-md-12">
                                 <h4>Age Criteria:</h4>
-                                <p>Generally, admission will be offered in Class I (1st Grade) for a child aged between 5 to 6-1/2 (five to six and a half years) as on 28th February of the year of admission. The subsequent classes can be so calculated. Generally, the accepted formula is, <b><em>age of child minus 5 or 6 = Class to be admitted. </em></b></p>
+                                <p>Generally, admission will be offered in Class I (1st Grade) for a child aged between 5 to 6-1/2 (five to six and a half years) as on 28th February of the year of admission. The subsequent classes can be so calculated. Generally, the accepted formula is, age of child minus 5 or 6 = Class to be admitted.</p>
                                 <p>The standard rule being that the admission will be granted provisionally for the first year and further continuance will depend on the child's performance, academic and otherwise, during the first year of his/her stay in the school.</p>
+                               
                                 <span> <b> <i>Important note:</i></b></span>
                                 <p><b><i>The boarding school orientation so conducted is not a test or criteria for promotion nor a process of selection/rejection but only meant to gauge the mental and physical make-up of a student to adjust to hostel life, which is vastly different to normal day-schools.</i></b></p>
                                 <p>Hence all new admissions have to join the school after successful completion of their academic session in the previous school and obtaining proper School Leaving Certificates.</p>
@@ -45,12 +47,12 @@ const AdmissionProcess = () => {
                             </div>
                             <div className="col-md-12">
                                 <h4>Plus-2 Admission :</h4>
-                                <p>1. <b><em>Rights of admission to the Senior Secondary Stage (Plus 1 &amp; 2) are reserved.</em></b> Children passing out of the secondary stage from Pinegrove will not have rights for direct admission to the Senior Secondary Stage and will need to reapply for admission for the senior secondary stage. No re-admission fee will be charged if the request for admission reaches the school Office by the appointed date announced by the school authorities.</p>
-                                <p> 2. Due to very limited seats, preference for admission will be given to students passing out from the 10th class from Pinegrove School itself.</p>
-                                <p>3. Children shall be considered for admissions and be offered provisional admission, on the basis of the result card of the 9th Class Final Exams and the Pre-Board Result of 10th Class. <b><em>The cut off percentage for admission will be announced each year as per school rules.</em></b> Appropriate weightage shall be given to students excelling in sports and at the discretion of the school management.</p>
-                                <p>4. Admission to Class XI, may not be offered, dependent on limited availability of seats in the hostel or on conduct and academic performance of the child during the previous stay of the child in the school.</p>
-                                <p>5. <b><em><u>In the best interest of the child no reasons for rejection need be given and the decision of the School Management and/or the Head of School will be final and binding.</u></em></b></p>
-                                <p>6. All admissions will be provisional till such time the Secondary School Board results are not declared. The provisional admission shall be confirmed after the senior secondary board result. </p>
+                                <p>1.  Rights of admission to the Senior Secondary Stage (Plus 1 & 2) are reserved. Children passing out of the secondary stage from Pinegrove will not have rights for direct admission to the Senior Secondary Stage and will need to reapply for admission for the senior secondary stage. No re-admission fee will be charged if the request for admission reaches the school Office by the appointed date announced by the school authorities.</p>
+                                <p> 2.  Due to very limited seats, preference for admission will be given to students passing out from the 10th class from Rukhmani Devi School itself.</p>
+                                <p>3.  Children shall be considered for admissions and be offered provisional admission, on the basis of the result card of the 9th Class Final Exams and the Pre-Board Result of 10th Class. The cut off percentage for admission will be announced each year as per school rules. Appropriate weightage shall be given to students excelling in sports and at the discretion of the school management.</p>
+                                <p>4. Admission to Class XI, may not be offered, dependent on limited availability of seats or on conduct and academic performance of the child during the previous stay of the child in the school.</p>
+                                <p>5. In the best interest of the child no reasons for rejection need be given and the decision of the School Management and/or the Head of School will be final and binding.</p>
+                                <p>6. All admissions will be provisional till such time the Secondary School Board results are not declared. The provisional admission shall be confirmed after the senior secondary board result.</p>
                                 <p>7. The provisional admission will be withdrawn in such cases where the minimum percentage is not obtained or if a child gets a Compartment or a Fail result in the Secondary School Board results.</p>
                                 <p>8. New Admissions for Class XI shall follow the procedure of Registration, Admission test and interview.</p>
 
@@ -80,18 +82,7 @@ const AdmissionProcess = () => {
 
                                 </ul>
                             </div>
-                            <div className="col-md-12"><br />
-                                <h4>Additional Documents for NRIs :</h4>
-                                <p>In addition to the above mentioned documents, the <b><em>following documents</em></b> will also have to be submitted by NRI and foreign students:</p>
-                                <ul>
-                                    <li>a) <b><em>Original Passport</em></b> with valid <b><em>STUDENT VISA</em></b> (in original).</li>
-                                    <li>b) An additional attested photocopy of <b><em>Passport</em></b></li>
-                                    <li>c) <b><em>Letter of acceptance from the local guardian</em></b> agreeing to be the guardian of the child during his/her stay at the school and accepting to take full responsibility and care of the child during short leaves, vacations and especially during emergencies.</li>
-                                    <li>d) <b><em>Copy of the Police report</em></b> regarding the permission for stay of over six months in India. (<b><em>FRRO Registration,</em></b> if the child is above 15 years of age).</li>
-                                    <li>e) <b><em>Letter of Authority</em></b> permitting the Headmaster or his representative to take all responsibility in case of any emergency.</li>
-                                    <li>f)	<b><em>Photographs and addresses of people allowed to meet the child/children</em></b> and to take them on visiting weekends and vacations. (for NRI students only)</li>
-                                </ul>
-                            </div>
+                             
                             <div className="col-md-12"><br />
                                 <h4>Additional Documents required to be submitted for Plus-2 admission:</h4>
                                 <p>Documents to be submitted by children seeking admission to the Senior Secondary Stage at the time of admission will be as follows:</p>
@@ -118,12 +109,12 @@ const AdmissionProcess = () => {
                             </div>
                             <div className="mb-3 col-md-12">
                                 <h4>Download Documents :</h4>
-                                <p>The following documents are available for download in PDF format. You will require Adobe Acrobat Reader for viewing and printing these documents. You can download Adobe Acrobat Reader from www.adobe.com</p>
+                                {/* <p>The following documents are available for download in PDF format. You will require Adobe Acrobat Reader for viewing and printing these documents. You can download Adobe Acrobat Reader from www.adobe.com</p>
                                 <li>1) Admission Form </li>
                                 <li>2) Medical Certificate</li> 
                                 <li>3) General Rules and Regulations</li>
                                 <li>4) Clothing List</li>
-                                <li>5) Medical Consent Authorization</li>
+                                <li>5) Medical Consent Authorization</li> */}
                             </div>
                         </div>
                         {/* <div className="row">
