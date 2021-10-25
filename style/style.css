@@ -7,6 +7,16 @@
           box-sizing: border-box;
 }
 
+@media (max-width:624px){
+  .items1 img{
+    height: 300px !important;
+    margin-top: -30px !important;
+
+  }
+  .display_none{
+    display: none !important;
+  }
+ }
 @font-face {
   font-family: "curveFont";
   src: url("../public/Fontin_Sans_SC_45b.otf");
@@ -1456,11 +1466,5 @@ margin-top: 30px;
    margin-top: 30px !important;
  }
 
- @media (max-width:624px){
-  .items1 img{
-    height: 300px !important;
-    margin-top: 35px !important;
-
-  }
- }
+ 
   

@@ -73,13 +73,16 @@ function Header() {
                                         </div>
                                     </div>
                                     <div className="float-right mb-1 col-sm-4">
+                                    <div className="display_none">
                                         <div className="d-flex text-light">
+                                              
                                             <Link href="#video">
-                                                <a>
+                                                <a className=" ">
                                                     <p className="text-light">Virtual Tour for Rukhmani Devi School</p>
                                                 </a>
                                             </Link>
-                                            &ensp;|&ensp; <Link href='#footer'><a className="text-light">Contact</a></Link>
+                                            &ensp;|&ensp; <Link href='#footer'><a className="text-light   ">Contact</a></Link>
+                                        </div>
                                         </div>
 
                                         <div className="row icon_head_logo">

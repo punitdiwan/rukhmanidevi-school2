@@ -153,6 +153,15 @@ function Footer({ data_header }) {
                                         <li><a href=''><FontAwesomeIcon icon={faEnvelopeOpenText} />&nbsp;{data_header?.data ? data_header?.data[0]?.email : "maitretech@example.com"}</a></li>
                                         <li><a href=''><FontAwesomeIcon icon={faMapMarkerAlt} />&nbsp;{data_header?.data ? data_header?.data[0]?.address : " Demo Address , Demo Address, Madhya Pradesh 111111"}</a></li>
                                     </ul> */}
+                                    <h5 className="text-light">Head Branch</h5>
+                                    <ul>
+                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;{  data?.data[0]?.phone  }</a></li>
+                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;{  data?.data[0]?.mobile }</a></li>
+                                        <li><a href=''><FontAwesomeIcon icon={faEnvelopeOpenText} />&nbsp;{  data?.data[0]?.email }</a></li>
+                                        <li><a href=''><FontAwesomeIcon icon={faMapMarkerAlt} />&nbsp;{  data?.data[0]?.address }</a></li>
+                                    </ul>
+
+                                    <h5 className="text-light">Main Branch</h5>
                                     <ul>
                                         <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;{  data?.data[0]?.phone  }</a></li>
                                         <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;{  data?.data[0]?.mobile }</a></li>
