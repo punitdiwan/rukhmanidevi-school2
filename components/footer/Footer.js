@@ -127,7 +127,7 @@ function Footer({ data_header }) {
                 <div className='container' >
                     <div className="row">
                         <div className="col-sm-4">
-                            <div style={{ paddingTop: '20px' }}>
+                            <div style={{ paddingTop: '40px' }}>
                                 <div style={{ display: 'flex' }}>
                                     <img src="/images/pglogo.png" alt='logo' style={{ height: "53px" }} />
                                     <div style={{ lineHeight: '20px' }}>
@@ -146,7 +146,10 @@ function Footer({ data_header }) {
                             <div className='contactus'>
                                 <div>
 
-                                    <h5><span>|&nbsp;</span><FontAwesomeIcon icon={faNetworkWired} /> Connect with us</h5>
+                                    <h5><span>|&nbsp;</span>
+                                     
+                                    {/* <FontAwesomeIcon icon={faNetworkWired} /> */}
+                                     Connect with us</h5>
                                     {/* <ul>
                                         <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;{data_header?.data ? data_header?.data[0]?.phone : "9999911111"}</a></li>
                                         <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;{data_header?.data ? data_header?.data[0]?.mobile : "999999999"}</a></li>
@@ -161,22 +164,26 @@ function Footer({ data_header }) {
                                         <li><a href=''><FontAwesomeIcon icon={faMapMarkerAlt} />&nbsp;{  data?.data[0]?.address }</a></li>
                                     </ul>
 
-                                    <h5 className="text-light">Main Branch</h5>
+                                    <h5 className="text-light">Airport Road Branch</h5>
                                     <ul>
-                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;{  data?.data[0]?.phone  }</a></li>
-                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;{  data?.data[0]?.mobile }</a></li>
+                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp; 9993392708</a></li>
+                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp; 8109048886</a></li>
                                         <li><a href=''><FontAwesomeIcon icon={faEnvelopeOpenText} />&nbsp;{  data?.data[0]?.email }</a></li>
-                                        <li><a href=''><FontAwesomeIcon icon={faMapMarkerAlt} />&nbsp;{  data?.data[0]?.address }</a></li>
+                                        <li><a href=''><FontAwesomeIcon icon={faMapMarkerAlt} />&nbsp;Airport Road,Lalghati</a></li>
                                     </ul>
                                 </div>
 
                             </div>
                         </div>
                         <div className="col-sm-4">
-                            <div className='emailus'>
-
-
-                                <h5><span>|&nbsp;</span><FontAwesomeIcon icon={faEnvelope} />&nbsp; Connect with us</h5>
+                            <div className='emailus'> 
+                                <h5><span>|&nbsp;</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                     style={{ width: "25px", color: "white" }}>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                        </svg>
+                                {/* <FontAwesomeIcon icon={faEnvelope} /> */}
+                                &nbsp; Connect with us</h5>
                                 <div className="form-group" id="contact-bottom">
                                     <div className="mb-2 input-group">
                                         <div className="input-group-prepend">
@@ -192,7 +199,9 @@ function Footer({ data_header }) {
                                 <div className="form-group" id="contact-bottom">
                                     <div className="mb-2 input-group">
                                         <div className="input-group-prepend">
-                                            <div className="input-group-text"><FontAwesomeIcon icon={faEnvelope} /></div>
+                                            <div className="input-group-text">
+                                                {/* <FontAwesomeIcon icon={faEnvelope} /> */}
+                                                </div>
                                         </div>
 
                                         <input name="email" type="text" id="txtname2" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email@gmail.com" className="form-control" />
@@ -204,7 +213,9 @@ function Footer({ data_header }) {
                                 <div className="form-group" id="contact-bottom">
                                     <div className="mb-2 input-group">
                                         <div className="input-group-prepend">
-                                            <div className="input-group-text"><FontAwesomeIcon icon={faPhone} /></div>
+                                            <div className="input-group-text">
+                                                <FontAwesomeIcon icon={faPhone} />
+                                                </div>
                                         </div>
 
                                         <input name="mobile" type="text" id="txtname3" value={mobile} onChange={e => setMobile(e.target.value)} placeholder="Contact Number" className="form-control" />

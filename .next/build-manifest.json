@@ -19,10 +19,10 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/index.js"
     ],
-    "/AdmissionProcess": [
+    "/FacultysMain": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/AdmissionProcess.js"
+      "static/chunks/pages/FacultysMain.js"
     ],
     "/_app": [
       "static/chunks/main.js",

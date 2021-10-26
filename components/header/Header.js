@@ -179,7 +179,7 @@ function Header() {
                                     <li>
                                         <button className='dropdownbtn'>Facilities <FontAwesomeIcon icon={faCaretDown} />
                                             <div className='dropdownmenu'>
-                                                <li><Link href='/FacilitiesIntro'><a>Facilities INTRODUCTION </a></Link></li>
+                                                {/* <li><Link href='/FacilitiesIntro'><a>Facilities INTRODUCTION </a></Link></li> */}
                                                 <li><Link href='/AcademicFacilities'><a>Academic Facilities</a></Link></li>
                                                 <li><Link href='/GamesSports'><a>Games & Sports</a></Link></li>
                                                 <li><Link href='/Activities'><a>Activities</a></Link></li>
