@@ -19,10 +19,20 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/index.js"
     ],
+    "/Director": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/Director.js"
+    ],
     "/FacultysMain": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/FacultysMain.js"
+    ],
+    "/Location": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/Location.js"
     ],
     "/_app": [
       "static/chunks/main.js",
@@ -33,6 +43,11 @@
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
+    ],
+    "/next/dist/pages/_error": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/next/dist/pages/_error.js"
     ]
   },
   "ampFirstPages": []
