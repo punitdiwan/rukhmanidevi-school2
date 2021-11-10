@@ -158,18 +158,26 @@ function Footer({ data_header }) {
                                     </ul> */}
                                     <h5 className="text-light">Head Branch</h5>
                                     <ul>
-                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;{  data?.data[0]?.phone  }</a></li>
-                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;{  data?.data[0]?.mobile }</a></li>
-                                        <li><a href=''><FontAwesomeIcon icon={faEnvelopeOpenText} />&nbsp;{  data?.data[0]?.email }</a></li>
-                                        <li><a href=''><FontAwesomeIcon icon={faMapMarkerAlt} />&nbsp;{  data?.data[0]?.address }</a></li>
+                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />
+                                        &nbsp; 8871018886</a></li>
+                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />
+                                        &nbsp; 8878954637 </a></li>
+                                        <li><a href=''><FontAwesomeIcon icon={faEnvelopeOpenText} />
+                                        &nbsp;{  data?.data[0]?.email }</a></li>
+                                        <li><a href=''><FontAwesomeIcon icon={faMapMarkerAlt} />
+                                        &nbsp;NH-46 BHOPAL- Narsinghgarh Road Near Jharkheda.</a></li>
                                     </ul>
 
                                     <h5 className="text-light">Airport Road Branch</h5>
                                     <ul>
-                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp; 9993392708</a></li>
-                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp; 8109048886</a></li>
-                                        <li><a href=''><FontAwesomeIcon icon={faEnvelopeOpenText} />&nbsp;{  data?.data[0]?.email }</a></li>
-                                        <li><a href=''><FontAwesomeIcon icon={faMapMarkerAlt} />&nbsp;Airport Road,Lalghati</a></li>
+                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;
+                                        9926188840</a></li> 
+                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;
+                                         8109048886</a></li>
+                                        <li><a href=''><FontAwesomeIcon icon={faEnvelopeOpenText} />
+                                        &nbsp;{  data?.data[0]?.email }</a></li>
+                                        <li><a href=''><FontAwesomeIcon icon={faMapMarkerAlt} />
+                                        &nbsp;Airport Road Data colony Bhopal postal code:  462030 </a></li>
                                     </ul>
                                 </div>
 

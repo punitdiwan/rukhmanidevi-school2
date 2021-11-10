@@ -19,15 +19,10 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/index.js"
     ],
-    "/Director": [
+    "/Gallery": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/Director.js"
-    ],
-    "/FacultysMain": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/FacultysMain.js"
+      "static/chunks/pages/Gallery.js"
     ],
     "/Location": [
       "static/chunks/main.js",
