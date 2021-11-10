@@ -47,7 +47,7 @@ const Location = () => {
                             <img src="/images/2" style={{ width: "100%", height: "350px" }} />
                             <div className="col-sm-12">
                                 <div>
-                                    <h4 style={{ color: "#0063a6" }}><b> Head Branch </b></h4>
+                                    <h4 style={{ color: "#0063a6" }}><b> Main Branch </b></h4>
                                 </div>
                                 <table class="table table-bordered table-double" style={{ overflowX: "auto", backgroundColor: "#ecf4f9" }}>
                                     <tbody>
@@ -68,7 +68,7 @@ const Location = () => {
                                     </tbody>
                                 </table>
                                 <div>
-                                    <h5><b>Head Branch</b></h5>
+                                    <h5><b>Main Branch</b></h5>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" style={{ width: "16px", color: "#0a7ad1" }}>
                                             <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
