@@ -46,7 +46,7 @@ const Location = () => {
                         <div className="col-sm-6 then-img">
                             <img src="/images/2" style={{ width: "100%", height: "350px" }} />
                             <div className="col-sm-12">
-                                <div>
+                                {/* <div>
                                     <h4 style={{ color: "#0063a6" }}><b> Main Branch </b></h4>
                                 </div>
                                 <table class="table table-bordered table-double" style={{ overflowX: "auto", backgroundColor: "#ecf4f9" }}>
@@ -66,7 +66,7 @@ const Location = () => {
                                         </tr>
 
                                     </tbody>
-                                </table>
+                                </table> */}
                                 <div>
                                     <h5><b>Main Branch</b></h5>
                                     <div>
@@ -88,7 +88,7 @@ const Location = () => {
                                         <span>91-1792-275666</span>
                                     </div> */}
 
-                                    <div className="mt-1">
+                                    {/* <div className="mt-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ width: "18px", color: "#0a7ad1" }}>
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                         </svg>&nbsp;&nbsp;
@@ -99,7 +99,7 @@ const Location = () => {
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                         </svg>&nbsp;&nbsp;
                                         <span>subathu@pinegroveschool.com</span>
-                                    </div>
+                                    </div> */}
 
                                 </div>
 
@@ -110,7 +110,7 @@ const Location = () => {
                             <img src="/images/1" style={{ width: "100%", height: "350px" }} />
 
                             <div className="col-sm-12">
-                                <div>
+                                {/* <div>
                                     <h4 style={{ color: "#0063a6" }}><b>Airport Road Branch</b></h4>
                                 </div>
                                 <table class="table table-bordered table-double" style={{ overflowX: "auto", backgroundColor: "#ecf4f9" }}>
@@ -130,7 +130,7 @@ const Location = () => {
                                         </tr>
 
                                     </tbody>
-                                </table>
+                                </table> */}
 
 
                                 <div>
@@ -154,7 +154,7 @@ const Location = () => {
                                         <span>8109048886</span>
                                     </div> */}
 
-                                    <div className="mt-1">
+                                    {/* <div className="mt-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ width: "18px", color: "#0a7ad1" }}>
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                         </svg>&nbsp;&nbsp;
@@ -165,7 +165,7 @@ const Location = () => {
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                         </svg>&nbsp;&nbsp;
                                         <span>subathu@pinegroveschool.com</span>
-                                    </div>
+                                    </div> */}
 
                                 </div>
 

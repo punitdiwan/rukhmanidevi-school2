@@ -162,8 +162,8 @@ function Footer({ data_header }) {
                                         &nbsp; 8871018886</a></li>
                                         <li><a href=''><FontAwesomeIcon icon={faPhone} />
                                         &nbsp; 8878954637 </a></li>
-                                        <li><a href=''><FontAwesomeIcon icon={faEnvelopeOpenText} />
-                                        &nbsp;{  data?.data[0]?.email }</a></li>
+                                        {/* <li><a href=''><FontAwesomeIcon icon={faEnvelopeOpenText} />
+                                        &nbsp;{  data?.data[0]?.email }</a></li> */}
                                         <li><a href=''><FontAwesomeIcon icon={faMapMarkerAlt} />
                                         &nbsp;NH-46 BHOPAL- Narsinghgarh Road Near Jharkheda.</a></li>
                                     </ul>
@@ -174,8 +174,8 @@ function Footer({ data_header }) {
                                         9926188840</a></li> 
                                         <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;
                                          8109048886</a></li>
-                                        <li><a href=''><FontAwesomeIcon icon={faEnvelopeOpenText} />
-                                        &nbsp;{  data?.data[0]?.email }</a></li>
+                                        {/* <li><a href=''><FontAwesomeIcon icon={faEnvelopeOpenText} />
+                                        &nbsp;{  data?.data[0]?.email }</a></li> */}
                                         <li><a href=''><FontAwesomeIcon icon={faMapMarkerAlt} />
                                         &nbsp;Airport Road Data colony Bhopal postal code:  462030 </a></li>
                                     </ul>
