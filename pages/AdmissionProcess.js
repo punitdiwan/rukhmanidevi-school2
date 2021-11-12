@@ -19,7 +19,7 @@ const AdmissionProcess = () => {
                             <div className="col-md-12">
                                 <h4>Registration :</h4>
                                 <p>Registration is normally open throughout the year. Both NRI and resident Indian children are to be registered. Registration entails filling in the requisite  
-                                    <a href="#">“Admission Form”</a>   remitting the registration fees and submitting the requisite documents as listed hereunder, to be deposited for registration through post/email or by hand in the School Office. (Registration Fee is mentioned in the  
+                                     Admission Form    remitting the registration fees and submitting the requisite documents as listed hereunder, to be deposited for registration through post/email or by hand in the School Office. (Registration Fee is mentioned in the  
                                       </p>
                                 <p><b><em><u> remitting the registration fees and submitting the requisite documents as listed hereunder, to be deposited for registration through post/email or by hand in the School Office. .</u></em></b></p>
                                 <p>Please note that registration does NOT guarantee admission.</p>
@@ -39,12 +39,7 @@ const AdmissionProcess = () => {
                                 <p><b><i>The boarding school orientation so conducted is not a test or criteria for promotion nor a process of selection/rejection but only meant to gauge the mental and physical make-up of a student to adjust to hostel life, which is vastly different to normal day-schools.</i></b></p>
                                 <p>Hence all new admissions have to join the school after successful completion of their academic session in the previous school and obtaining proper School Leaving Certificates.</p>
                             </div>
-                            <div className="col-md-12">
-                                <h4>NRI Admissions :</h4>
-                                <p>All parents whose earning is in foreign exchange and those whose children are not Indian nationals shall be considered as NRI children.<b><em> As an NRI, it is advisable to get the child admitted only if you have some relative/friend who can be the local guardian,</em></b> for visiting your child on visiting weekends, short/long holidays and shoulder responsibility, especially in case of emergencies. </p>
-                                <p><b><em>An NRI/Foreigner has the option to seek direct admission in Classes I to VII only </em></b>(Subject to availability of seats). This will be permitted only if the child is flying in from abroad for the sole purpose of seeking admission. For Classes VIII and above the child has to appear for a “Boarding School Orientation” as per schedule at the Subathu campus. </p>
-                                <p>For such direct NRI admission the payment of school fee, in USD, as per <b><em>“Fee Schedule”,</em></b> for the first academic year, should reach the School Office in full before 15th February of the year admission is sought. NRI students are charged fees in USD which includes tuition, boarding, lodging, books, stationery, laundry, toiletries and other miscellaneous overhead expenses of the school but does not include expenditure on clothing, uniforms, personal items, medicines and camps/excursions.</p>
-                            </div>
+                             
                             <div className="col-md-12">
                                 <h4>Plus-2 Admission :</h4>
                                 <p>1.  Rights of admission to the Senior Secondary Stage (Plus 1 & 2) are reserved. Children passing out of the secondary stage from Pinegrove will not have rights for direct admission to the Senior Secondary Stage and will need to reapply for admission for the senior secondary stage. No re-admission fee will be charged if the request for admission reaches the school Office by the appointed date announced by the school authorities.</p>
