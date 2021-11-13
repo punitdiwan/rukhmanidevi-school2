@@ -135,11 +135,11 @@ function Footer({ data_header }) {
                                         <span style={{ fontSize: "13px",fontFamily: "curveFont"  }} className='place'>Bhopal, Madhya Pradesh</span>
                                     </div>
                                 </div>
-                                <p>Rukhmani Devi School, established in 1991, is a Co-educational, purely residential,
-                                    English medium public school affiliated to the Central Board of Secondary Education
-                                    (CBSE), Delhi, up to 10th and 12th Grades. Pinegrove is a Regional Member of the Round
-                                    Square, is accredited with ISO 9001:2008 (BSI) and is a member of the
-                                    prestigious Indian Public Schools` Conference (IPSC).</p>
+                                <p>Rukhmani Devi School, established in 2007, is a Co-educational, 
+                                    Day Boarding English medium public school affiliated to the Central
+                                     Board of Secondary Education (CBSE), Delhi, up to 10th and 12th Grades.
+                                      Pinegrove is a Regional Member of the Round Square, is accredited with ISO 9001:2008 (BSI)
+                                     and is a member of the prestigious Indian Public Schools` Conference (IPSC).</p>
                             </div>
                         </div>
                         <div className="col-sm-4">

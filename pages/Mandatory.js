@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/layouts/Layout'
 import Link from 'next/link'
 
-const Mandatory = ({data_header}) => {
+const Mandatory = ({ data_header }) => {
     return (
         <Layout>
             <div className="container-fluid media_top"  >
@@ -50,32 +50,37 @@ const Mandatory = ({data_header}) => {
                                         <tr>
                                             <td>2</td>
                                             <td>AFFILIATION NO.(IF APPLICABLE)</td>
-                                            <td>630065</td>
+                                            <td>1030619</td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
                                             <td>SCHOOL CODE (IF APPLICABLE)</td>
-                                            <td>43054</td>
+                                            <td>50585</td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
                                             <td>COMPLETE ADDRESS WITH PIN CODE</td>
-                                            <td>Kuthar Road Subathu, Distt. Solan Himachal Pradesh 173206, India</td>
+                                            <td>
+                                                NH-46 Bhopal – Narsinghgarh Road,
+                                                Near Jharkheda Tahsil Shyampur
+                                                District Sehore (M.P)  Pin No. 466661
+
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
                                             <td>PRINCIPAL NAME &amp; QUALIFICATION</td>
-                                            <td>Devender Kumar Verma, MPhil</td>
+                                            <td>MRS SAMEENA HASAN ( M.Ed )</td>
                                         </tr>
                                         <tr>
                                             <td>6</td>
                                             <td>SCHOOL EMAIL ID</td>
-                                            <td>subathu@pinegroveschool.com<br />43054@cbseshiksha.in </td>
+                                            <td>rukhmanidevischool@gmail.com <br />50585@cbseshiksha.in</td>
                                         </tr>
                                         <tr>
                                             <td>7</td>
                                             <td>CONTACT DETAILS (LANDLINE/MOBILE)</td>
-                                            <td>01792-275690, 9805004108</td>
+                                            <td>8878954637, 9993392708</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -205,24 +210,24 @@ const Mandatory = ({data_header}) => {
                                         <tr>
                                             <td> 1 </td>
                                             <td> 2018 </td>
-                                            <td> 69 </td>
-                                            <td> 69 </td>
+                                            <td> 66 </td>
+                                            <td> 66 </td>
                                             <td> 100 </td>
                                             <td>  </td>
                                         </tr>
                                         <tr><td> 2 </td>
                                             <td> 2019 </td>
-                                            <td> 74 </td>
-                                            <td> 74 </td>
-                                            <td> 100 </td>
+                                            <td> 89 </td>
+                                            <td> 88 </td>
+                                            <td> 99.0 </td>
                                             <td>  </td>
                                         </tr>
                                         <tr>
                                             <td> 3 </td>
                                             <td> 2020 </td>
-                                            <td>75  </td>
-                                            <td>75  </td>
-                                            <td> 100 </td>
+                                            <td>57  </td>
+                                            <td>56 </td>
+                                            <td> 99.0 </td>
                                             <td>  </td>
                                         </tr>
 
@@ -250,23 +255,23 @@ const Mandatory = ({data_header}) => {
                                         <tr>
                                             <td> 1 </td>
                                             <td> 2018 </td>
-                                            <td> 69 </td>
-                                            <td> 69 </td>
-                                            <td> 100 </td>
+                                            <td> 40 </td>
+                                            <td> 36 </td>
+                                            <td> 90.0 </td>
                                             <td>  </td>
                                         </tr>
                                         <tr><td> 2 </td>
                                             <td> 2019 </td>
-                                            <td> 74 </td>
-                                            <td> 74 </td>
-                                            <td> 100 </td>
+                                            <td> 73 </td>
+                                            <td> 72 </td>
+                                            <td> 99.0 </td>
                                             <td>  </td>
                                         </tr>
                                         <tr>
                                             <td> 3 </td>
                                             <td> 2020 </td>
-                                            <td>75  </td>
-                                            <td>75  </td>
+                                            <td>70</td>
+                                            <td>70</td>
                                             <td> 100 </td>
                                             <td>  </td>
                                         </tr>
@@ -292,20 +297,21 @@ const Mandatory = ({data_header}) => {
                                         <tr>
                                             <td> 1 </td>
                                             <td> PRINCIPAL </td>
-                                            <td> 1 </td>
+                                            <td>  </td>
 
                                         </tr>
-                                        <tr><td rowspan="3">2</td>
+                                        <tr>
+                                            <td rowspan="3">2</td>
                                             <td>PGT</td>
-                                            <td>14</td>
+                                            <td> </td>
                                         </tr>
                                         <tr>
                                             <td>TGT</td>
-                                            <td>21</td>
+                                            <td> </td>
                                         </tr>
                                         <tr>
                                             <td>PRT</td>
-                                            <td>18</td>
+                                            <td> </td>
                                         </tr>
 
                                         <tr>
@@ -351,19 +357,37 @@ const Mandatory = ({data_header}) => {
                                         <tr>
                                             <td> 1 </td>
                                             <td> TOTAL CAMPUS AREA OF THE SCHOOL (IN SQUARE MTR) </td>
-                                            <td> 53526 Sq.mtrs. </td>
+                                            <td> 12,145 Sq.mtrs. </td>
 
                                         </tr>
                                         <tr><td> 2 </td>
                                             <td> NO. AND SIZE OF THE CLASS ROOMS (IN SQ MTR) </td>
-                                            <td> 60 </td>
+                                            <td> 18  (20x30) </td>
 
                                         </tr>
                                         <tr>
-                                            <td> 3 </td>
+                                            <td rowspan="5"> 3 </td>
                                             <td> NO. AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (IN SQ MTR) </td>
-                                            <td> 7 </td>
+                                            <td> 4 </td>
 
+                                        </tr>
+                                        <tr>
+                                             
+                                            <td>Physics Lab</td>
+                                            <td> 1</td>
+                                             
+                                        </tr>
+                                        <tr>
+                                            <td>Chemistry Lab</td>
+                                            <td> 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Biology Lab</td>
+                                            <td>1 </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Computer lab</td>
+                                            <td>1 </td>
                                         </tr>
                                         <tr>
                                             <td> 4 </td>
@@ -374,13 +398,13 @@ const Mandatory = ({data_header}) => {
                                         <tr>
                                             <td> 5 </td>
                                             <td> NO. OF GIRLS TOILETS </td>
-                                            <td> 56 </td>
+                                            <td> 15 </td>
 
                                         </tr>
                                         <tr>
                                             <td> 6 </td>
                                             <td> NO. OF BOYS TOILETS </td>
-                                            <td> 60 </td>
+                                            <td> 15 </td>
 
                                         </tr>
                                         <tr>
@@ -408,20 +432,20 @@ export default Mandatory
 
 export async function getStaticProps(context) {
 
-    let data_header 
-  
+    let data_header
+
     try {
-     
-      const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/config?fields=*,logo.data.full_url`)
-   
-      data_header = await response.json()  
-    } 
+
+        const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/config?fields=*,logo.data.full_url`)
+
+        data_header = await response.json()
+    }
     catch (error) {
-      data_header = false 
-    } 
-      
+        data_header = false
+    }
+
     return {
-        props: {data_header },
+        props: { data_header },
         revalidate: 2, // will be passed to the page component as props
     }
-  }
+}
