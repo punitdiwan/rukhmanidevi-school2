@@ -7,7 +7,7 @@ function Activities() {
         <Layout>
             <div className="container media_top"> 
 
-                <div className="ml-4 sticky-top position-fixed bg-light text-dark d-flex" style={{ marginTop: "150px" }} >
+                <div className="   ml-4 sticky-top position-fixed bg-light text-dark d-flex" style={{ marginTop: "150px" }} >
                     &nbsp;&nbsp;
                     <Link href="/">
                         <svg xmlns="http://www.w3.org/2000/svg" class = "h-5 w-5" viewBox="0 0 20 20" fill="currentColor" style={{ width: "25px", color: "green" }}>
