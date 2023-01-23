@@ -8,8 +8,7 @@ import Trust from '../components/trust/Trust';
 import Carouselswr from '../components/carousel/Carouselswr';
 import Schoolgallery from '../components/schoolgallery/Schoolgallery'
 import LocateUs from '../pages/LocateUs'
-// import '../node_modules/react-image-slider/lib/image-slider.css'
-// import '../'
+import Column from './Column';
 
 export default function Home({data_header,slider_data,about_data,gallery_data}) {
   return (
@@ -27,6 +26,7 @@ export default function Home({data_header,slider_data,about_data,gallery_data}) 
         <Schoolaccreditation />
         <Trust />
         <Schoolgallery gallery_data={gallery_data} />
+        <Column/>
         <LocateUs/>
       </Layout>
     </div>

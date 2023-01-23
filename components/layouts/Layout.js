@@ -14,15 +14,11 @@ const Layout = ({ children, data_header }) => {
                 <title>Rukhmani Devi Public School</title>
                 <link rel="icon"  type="image/jpg" href="/images/fullogo.png"   />
             </Head>
-
             <Header />
-            {/* <Headercontant/> */}
             {children}
             <ToastProvider>
                 <Footer data_header={data_header} />
             </ToastProvider>
-            {/* <Stickyfooter/> */}
-
         </div>
     )
 }

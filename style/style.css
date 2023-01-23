@@ -160,7 +160,20 @@ margin-top: 30px;
 .dropdownbtn:hover .dropdownmenu {
   display: block;
 }
-
+.dropdown-new{
+  display: none
+}
+.dropdownbtn:hover>.dropdown-new{
+  display: block;
+  background-color: #002a5c;
+}
+.dropdown-new>li:hover>.dropdownbtn{
+  background-color: #002a5c;
+  color: black;
+}
+.new-btn{
+  background: #002a5c;
+}
 .dropdownmenu {
   display: none;
   position: absolute;
@@ -183,7 +196,8 @@ margin-top: 30px;
 }
 
 .dropdownmenu li a {
-  padding: 15px 20px;
+  padding: 0.5rem;
+  display: flex;
 }
 
 .dropdownmenu li a:hover {
@@ -198,7 +212,6 @@ margin-top: 30px;
   display: block;
   float: right;
 }
-
 .nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,7 +235,30 @@ margin-top: 30px;
   text-transform: uppercase;
   font-family: "Exo 2", sans-serif;
 }
-
+#new-add1{
+  display: flex;
+  /* border: 2px solid blue; */
+  flex-direction: column;
+  width: 30%;
+}
+.new-add{
+  /* border: 2px solid red; */
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+  gap: 2rem;
+}
+.new-add-1{
+  width: 100%;
+  margin-bottom: auto;
+  /* border: 2px solid green; */
+}
+.new-add2{
+  width: 100%;
+  text-align: center;
+  /* border: 2px solid yellow; */
+}
 .carousel-caption {
   background-color: #000000a8;
   font-size: 26px;
@@ -312,6 +348,90 @@ margin-top: 30px;
   padding-right: 20px;
 }
 
+
+
+/* **************** column ****************** */
+
+.column-1{
+  height: 85%;
+  width: 25vw;
+  position: relative;
+}
+.column-1 .column-1-inner{
+  text-align: center;
+}
+.column-1 img, .column-1-inner{
+  transition: .3s all;
+  border-radius: 3px;
+}
+.column-1>img{
+  width: 100%;
+  height:  100%;
+}
+.column-1 .sport-image{
+  height: 63vh;
+  image-resolution: revert-layer;
+  /* border: 2px solid red; */
+}
+.column-1-inner{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(19, 42, 92, 0.9);
+    color: #fff;
+    opacity: 0;
+}
+.column-1-inner >h1{
+  margin:2rem;
+  position: absolute;
+  font-size: large;
+  top: 30%;
+  text-transform: uppercase;
+  opacity:1;
+  border-bottom:2px solid green; 
+} 
+.column-1-inner >p{
+  text-align: center;
+  margin:2rem;
+  opacity:12;
+  position: absolute;
+  font-size: medium;
+  top: 40%;
+  font-weight: dark;
+}
+.column-1:hover .column-1-inner{
+  cursor:pointer;
+  opacity:1;
+  
+}
+.column-main{
+  height: 100%;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .column-1 img {
+  -webkit-filter: blur(1px);
+      filter: blur(1px);
+} */
+
+#location{
+  margin: 0;
+  padding:0;
+  /* border: 2px solid red; */
+}
+
+
+
+/* ********************************************** */
 .react-tabs__tab-list {
   margin-bottom: 0px !important;
 }
@@ -378,8 +498,8 @@ margin-top: 30px;
 .director {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[13];
-      grid-template-columns: repeat(13, 1fr);
+  -ms-grid-columns: (1fr,13);
+  grid-template-columns: repeat(13, 1fr);
   grid-gap: 20px;
 }
 
@@ -398,7 +518,8 @@ margin-top: 30px;
 .extragrid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[13];
+  /* -ms-grid-columns: (1fr)[13]; */
+  -ms-grid-columns: (1fr,13);
       grid-template-columns: repeat(13, 1fr);
   grid-gap: 20px;
 }
@@ -447,7 +568,8 @@ margin-top: 30px;
 .eventgrid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[13];
+  /* -ms-grid-columns: (1fr)[13]; */
+  -ms-grid-columns: (1fr,13);
       grid-template-columns: repeat(13, 1fr);
   grid-gap: 20px;
 }
@@ -994,6 +1116,31 @@ margin-top: 30px;
 }
 
 @media (max-width: 1024px) {
+  #new-add1{
+    padding: 2rem;
+    width:100%
+  }
+  .new-add{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .new-add2{
+    width: 100%;
+  }
+  .column-main{
+    height: 50%;
+    padding:2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+  }
+  .column-1{
+    width:100%;
+    height: 500px;
+  }
   .aboutnav .react-tabs__tab button {
     padding: 18px 1.45rem;
   }
@@ -1081,6 +1228,31 @@ margin-top: 30px;
   margin-top: 180px;
 }
 @media only screen and (max-width: 700px) {
+  .column-main{
+    height: 50%;
+    padding:2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+  }
+  .column-1{
+    width:100%;
+    height: 500px;
+  }
+  #new-add1{
+    padding: 2rem;
+    width:100%
+  }
+  .new-add{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .new-add2{
+    width: 100%;
+  }
   .locate h3 {
     color: #07445f;
     font-size: 28px;
@@ -1112,6 +1284,18 @@ margin-top: 30px;
   margin-top: 160px !important;
 }
 @media only screen and (max-width: 767px) {
+  #new-add1{
+    padding: 2rem;
+    width:100%
+  }
+  .new-add{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .new-add2{
+    width: 100%;
+  }
   .aboutnav .react-tabs__tab button {
     padding: 18px 1.05rem;
   }
@@ -1264,7 +1448,8 @@ margin-top: 30px;
   .eventgrid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[13];
+    /* -ms-grid-columns: (1fr)[13]; */
+    -ms-grid-columns: (1fr,13);
         grid-template-columns: repeat(13, 1fr);
     grid-gap: 20px;
   }
@@ -1286,7 +1471,8 @@ margin-top: 30px;
   .director {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[13];
+    /* -ms-grid-columns: (1fr)[13]; */
+    -ms-grid-columns: (1fr,13);
         grid-template-columns: repeat(13, 1fr);
     grid-gap: 20px;
   }
@@ -1304,6 +1490,32 @@ margin-top: 30px;
 }
 
 @media only screen and (max-width: 540px) {
+  .column-main{
+    font-size: small;
+  }
+  /* .column-main .column-1 .column-1-inner>h1{
+    top:5%;
+  }
+  .column-main .column-1 .column-1-inner>p{
+    top:15%;
+  } */
+  .column-1-inner{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+  #new-add1{
+    padding: 2rem;
+    width:100%
+  }
+  .new-add{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .new-add2{
+    width: 100%;
+  }
   .about .container {
     padding: 0px;
   }

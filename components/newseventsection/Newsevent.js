@@ -39,7 +39,7 @@ function Newsevent() {
                 <hr />
                 <div>
                     <div className='newsinfo'> 
-                        <marquee direction="up" id="scroll">
+                        <marquee direction="up" id="scroll" behaviour='scroll' scroll-amount='2' >
                             <div className="ideaboxNews in-easing in-relative" id="idx1">
                                 <ul id="newscontent1" className="mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar" >
                                     <div id="mCSB_1" className="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" >

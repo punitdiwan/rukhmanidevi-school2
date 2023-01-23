@@ -1,13 +1,12 @@
 import { SRLWrapper } from "simple-react-lightbox";
 import Layout from '../components/layouts/Layout'
-import useSWR from "swr";
  
 
 const Gallery = ({ data_header ,gallery_data}) => {
   
 
   const slides = [
-    { title: "/images/is7.jpg", description: 'View Gallery' },
+    { title: "/images/a1.jpg", description: 'View Gallery' },
     { title: "/images/is8.jpg  ", description: 'View Gallery' },
     { title: " /images/is9.jpg ", description: 'View Gallery' },
     { title: "/images/is11.jpg  ", description: 'View Gallery' },
@@ -19,6 +18,7 @@ const Gallery = ({ data_header ,gallery_data}) => {
 
 
   return (
+    <>
     <Layout>
       <SRLWrapper>
 
@@ -55,6 +55,7 @@ const Gallery = ({ data_header ,gallery_data}) => {
         </div>
       </SRLWrapper>
     </Layout>
+    </>
   );
 };
 

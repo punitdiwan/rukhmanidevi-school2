@@ -7,6 +7,7 @@ import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import { useToasts } from 'react-toast-notifications'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import useSWR from 'swr'
+import {FaPhoneAlt} from "react-icons/fa";
 
 const fetcher = (...args) => fetch(...args).then(res => res.json());
 
@@ -158,9 +159,9 @@ function Footer({ data_header }) {
                                     </ul> */}
                                     <h5 className="text-light">Main Branch</h5>
                                     <ul>
-                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />
+                                        <li><a href='tel:8871018886'><FaPhoneAlt />
                                         &nbsp; 8871018886</a></li>
-                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />
+                                        <li><a href='tel:8878954637'><FaPhoneAlt />
                                         &nbsp; 8878954637 </a></li>
                                         {/* <li><a href=''><FontAwesomeIcon icon={faEnvelopeOpenText} />
                                         &nbsp;{  data?.data[0]?.email }</a></li> */}
@@ -170,9 +171,9 @@ function Footer({ data_header }) {
 
                                     <h5 className="text-light">Airport Road Branch</h5>
                                     <ul>
-                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;
+                                        <li><a href='tel:9926188840'><FaPhoneAlt />&nbsp;
                                         9926188840</a></li> 
-                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;
+                                        <li><a href='tel:8109048886'><FaPhoneAlt/>&nbsp;
                                          8109048886</a></li>
                                         {/* <li><a href=''><FontAwesomeIcon icon={faEnvelopeOpenText} />
                                         &nbsp;{  data?.data[0]?.email }</a></li> */}
@@ -208,7 +209,7 @@ function Footer({ data_header }) {
                                     <div className="mb-2 input-group">
                                         <div className="input-group-prepend">
                                             <div className="input-group-text">
-                                                {/* <FontAwesomeIcon icon={faEnvelope} /> */}
+                                                <FontAwesomeIcon icon={faEnvelope} />
                                                 </div>
                                         </div>
 
