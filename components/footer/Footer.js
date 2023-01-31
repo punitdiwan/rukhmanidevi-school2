@@ -161,12 +161,6 @@ function Footer({ data_header }) {
                     {/* <FontAwesomeIcon icon={faNetworkWired} /> */}
                     Connect with us
                   </h5>
-                  {/* <ul>
-                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;{data_header?.data ? data_header?.data[0]?.phone : "9999911111"}</a></li>
-                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;{data_header?.data ? data_header?.data[0]?.mobile : "999999999"}</a></li>
-                                        <li><a href=''><FontAwesomeIcon icon={faEnvelopeOpenText} />&nbsp;{data_header?.data ? data_header?.data[0]?.email : "maitretech@example.com"}</a></li>
-                                        <li><a href=''><FontAwesomeIcon icon={faMapMarkerAlt} />&nbsp;{data_header?.data ? data_header?.data[0]?.address : " Demo Address , Demo Address, Madhya Pradesh 111111"}</a></li>
-                                    </ul> */}
                   <h5 className="text-light">Main Branch</h5>
                   <ul>
                     <li>
