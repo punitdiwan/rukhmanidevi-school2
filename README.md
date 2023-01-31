@@ -1,1 +1,1 @@
-# rukhmanidevi-school2
+# rukhmanidevi-school
