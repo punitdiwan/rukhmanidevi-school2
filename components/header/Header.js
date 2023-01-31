@@ -266,7 +266,7 @@ function Header() {
                     </button>
                     &ensp;|&ensp;
                   </li>
-                  <li>
+                  {/* <li>
                     <button className='dropdownbtn'>
                         Branches <FontAwesomeIcon icon={faCaretDown}/>
                     
@@ -289,7 +289,7 @@ function Header() {
                     </div>
                     </button>
                     &ensp;|&ensp;
-                  </li>
+                  </li> */}
 
                   <li>
                     <button className="dropdownbtn">

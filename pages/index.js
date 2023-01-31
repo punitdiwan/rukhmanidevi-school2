@@ -26,7 +26,7 @@ export default function Home({data_header,slider_data,about_data,gallery_data}) 
         <Schoolaccreditation />
         <Trust />
         <Schoolgallery gallery_data={gallery_data} />
-        <Column/>
+        {/* <Column/> */}
         <LocateUs/>
       </Layout>
     </div>

@@ -1,767 +1,31 @@
-module.exports =
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = require('../ssr-module-cache.js');
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		var threw = true;
-/******/ 		try {
-/******/ 			modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/ 			threw = false;
-/******/ 		} finally {
-/******/ 			if(threw) delete installedModules[moduleId];
-/******/ 		}
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// define __esModule on exports
-/******/ 	__webpack_require__.r = function(exports) {
-/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 		}
-/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 	};
-/******/
-/******/ 	// create a fake namespace object
-/******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
-/******/ 	// mode & 4: return value when already ns object
-/******/ 	// mode & 8|1: behave like require
-/******/ 	__webpack_require__.t = function(value, mode) {
-/******/ 		if(mode & 1) value = __webpack_require__(value);
-/******/ 		if(mode & 8) return value;
-/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
-/******/ 		var ns = Object.create(null);
-/******/ 		__webpack_require__.r(ns);
-/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
-/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
-/******/ 		return ns;
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 23);
-/******/ })
-/************************************************************************/
-/******/ ({
-
-/***/ "+eM2":
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "/jkW":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports.isDynamicRoute = isDynamicRoute; // Identify /[param]/ in route string
-
-const TEST_ROUTE = /\/\[[^/]+?\](?=\/|$)/;
-
-function isDynamicRoute(route) {
-  return TEST_ROUTE.test(route);
-}
-
-/***/ }),
-
-/***/ "0Bsm":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__("TqRt");
-
-exports.__esModule = true;
-exports.default = withRouter;
-
-var _react = _interopRequireDefault(__webpack_require__("cDcd"));
-
-var _router = __webpack_require__("nOHt");
-
-function withRouter(ComposedComponent) {
-  function WithRouterWrapper(props) {
-    return /*#__PURE__*/_react.default.createElement(ComposedComponent, Object.assign({
-      router: (0, _router.useRouter)()
-    }, props));
-  }
-
-  WithRouterWrapper.getInitialProps = ComposedComponent.getInitialProps // This is needed to allow checking for custom getInitialProps in _app
-  ;
-  WithRouterWrapper.origGetInitialProps = ComposedComponent.origGetInitialProps;
-
-  if (false) {}
-
-  return WithRouterWrapper;
-}
-
-/***/ }),
-
-/***/ "1uhO":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("F5FC");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("YFqc");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-
-
-
-const Column = () => {
-  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-    children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("section", {
-      className: "column-main",
-      children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-        className: "column-1",
-        children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-          src: "/images/admission.jpg",
-          alt: "admission",
-          className: "sport-image"
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-          href: "/AdmissionProcess",
-          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-            className: "column-1-inner",
-            children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
-              children: "ADMISSIONS"
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-              children: "Learn about your child's admission requirements, how to apply, and the next steps once you've applied."
-            })]
-          })
-        })]
-      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-        className: "column-1",
-        children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-          src: "/images/academics.jpg",
-          alt: "admission",
-          className: "sport-image"
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-          href: "/AcademicFacilities",
-          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-            className: "column-1-inner",
-            children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
-              children: "Academics"
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-              children: "The Rukhmani Devi School is a co-education public school. The school is affiliated to the CBSE Board."
-            })]
-          })
-        })]
-      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-        className: "column-1",
-        children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-          src: "/images/column-sports.jpg",
-          alt: "admission",
-          className: "sport-image"
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-          href: "/GamesSports",
-          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-            className: "column-1-inner",
-            children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
-              children: "Sports"
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-              children: "Education at Rukhmani Devi Public School isn't limited to the classroom. It happens throughout campus each and every day through our student activities."
-            })]
-          })
-        })]
-      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-        className: "column-1",
-        children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-          src: "/images/curricular.jpg",
-          alt: "admission",
-          className: "sport-image"
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-          href: "/Activities",
-          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-            className: "column-1-inner",
-            children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
-              children: "co-curricular "
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-              children: "Co-Curricular activities are meant to bring social skills, intellectual skills, moral values, personality progress and character appeal in students."
-            })]
-          })
-        })]
-      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-        className: "column-1",
-        children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-          src: "/images/column-5.jpg",
-          alt: "admission",
-          className: "sport-image"
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-          className: "column-1-inner",
-          children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
-            children: "Boarding"
-          }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-            children: "Where you live, plays an important role in child\u2019s development. We ensure the highest form of care is extended to them."
-          })]
-        })]
-      })]
-    })
-  });
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Column);
-
-/***/ }),
-
-/***/ 23:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("RNiq");
-
-
-/***/ }),
-
-/***/ "284h":
-/***/ (function(module, exports, __webpack_require__) {
-
-var _typeof = __webpack_require__("cDf5");
-
-function _getRequireWildcardCache() {
-  if (typeof WeakMap !== "function") return null;
-  var cache = new WeakMap();
-
-  _getRequireWildcardCache = function _getRequireWildcardCache() {
-    return cache;
-  };
-
-  return cache;
-}
-
-function _interopRequireWildcard(obj) {
-  if (obj && obj.__esModule) {
-    return obj;
-  }
-
-  if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") {
-    return {
-      "default": obj
-    };
-  }
-
-  var cache = _getRequireWildcardCache();
-
-  if (cache && cache.has(obj)) {
-    return cache.get(obj);
-  }
-
-  var newObj = {};
-  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
-
-  for (var key in obj) {
-    if (Object.prototype.hasOwnProperty.call(obj, key)) {
-      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
-
-      if (desc && (desc.get || desc.set)) {
-        Object.defineProperty(newObj, key, desc);
-      } else {
-        newObj[key] = obj[key];
-      }
-    }
-  }
-
-  newObj["default"] = obj;
-
-  if (cache) {
-    cache.set(obj, newObj);
-  }
-
-  return newObj;
-}
-
-module.exports = _interopRequireWildcard;
-
-/***/ }),
-
-/***/ "3WeD":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports.searchParamsToUrlQuery = searchParamsToUrlQuery;
-exports.urlQueryToSearchParams = urlQueryToSearchParams;
-exports.assign = assign;
-
-function searchParamsToUrlQuery(searchParams) {
-  const query = {};
-  searchParams.forEach((value, key) => {
-    if (typeof query[key] === 'undefined') {
-      query[key] = value;
-    } else if (Array.isArray(query[key])) {
-      ;
-      query[key].push(value);
-    } else {
-      query[key] = [query[key], value];
-    }
-  });
-  return query;
-}
-
-function stringifyUrlQueryParam(param) {
-  if (typeof param === 'string' || typeof param === 'number' && !isNaN(param) || typeof param === 'boolean') {
-    return String(param);
-  } else {
-    return '';
-  }
-}
-
-function urlQueryToSearchParams(urlQuery) {
-  const result = new URLSearchParams();
-  Object.entries(urlQuery).forEach(([key, value]) => {
-    if (Array.isArray(value)) {
-      value.forEach(item => result.append(key, stringifyUrlQueryParam(item)));
-    } else {
-      result.set(key, stringifyUrlQueryParam(value));
-    }
-  });
-  return result;
-}
-
-function assign(target, ...searchParamsList) {
-  searchParamsList.forEach(searchParams => {
-    Array.from(searchParams.keys()).forEach(key => target.delete(key));
-    searchParams.forEach((value, key) => target.append(key, value));
-  });
-  return target;
-}
-
-/***/ }),
-
-/***/ "5mtF":
-/***/ (function(module, exports) {
-
-module.exports = require("react-icons/fa");
-
-/***/ }),
-
-/***/ "65ip":
-/***/ (function(module, exports) {
-
-module.exports = require("react-tabs");
-
-/***/ }),
-
-/***/ "6D7l":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports.formatUrl = formatUrl;
-
-var querystring = _interopRequireWildcard(__webpack_require__("3WeD"));
-
-function _getRequireWildcardCache() {
-  if (typeof WeakMap !== "function") return null;
-  var cache = new WeakMap();
-
-  _getRequireWildcardCache = function () {
-    return cache;
-  };
-
-  return cache;
-}
-
-function _interopRequireWildcard(obj) {
-  if (obj && obj.__esModule) {
-    return obj;
-  }
-
-  if (obj === null || typeof obj !== "object" && typeof obj !== "function") {
-    return {
-      default: obj
-    };
-  }
-
-  var cache = _getRequireWildcardCache();
-
-  if (cache && cache.has(obj)) {
-    return cache.get(obj);
-  }
-
-  var newObj = {};
-  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
-
-  for (var key in obj) {
-    if (Object.prototype.hasOwnProperty.call(obj, key)) {
-      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
-
-      if (desc && (desc.get || desc.set)) {
-        Object.defineProperty(newObj, key, desc);
-      } else {
-        newObj[key] = obj[key];
-      }
-    }
-  }
-
-  newObj.default = obj;
-
-  if (cache) {
-    cache.set(obj, newObj);
-  }
-
-  return newObj;
-} // Format function modified from nodejs
-// Copyright Joyent, Inc. and other Node contributors.
-//
-// Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this software and associated documentation files (the
-// "Software"), to deal in the Software without restriction, including
-// without limitation the rights to use, copy, modify, merge, publish,
-// distribute, sublicense, and/or sell copies of the Software, and to permit
-// persons to whom the Software is furnished to do so, subject to the
-// following conditions:
-//
-// The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-// USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-const slashedProtocols = /https?|ftp|gopher|file/;
-
-function formatUrl(urlObj) {
-  let {
-    auth,
-    hostname
-  } = urlObj;
-  let protocol = urlObj.protocol || '';
-  let pathname = urlObj.pathname || '';
-  let hash = urlObj.hash || '';
-  let query = urlObj.query || '';
-  let host = false;
-  auth = auth ? encodeURIComponent(auth).replace(/%3A/i, ':') + '@' : '';
-
-  if (urlObj.host) {
-    host = auth + urlObj.host;
-  } else if (hostname) {
-    host = auth + (~hostname.indexOf(':') ? `[${hostname}]` : hostname);
-
-    if (urlObj.port) {
-      host += ':' + urlObj.port;
-    }
-  }
-
-  if (query && typeof query === 'object') {
-    query = String(querystring.urlQueryToSearchParams(query));
-  }
-
-  let search = urlObj.search || query && `?${query}` || '';
-  if (protocol && protocol.substr(-1) !== ':') protocol += ':';
-
-  if (urlObj.slashes || (!protocol || slashedProtocols.test(protocol)) && host !== false) {
-    host = '//' + (host || '');
-    if (pathname && pathname[0] !== '/') pathname = '/' + pathname;
-  } else if (!host) {
-    host = '';
-  }
-
-  if (hash && hash[0] !== '#') hash = '#' + hash;
-  if (search && search[0] !== '?') search = '?' + search;
-  pathname = pathname.replace(/[?#]/g, encodeURIComponent);
-  search = search.replace('#', '%23');
-  return `${protocol}${host}${pathname}${search}${hash}`;
-}
-
-/***/ }),
-
-/***/ "C1xe":
-/***/ (function(module, exports) {
-
-module.exports = require("react-toast-notifications");
-
-/***/ }),
-
-/***/ "E8iq":
-/***/ (function(module, exports) {
-
-module.exports = require("react-tooltip");
-
-/***/ }),
-
-/***/ "F5FC":
-/***/ (function(module, exports) {
-
-module.exports = require("react/jsx-runtime");
-
-/***/ }),
-
-/***/ "FKgC":
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "IQIR":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LocateUs", function() { return LocateUs; });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("F5FC");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-
-
- // import {FaMapMarkerAlt} from "react-icons/fa";
-// import LocationOnIcon from '@mui/icons-material/LocationOn';
-
-const LocateUs = () => {
-  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-    className: "container-fluid",
-    children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
-      className: "text-center py-3",
-      children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("b", {
-        children: "LOCATE US"
-      })
-    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-      className: "row new-add",
-      children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-        id: "new-add1",
-        children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-          className: "new-add2",
-          children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h2", {
-            children: "Main Branch "
-          }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-            className: "new-add-1",
-            children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("svg", {
-              xmlns: "http://www.w3.org/2000/svg",
-              class: "h-5 w-5",
-              viewBox: "0 0 20 20",
-              fill: "currentColor",
-              style: {
-                width: "25px",
-                color: "#0a7ad1"
-              },
-              children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("path", {
-                "fill-rule": "evenodd",
-                d: "M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z",
-                "clip-rule": "evenodd"
-              })
-            }), "\xA0\xA0", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-              children: "Rukhmani Devi Public School, BHOPAL- NARSINGHGARH ROAD, JHARKHEDA, Sehore, Madhya Pradesh 466661"
-            })]
-          })]
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("iframe", {
-          src: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14650.29471672161!2d77.1965026!3d23.367455!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7469a793226393fd!2sRukhmani%20Devi%20Public%20School%20%2CCBSE!5e0!3m2!1sen!2sin!4v1636954222488!5m2!1sen!2sin",
-          style: {
-            width: "100%",
-            height: "200px",
-            border: "5px solid black",
-            borderRadius: "10px"
-          },
-          allowfullscreen: "",
-          loading: "lazy"
-        })]
-      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-        id: "new-add1",
-        children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-          className: "new-add2",
-          children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h2", {
-            children: "Airport Road Branch "
-          }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-            className: "new-add-1",
-            children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("svg", {
-              xmlns: "http://www.w3.org/2000/svg",
-              class: "h-5 w-5",
-              viewBox: "0 0 20 20",
-              fill: "currentColor",
-              style: {
-                width: "25px",
-                color: "#0a7ad1"
-              },
-              children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("path", {
-                "fill-rule": "evenodd",
-                d: "M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z",
-                "clip-rule": "evenodd"
-              })
-            }), "\xA0\xA0", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-              children: " Rukhmani Devi Public School, CTO Rd,Singarcholi, Data Colony, Lalghati, Bhopal, Madhya Pradesh 462030 "
-            })]
-          })]
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("iframe", {
-          src: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14659.47914234759!2d77.357023!3d23.2841807!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8f294b174c79335c!2sRukhmani%20Devi%20Public%20School!5e0!3m2!1sen!2sin!4v1633433162299!5m2!1sen!2sin",
-          style: {
-            width: "100%",
-            height: "200px",
-            border: "5px solid black",
-            borderRadius: "10px"
-          },
-          allowfullscreen: "",
-          loading: "lazy"
-        })]
-      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-        id: "new-add1",
-        children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-          className: "new-add2",
-          children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h2", {
-            children: "Aakriti Ecocity"
-          }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-            className: "new-add-1",
-            children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("svg", {
-              xmlns: "http://www.w3.org/2000/svg",
-              class: "h-5 w-5",
-              viewBox: "0 0 20 20",
-              fill: "currentColor",
-              style: {
-                width: "25px",
-                color: "#0a7ad1"
-              },
-              children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("path", {
-                "fill-rule": "evenodd",
-                d: "M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z",
-                "clip-rule": "evenodd"
-              })
-            }), "\xA0\xA0", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-              children: " Rukhmani Devi Public School Aakriti Ecocity, Salaiya, Bhopal, Madhya Pradesh 462026"
-            })]
-          })]
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("iframe", {
-          src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1834.003697088286!2d77.4377056304142!3d23.169930230018924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1af3976549a7c190!2s7JMV5C9Q%2BWFF!5e0!3m2!1sen!2sin!4v1674301314625!5m2!1sen!2sin",
-          style: {
-            width: "100%",
-            height: "200px",
-            border: "5px solid black",
-            borderRadius: "10px"
-          },
-          allowfullscreen: "",
-          loading: "lazy"
-        })]
-      })]
-    })]
-  });
-};
-/* harmony default export */ __webpack_exports__["default"] = (LocateUs);
-
-/***/ }),
-
-/***/ "KaAA":
-/***/ (function(module, exports) {
-
-module.exports = require("react-responsive-carousel");
-
-/***/ }),
-
-/***/ "No/t":
-/***/ (function(module, exports) {
-
-module.exports = require("@fortawesome/free-solid-svg-icons");
-
-/***/ }),
-
-/***/ "Osoz":
-/***/ (function(module, exports) {
-
-module.exports = require("next/dist/next-server/lib/router-context.js");
-
-/***/ }),
-
-/***/ "QV/D":
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "RNiq":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+(function() {
+var exports = {};
+exports.id = 818;
+exports.ids = [818,279];
+exports.modules = {
+
+/***/ 472:
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
-__webpack_require__.d(__webpack_exports__, "default", function() { return /* binding */ Home; });
-__webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return /* binding */ pages_getStaticProps; });
+__webpack_require__.d(__webpack_exports__, {
+  "default": function() { return /* binding */ Home; },
+  "getStaticProps": function() { return /* binding */ pages_getStaticProps; }
+});
 
 // EXTERNAL MODULE: external "react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__("F5FC");
-
+var jsx_runtime_ = __webpack_require__(5282);
 // EXTERNAL MODULE: external "next/head"
-var head_ = __webpack_require__("xnum");
-
-// EXTERNAL MODULE: ./node_modules/bootstrap/dist/css/bootstrap.css
-var bootstrap = __webpack_require__("+eM2");
-
+var head_ = __webpack_require__(701);
 // EXTERNAL MODULE: ./components/layouts/Layout.js + 4 modules
-var Layout = __webpack_require__("t30L");
-
-// EXTERNAL MODULE: external "react-tabs"
-var external_react_tabs_ = __webpack_require__("65ip");
-
-// EXTERNAL MODULE: ./node_modules/react-tabs/style/react-tabs.css
-var react_tabs = __webpack_require__("QV/D");
-
-// CONCATENATED MODULE: ./components/aboutinfo/About.js
+var Layout = __webpack_require__(7386);
+;// CONCATENATED MODULE: external "react-tabs"
+var external_react_tabs_namespaceObject = require("react-tabs");;
+;// CONCATENATED MODULE: ./components/aboutinfo/About.js
 
 
 
@@ -788,23 +52,23 @@ const About = ({
     images: [],
     title: "Our founder Demo"
   }];
-  return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+  return /*#__PURE__*/jsx_runtime_.jsx("div", {
     className: "about",
-    children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+    children: /*#__PURE__*/jsx_runtime_.jsx("div", {
       className: "container",
-      children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])(external_react_tabs_["Tabs"], {
-        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+      children: /*#__PURE__*/(0,jsx_runtime_.jsxs)(external_react_tabs_namespaceObject.Tabs, {
+        children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
           className: "aboutnav",
-          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(external_react_tabs_["TabList"], {
+          children: /*#__PURE__*/jsx_runtime_.jsx(external_react_tabs_namespaceObject.TabList, {
             children: (about_data === null || about_data === void 0 ? void 0 : (_about_data$data = about_data.data) === null || _about_data$data === void 0 ? void 0 : _about_data$data.length) > 0 ? about_data === null || about_data === void 0 ? void 0 : about_data.data.map((item, i) => {
-              return /*#__PURE__*/Object(jsx_runtime_["jsx"])(external_react_tabs_["Tab"], {
-                children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("button", {
+              return /*#__PURE__*/jsx_runtime_.jsx(external_react_tabs_namespaceObject.Tab, {
+                children: /*#__PURE__*/jsx_runtime_.jsx("button", {
                   children: item.title
                 })
               }, i);
             }) : aboutdata.map((item, i) => {
-              return /*#__PURE__*/Object(jsx_runtime_["jsx"])(external_react_tabs_["Tab"], {
-                children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("button", {
+              return /*#__PURE__*/jsx_runtime_.jsx(external_react_tabs_namespaceObject.Tab, {
+                children: /*#__PURE__*/jsx_runtime_.jsx("button", {
                   children: item.title
                 })
               }, i);
@@ -813,31 +77,31 @@ const About = ({
         }), (about_data === null || about_data === void 0 ? void 0 : (_about_data$data2 = about_data.data) === null || _about_data$data2 === void 0 ? void 0 : _about_data$data2.length) > 0 ? about_data === null || about_data === void 0 ? void 0 : about_data.data.map((items, i) => {
           var _items$images;
 
-          return /*#__PURE__*/Object(jsx_runtime_["jsx"])(external_react_tabs_["TabPanel"], {
-            children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+          return /*#__PURE__*/jsx_runtime_.jsx(external_react_tabs_namespaceObject.TabPanel, {
+            children: /*#__PURE__*/jsx_runtime_.jsx("div", {
               className: "aemptydiv",
-              children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+              children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
                 className: "info",
                 style: {
                   display: 'flex'
                 },
-                children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                  children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("h3", {
+                children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+                  children: [/*#__PURE__*/jsx_runtime_.jsx("h3", {
                     children: items === null || items === void 0 ? void 0 : items.heading
-                  }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("p", {
+                  }), /*#__PURE__*/jsx_runtime_.jsx("p", {
                     className: "p",
                     children: items === null || items === void 0 ? void 0 : items.body
                   })]
-                }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+                }), /*#__PURE__*/jsx_runtime_.jsx("div", {
                   style: {
                     width: '25%'
                   },
                   children: items === null || items === void 0 ? void 0 : (_items$images = items.images) === null || _items$images === void 0 ? void 0 : _items$images.map((img, index) => {
                     var _img$directus_files_i, _img$directus_files_i2;
 
-                    return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+                    return /*#__PURE__*/jsx_runtime_.jsx("div", {
                       className: "founderdiv",
-                      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+                      children: /*#__PURE__*/jsx_runtime_.jsx("img", {
                         src: img === null || img === void 0 ? void 0 : (_img$directus_files_i = img.directus_files_id) === null || _img$directus_files_i === void 0 ? void 0 : (_img$directus_files_i2 = _img$directus_files_i.data) === null || _img$directus_files_i2 === void 0 ? void 0 : _img$directus_files_i2.full_url,
                         alt: "now",
                         width: "250px",
@@ -852,31 +116,31 @@ const About = ({
         }) : aboutdata.map((items, i) => {
           var _items$images2;
 
-          return /*#__PURE__*/Object(jsx_runtime_["jsx"])(external_react_tabs_["TabPanel"], {
-            children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+          return /*#__PURE__*/jsx_runtime_.jsx(external_react_tabs_namespaceObject.TabPanel, {
+            children: /*#__PURE__*/jsx_runtime_.jsx("div", {
               className: "aemptydiv",
-              children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+              children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
                 className: "info",
                 style: {
                   display: 'flex'
                 },
-                children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                  children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("h3", {
+                children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+                  children: [/*#__PURE__*/jsx_runtime_.jsx("h3", {
                     children: items === null || items === void 0 ? void 0 : items.heading
-                  }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("p", {
+                  }), /*#__PURE__*/jsx_runtime_.jsx("p", {
                     className: "p",
                     children: items === null || items === void 0 ? void 0 : items.body
                   })]
-                }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+                }), /*#__PURE__*/jsx_runtime_.jsx("div", {
                   style: {
                     width: '25%'
                   },
                   children: items === null || items === void 0 ? void 0 : (_items$images2 = items.images) === null || _items$images2 === void 0 ? void 0 : _items$images2.map((img, index) => {
                     var _img$directus_files_i3, _img$directus_files_i4;
 
-                    return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+                    return /*#__PURE__*/jsx_runtime_.jsx("div", {
                       className: "founderdiv",
-                      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+                      children: /*#__PURE__*/jsx_runtime_.jsx("img", {
                         src: img === null || img === void 0 ? void 0 : (_img$directus_files_i3 = img.directus_files_id) === null || _img$directus_files_i3 === void 0 ? void 0 : (_img$directus_files_i4 = _img$directus_files_i3.data) === null || _img$directus_files_i4 === void 0 ? void 0 : _img$directus_files_i4.full_url,
                         alt: "now",
                         width: "250px",
@@ -896,22 +160,18 @@ const About = ({
 
 /* harmony default export */ var aboutinfo_About = (About);
 // EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__("cDcd");
+var external_react_ = __webpack_require__(9297);
 var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
-
 // EXTERNAL MODULE: external "swr"
-var external_swr_ = __webpack_require__("aYjl");
+var external_swr_ = __webpack_require__(7749);
 var external_swr_default = /*#__PURE__*/__webpack_require__.n(external_swr_);
-
-// EXTERNAL MODULE: external "moment"
-var external_moment_ = __webpack_require__("wy2R");
-var external_moment_default = /*#__PURE__*/__webpack_require__.n(external_moment_);
-
+;// CONCATENATED MODULE: external "moment"
+var external_moment_namespaceObject = require("moment");;
+var external_moment_default = /*#__PURE__*/__webpack_require__.n(external_moment_namespaceObject);
 // EXTERNAL MODULE: external "axios"
-var external_axios_ = __webpack_require__("zr5I");
+var external_axios_ = __webpack_require__(2376);
 var external_axios_default = /*#__PURE__*/__webpack_require__.n(external_axios_);
-
-// CONCATENATED MODULE: ./components/newseventsection/Newsevent.js
+;// CONCATENATED MODULE: ./components/newseventsection/Newsevent.js
 
 
 
@@ -925,9 +185,9 @@ function Newsevent() {
   const {
     0: data,
     1: setdata
-  } = Object(external_react_["useState"])("");
-  Object(external_react_["useEffect"])(() => {
-    external_axios_default.a.get(`${"https://cms.schoolscoop.co.in"}/${"rukhmani"}/items/events`).then(response => {
+  } = (0,external_react_.useState)("");
+  (0,external_react_.useEffect)(() => {
+    external_axios_default().get(`${"https://cms.schoolscoop.co.in"}/${"rukhmani"}/items/events`).then(response => {
       var _response$data, _response$data$data;
 
       if ((response === null || response === void 0 ? void 0 : (_response$data = response.data) === null || _response$data === void 0 ? void 0 : (_response$data$data = _response$data.data) === null || _response$data$data === void 0 ? void 0 : _response$data$data.length) > 0) {
@@ -958,85 +218,85 @@ function Newsevent() {
     eventdate: "2021-07-15",
     title: "Tomorrow is holiday"
   }];
-  return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-    children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+  return /*#__PURE__*/jsx_runtime_.jsx("div", {
+    children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
       className: "eventinfo",
-      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("h3", {
+      children: [/*#__PURE__*/jsx_runtime_.jsx("h3", {
         style: {
           textAlign: 'center'
         },
         children: "News & Events"
-      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("hr", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+      }), /*#__PURE__*/jsx_runtime_.jsx("hr", {}), /*#__PURE__*/jsx_runtime_.jsx("div", {
+        children: /*#__PURE__*/jsx_runtime_.jsx("div", {
           className: "newsinfo",
-          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("marquee", {
+          children: /*#__PURE__*/jsx_runtime_.jsx("marquee", {
             direction: "up",
             id: "scroll",
             behaviour: "scroll",
             "scroll-amount": "2",
-            children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+            children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
               className: "ideaboxNews in-easing in-relative",
               id: "idx1",
-              children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("ul", {
+              children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("ul", {
                 id: "newscontent1",
                 className: "mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar",
-                children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+                children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
                   id: "mCSB_1",
                   className: "mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside",
-                  children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+                  children: /*#__PURE__*/jsx_runtime_.jsx("div", {
                     id: "mCSB_1_container",
                     className: "mCSB_container mCS_y_hidden mCS_no_scrollbar_y",
                     children: (data === null || data === void 0 ? void 0 : (_data$data = data.data) === null || _data$data === void 0 ? void 0 : _data$data.data.length) > 0 ? data === null || data === void 0 ? void 0 : (_data$data2 = data.data) === null || _data$data2 === void 0 ? void 0 : _data$data2.data.map((item, i) => {
-                      return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("li", {
-                        children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+                      return /*#__PURE__*/(0,jsx_runtime_.jsxs)("li", {
+                        children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
                           className: "in-image",
-                          children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+                          children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
                             className: "tt-b-day rem-border",
-                            children: [item.eventdate.split('-')[2], /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+                            children: [item.eventdate.split('-')[2], /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
                               className: "tt-b-day-r",
-                              children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+                              children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
                                 className: "tt-b-month",
                                 children: external_moment_default()(item.eventdate.split('-')[1], 'M').format('MMM')
-                              }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+                              }), /*#__PURE__*/jsx_runtime_.jsx("div", {
                                 className: "tt-b-date",
                                 children: external_moment_default()(item.eventdate.split('-')[0]).format('YYYY')
                               })]
                             })]
-                          }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
+                          }), /*#__PURE__*/jsx_runtime_.jsx("span", {
                             className: "in-turquoise",
-                            children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("h6", {
+                            children: /*#__PURE__*/jsx_runtime_.jsx("h6", {
                               children: "+ Read more"
                             })
                           })]
-                        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+                        }), /*#__PURE__*/jsx_runtime_.jsx("div", {
                           className: "in-content",
                           id: "nid",
                           children: item.title
                         })]
                       }, i);
                     }) : filteredData.map((item, i) => {
-                      return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("li", {
-                        children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+                      return /*#__PURE__*/(0,jsx_runtime_.jsxs)("li", {
+                        children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
                           className: "in-image",
-                          children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+                          children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
                             className: "tt-b-day rem-border",
-                            children: [item.eventdate.split('-')[2], /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+                            children: [item.eventdate.split('-')[2], /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
                               className: "tt-b-day-r",
-                              children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+                              children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
                                 className: "tt-b-month",
                                 children: external_moment_default()(item.eventdate.split('-')[1], 'M').format('MMM')
-                              }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+                              }), /*#__PURE__*/jsx_runtime_.jsx("div", {
                                 className: "tt-b-date",
                                 children: external_moment_default()(item.eventdate.split('-')[0]).format('YYYY')
                               })]
                             })]
-                          }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
+                          }), /*#__PURE__*/jsx_runtime_.jsx("span", {
                             className: "in-turquoise",
-                            children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("h6", {
+                            children: /*#__PURE__*/jsx_runtime_.jsx("h6", {
                               children: "+ Read more"
                             })
                           })]
-                        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+                        }), /*#__PURE__*/jsx_runtime_.jsx("div", {
                           className: "in-content",
                           id: "nid",
                           children: item.title
@@ -1044,39 +304,39 @@ function Newsevent() {
                       }, i);
                     })
                   })
-                }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+                }), /*#__PURE__*/jsx_runtime_.jsx("div", {
                   id: "mCSB_1_scrollbar_vertical",
                   className: "mCSB_scrollTools mCSB_1_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical",
-                  children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+                  children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
                     className: "mCSB_draggerContainer",
-                    children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+                    children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
                       id: "mCSB_1_dragger_vertical",
                       className: "mCSB_dragger",
-                      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+                      children: /*#__PURE__*/jsx_runtime_.jsx("div", {
                         className: "mCSB_dragger_bar"
                       })
-                    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+                    }), /*#__PURE__*/jsx_runtime_.jsx("div", {
                       className: "mCSB_draggerRail"
                     })]
                   })
                 })]
-              }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+              }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
                 className: "in-viewer",
-                children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+                children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
                   className: "in-viewer-header",
                   id: "newstitle1"
-                }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+                }), /*#__PURE__*/jsx_runtime_.jsx("div", {
                   className: "in-viewer-content",
                   id: "newscontent2"
-                }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
+                }), /*#__PURE__*/jsx_runtime_.jsx("span", {
                   className: "in-viewer-close"
                 })]
               })]
             })
           })
         })
-      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("button", {
+      }), /*#__PURE__*/jsx_runtime_.jsx("div", {
+        children: /*#__PURE__*/jsx_runtime_.jsx("button", {
           style: {
             margin: '10px 0px 0px 0px',
             backgroundColor: '#4c6578',
@@ -1093,12 +353,10 @@ function Newsevent() {
 
 /* harmony default export */ var newseventsection_Newsevent = (Newsevent);
 // EXTERNAL MODULE: external "@fortawesome/react-fontawesome"
-var react_fontawesome_ = __webpack_require__("uhWA");
-
+var react_fontawesome_ = __webpack_require__(799);
 // EXTERNAL MODULE: external "@fortawesome/free-solid-svg-icons"
-var free_solid_svg_icons_ = __webpack_require__("No/t");
-
-// CONCATENATED MODULE: ./components/newseventsection/Calendar.js
+var free_solid_svg_icons_ = __webpack_require__(887);
+;// CONCATENATED MODULE: ./components/newseventsection/Calendar.js
 
 
 
@@ -1108,7 +366,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
-class Calendar_Calendar extends external_react_default.a.Component {
+class Calendar extends (external_react_default()).Component {
   constructor(_props) {
     super(_props);
 
@@ -1120,11 +378,11 @@ class Calendar_Calendar extends external_react_default.a.Component {
       selectedDay: null
     });
 
-    _defineProperty(this, "weekdays", external_moment_default.a.weekdays());
+    _defineProperty(this, "weekdays", external_moment_default().weekdays());
 
-    _defineProperty(this, "weekdaysShort", external_moment_default.a.weekdaysShort());
+    _defineProperty(this, "weekdaysShort", external_moment_default().weekdaysShort());
 
-    _defineProperty(this, "months", external_moment_default.a.months());
+    _defineProperty(this, "months", external_moment_default().months());
 
     _defineProperty(this, "year", () => {
       return this.state.dateContext.format("Y");
@@ -1187,8 +445,8 @@ class Calendar_Calendar extends external_react_default.a.Component {
 
     _defineProperty(this, "SelectList", props => {
       let popup = props.data.map(data => {
-        return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+        return /*#__PURE__*/jsx_runtime_.jsx("div", {
+          children: /*#__PURE__*/jsx_runtime_.jsx("a", {
             href: "#",
             onClick: e => {
               this.onSelectChange(e, data);
@@ -1197,7 +455,7 @@ class Calendar_Calendar extends external_react_default.a.Component {
           })
         }, data);
       });
-      return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+      return /*#__PURE__*/jsx_runtime_.jsx("div", {
         className: "month-popup",
         children: popup
       });
@@ -1210,12 +468,12 @@ class Calendar_Calendar extends external_react_default.a.Component {
     });
 
     _defineProperty(this, "MonthNav", () => {
-      return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("span", {
+      return /*#__PURE__*/(0,jsx_runtime_.jsxs)("span", {
         className: "label-month",
         onClick: e => {
           this.onChangeMonth(e, this.month());
         },
-        children: [this.month(), this.state.showMonthPopup && /*#__PURE__*/Object(jsx_runtime_["jsx"])(this.SelectList, {
+        children: [this.month(), this.state.showMonthPopup && /*#__PURE__*/jsx_runtime_.jsx(this.SelectList, {
           data: this.months
         })]
       });
@@ -1250,7 +508,7 @@ class Calendar_Calendar extends external_react_default.a.Component {
     });
 
     _defineProperty(this, "YearNav", () => {
-      return this.state.showYearNav ? /*#__PURE__*/Object(jsx_runtime_["jsx"])("input", {
+      return this.state.showYearNav ? /*#__PURE__*/jsx_runtime_.jsx("input", {
         defaultValue: this.year(),
         className: "editor-year",
         ref: yearInput => {
@@ -1260,7 +518,7 @@ class Calendar_Calendar extends external_react_default.a.Component {
         onChange: e => this.onYearChange(e),
         type: "number",
         placeholder: "year"
-      }) : /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
+      }) : /*#__PURE__*/jsx_runtime_.jsx("span", {
         className: "label-year",
         onDoubleClick: e => {
           this.showYearEditor();
@@ -1284,7 +542,7 @@ class Calendar_Calendar extends external_react_default.a.Component {
   render() {
     // Map the weekdays i.e Sun, Mon, Tue etc as <td>
     let weekdays = this.weekdaysShort.map(day => {
-      return /*#__PURE__*/Object(jsx_runtime_["jsx"])("td", {
+      return /*#__PURE__*/jsx_runtime_.jsx("td", {
         className: "week-day",
         children: day
       }, day);
@@ -1292,7 +550,7 @@ class Calendar_Calendar extends external_react_default.a.Component {
     let blanks = [];
 
     for (let i = 0; i < this.firstDayOfMonth(); i++) {
-      blanks.push( /*#__PURE__*/Object(jsx_runtime_["jsx"])("td", {
+      blanks.push( /*#__PURE__*/jsx_runtime_.jsx("td", {
         className: "emptySlot",
         children: ""
       }, i * 80));
@@ -1303,9 +561,9 @@ class Calendar_Calendar extends external_react_default.a.Component {
     for (let d = 1; d <= this.daysInMonth(); d++) {
       let className = d == this.currentDay() ? "day current-day" : "day";
       let selectedClass = d == this.state.selectedDay ? " selected-day " : "";
-      daysInMonth.push( /*#__PURE__*/Object(jsx_runtime_["jsx"])("td", {
+      daysInMonth.push( /*#__PURE__*/jsx_runtime_.jsx("td", {
         className: className + selectedClass,
-        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
+        children: /*#__PURE__*/jsx_runtime_.jsx("span", {
           onClick: e => {
             this.onDayClick(e, d);
           },
@@ -1333,36 +591,36 @@ class Calendar_Calendar extends external_react_default.a.Component {
       }
     });
     let trElems = rows.map((d, i) => {
-      return /*#__PURE__*/Object(jsx_runtime_["jsx"])("tr", {
+      return /*#__PURE__*/jsx_runtime_.jsx("tr", {
         children: d
       }, i * 100);
     });
-    return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+    return /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
       className: "eventinfo",
-      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("h3", {
+      children: [/*#__PURE__*/jsx_runtime_.jsx("h3", {
         children: "School Calendar "
-      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("hr", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+      }), /*#__PURE__*/jsx_runtime_.jsx("hr", {}), /*#__PURE__*/jsx_runtime_.jsx("div", {
         className: "calendar-container",
         style: this.style,
-        children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("table", {
+        children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("table", {
           className: "calendar",
-          children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("thead", {
-            children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("tr", {
+          children: [/*#__PURE__*/jsx_runtime_.jsx("thead", {
+            children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("tr", {
               className: "calendar-header",
-              children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("td", {
+              children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("td", {
                 colSpan: "5",
-                children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(this.MonthNav, {}), " ", /*#__PURE__*/Object(jsx_runtime_["jsx"])(this.YearNav, {})]
-              }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("td", {
+                children: [/*#__PURE__*/jsx_runtime_.jsx(this.MonthNav, {}), " ", /*#__PURE__*/jsx_runtime_.jsx(this.YearNav, {})]
+              }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("td", {
                 colSpan: "2",
                 className: "nav-month",
-                children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(react_fontawesome_["FontAwesomeIcon"], {
-                  icon: free_solid_svg_icons_["faArrowLeft"],
+                children: [/*#__PURE__*/jsx_runtime_.jsx(react_fontawesome_.FontAwesomeIcon, {
+                  icon: free_solid_svg_icons_.faArrowLeft,
                   onClick: e => {
                     this.prevMonth();
                   },
                   className: "prev"
-                }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(react_fontawesome_["FontAwesomeIcon"], {
-                  icon: free_solid_svg_icons_["faArrowRight"],
+                }), /*#__PURE__*/jsx_runtime_.jsx(react_fontawesome_.FontAwesomeIcon, {
+                  icon: free_solid_svg_icons_.faArrowRight,
                   onClick: e => {
                     this.nextMonth();
                   },
@@ -1370,8 +628,8 @@ class Calendar_Calendar extends external_react_default.a.Component {
                 })]
               })]
             })
-          }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("tbody", {
-            children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("tr", {
+          }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("tbody", {
+            children: [/*#__PURE__*/jsx_runtime_.jsx("tr", {
               children: weekdays
             }), trElems]
           })]
@@ -1381,13 +639,9 @@ class Calendar_Calendar extends external_react_default.a.Component {
   }
 
 }
-// EXTERNAL MODULE: ./node_modules/react-responsive-carousel/lib/styles/carousel.min.css
-var carousel_min = __webpack_require__("a6qw");
-
-// EXTERNAL MODULE: external "react-responsive-carousel"
-var external_react_responsive_carousel_ = __webpack_require__("KaAA");
-
-// CONCATENATED MODULE: ./components/newseventsection/Toppercarousel.js
+;// CONCATENATED MODULE: external "react-responsive-carousel"
+var external_react_responsive_carousel_namespaceObject = require("react-responsive-carousel");;
+;// CONCATENATED MODULE: ./components/newseventsection/Toppercarousel.js
 
 
  // requires a loader
@@ -1402,9 +656,9 @@ function Toppercarousel() {
   const {
     0: data,
     1: setdata
-  } = Object(external_react_["useState"])("");
-  Object(external_react_["useEffect"])(() => {
-    external_axios_default.a.get(`${"https://cms.schoolscoop.co.in"}/${"rukhmani"}/items/toppers?fields=*,photo.*`).then(response => {
+  } = (0,external_react_.useState)("");
+  (0,external_react_.useEffect)(() => {
+    external_axios_default().get(`${"https://cms.schoolscoop.co.in"}/${"rukhmani"}/items/toppers?fields=*,photo.*`).then(response => {
       var _response$data, _response$data$data;
 
       if ((response === null || response === void 0 ? void 0 : (_response$data = response.data) === null || _response$data === void 0 ? void 0 : (_response$data$data = _response$data.data) === null || _response$data$data === void 0 ? void 0 : _response$data$data.length) > 0) {
@@ -1427,7 +681,7 @@ function Toppercarousel() {
     subject: 'Demo subject',
     percent: "percent %"
   }];
-  return /*#__PURE__*/Object(jsx_runtime_["jsx"])(external_react_responsive_carousel_["Carousel"], {
+  return /*#__PURE__*/jsx_runtime_.jsx(external_react_responsive_carousel_namespaceObject.Carousel, {
     showThumbs: false,
     autoPlay: true,
     infiniteLoop: true,
@@ -1439,14 +693,14 @@ function Toppercarousel() {
     children: (data === null || data === void 0 ? void 0 : (_data$data = data.data) === null || _data$data === void 0 ? void 0 : _data$data.data.length) > 0 ? data === null || data === void 0 ? void 0 : (_data$data2 = data.data) === null || _data$data2 === void 0 ? void 0 : _data$data2.data.map((item, i) => {
       var _item$photo, _item$photo$data;
 
-      return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+      return /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
         style: {
           background: '#e9e9e9'
         },
-        children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("center", {
+        children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("center", {
           className: "toppername",
           children: [" ", item.name, " "]
-        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+        }), /*#__PURE__*/jsx_runtime_.jsx("img", {
           className: "d-block",
           src: item === null || item === void 0 ? void 0 : (_item$photo = item.photo) === null || _item$photo === void 0 ? void 0 : (_item$photo$data = _item$photo.data) === null || _item$photo$data === void 0 ? void 0 : _item$photo$data.full_url,
           alt: "First slide",
@@ -1461,22 +715,22 @@ function Toppercarousel() {
             backgroundColor: '#fff',
             borderRadius: '5px'
           }
-        }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("p", {
+        }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("p", {
           className: "classpercent",
-          children: [" ", /*#__PURE__*/Object(jsx_runtime_["jsxs"])("b", {
-            children: ["  ", item.class, " ", /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), " ", item.subject, " (", item.percent, "%) "]
+          children: [" ", /*#__PURE__*/(0,jsx_runtime_.jsxs)("b", {
+            children: ["  ", item.class, " ", /*#__PURE__*/jsx_runtime_.jsx("br", {}), " ", item.subject, " (", item.percent, "%) "]
           })]
         })]
       }, i);
     }) : slides.map((item, i) => {
-      return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+      return /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
         style: {
           background: '#e9e9e9'
         },
-        children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("center", {
+        children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("center", {
           className: "toppername",
           children: [" ", item.name, " "]
-        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+        }), /*#__PURE__*/jsx_runtime_.jsx("img", {
           className: "d-block",
           src: item === null || item === void 0 ? void 0 : item.title,
           alt: "First slide",
@@ -1491,10 +745,10 @@ function Toppercarousel() {
             backgroundColor: '#fff',
             borderRadius: '5px'
           }
-        }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("p", {
+        }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("p", {
           className: "classpercent",
-          children: [" ", /*#__PURE__*/Object(jsx_runtime_["jsxs"])("b", {
-            children: [" ", item.class, " ", /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), " ", item.subject, " (", item.percent, " ) "]
+          children: [" ", /*#__PURE__*/(0,jsx_runtime_.jsxs)("b", {
+            children: [" ", item.class, " ", /*#__PURE__*/jsx_runtime_.jsx("br", {}), " ", item.subject, " (", item.percent, " ) "]
           })]
         })]
       }, i);
@@ -1776,30 +1030,30 @@ function Toppercarousel() {
 //   )
 // }
 // export default Toppercarousel
-// CONCATENATED MODULE: ./components/newseventsection/Topper.js
+;// CONCATENATED MODULE: ./components/newseventsection/Topper.js
 
 
 
 
 
 function Topper() {
-  return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-    children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+  return /*#__PURE__*/jsx_runtime_.jsx("div", {
+    children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
       className: "eventinfo",
-      children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("h3", {
-        children: ["Topper ", /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
+      children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("h3", {
+        children: ["Topper ", /*#__PURE__*/jsx_runtime_.jsx("span", {
           style: {
             fontSize: '1rem'
           },
           children: "(2019-2020)"
         })]
-      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("hr", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])(newseventsection_Toppercarousel, {})]
+      }), /*#__PURE__*/jsx_runtime_.jsx("hr", {}), /*#__PURE__*/jsx_runtime_.jsx(newseventsection_Toppercarousel, {})]
     })
   });
 }
 
 /* harmony default export */ var newseventsection_Topper = (Topper);
-// CONCATENATED MODULE: ./components/newseventsection/Eventmain.js
+;// CONCATENATED MODULE: ./components/newseventsection/Eventmain.js
 
 
 
@@ -1809,26 +1063,26 @@ function Topper() {
 function Eventmain({
   latest_data
 }) {
-  return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+  return /*#__PURE__*/jsx_runtime_.jsx("div", {
     className: "container",
-    children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+    children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
       className: "eventgrid",
-      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+      children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
         className: "newsevent",
-        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(newseventsection_Newsevent, {})
-      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+        children: /*#__PURE__*/jsx_runtime_.jsx(newseventsection_Newsevent, {})
+      }), /*#__PURE__*/jsx_runtime_.jsx("div", {
         className: "calendar1",
-        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(Calendar_Calendar, {})
-      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+        children: /*#__PURE__*/jsx_runtime_.jsx(Calendar, {})
+      }), /*#__PURE__*/jsx_runtime_.jsx("div", {
         className: "topper",
-        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(newseventsection_Topper, {})
+        children: /*#__PURE__*/jsx_runtime_.jsx(newseventsection_Topper, {})
       })]
     })
   });
 }
 
 /* harmony default export */ var newseventsection_Eventmain = (Eventmain);
-// CONCATENATED MODULE: ./components/schoolaccreditation/Schoolaccreditation.js
+;// CONCATENATED MODULE: ./components/schoolaccreditation/Schoolaccreditation.js
 
 
 
@@ -1843,33 +1097,33 @@ function Schoolaccreditation() {
   } = external_swr_default()(url, fetcher);
 
   if (error) {
-    return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+    return /*#__PURE__*/jsx_runtime_.jsx("div", {
       children: "Error..."
     });
   }
 
   if (!data) {
-    return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+    return /*#__PURE__*/jsx_runtime_.jsx("div", {
       children: "No Data..."
     });
   }
 
-  return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-    children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+  return /*#__PURE__*/jsx_runtime_.jsx("div", {
+    children: /*#__PURE__*/jsx_runtime_.jsx("div", {
       className: "container",
-      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+      children: /*#__PURE__*/jsx_runtime_.jsx("div", {
         className: "accreditation",
-        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+        children: /*#__PURE__*/jsx_runtime_.jsx("div", {
           className: "accicon",
           children: data.data[0].acredation.map((item, i) => {
             if (item.length > 1) {
-              return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+              return /*#__PURE__*/jsx_runtime_.jsx("div", {
                 children: "No data..."
               }, i);
             } else {
-              return /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+              return /*#__PURE__*/jsx_runtime_.jsx("a", {
                 href: "",
-                children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+                children: /*#__PURE__*/jsx_runtime_.jsx("img", {
                   src: item.directus_files_id.data.full_url,
                   alt: "ncc"
                 })
@@ -1883,7 +1137,7 @@ function Schoolaccreditation() {
 }
 
 /* harmony default export */ var schoolaccreditation_Schoolaccreditation = (Schoolaccreditation);
-// CONCATENATED MODULE: ./components/trust/Trust.js
+;// CONCATENATED MODULE: ./components/trust/Trust.js
 
 
 
@@ -1893,84 +1147,84 @@ function Schoolaccreditation() {
 
 
 function Trust() {
-  return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+  return /*#__PURE__*/jsx_runtime_.jsx("div", {
     id: "video",
-    children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+    children: /*#__PURE__*/jsx_runtime_.jsx("div", {
       className: "container-fluid trust",
-      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+      children: /*#__PURE__*/jsx_runtime_.jsx("div", {
         className: "py-3",
-        children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+        children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
           className: "row",
-          children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+          children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
             className: "col-sm-6",
-            children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("video", {
+            children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("video", {
               style: {
                 width: "100%",
                 height: "400px"
               },
               controls: true,
               poster: "/images/26",
-              children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("source", {
+              children: [/*#__PURE__*/jsx_runtime_.jsx("source", {
                 src: "/videos/movie.mp4",
                 type: "video/mp4"
               }), "Your browser does not support the video tag."]
             })
-          }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+          }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
             className: "col-sm-6",
-            children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("h2", {
+            children: [/*#__PURE__*/jsx_runtime_.jsx("h2", {
               children: "WHY TRUST US"
-            }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+            }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
               style: {
                 display: 'flex',
                 alignItems: 'center',
                 margin: 'auto auto'
               },
-              children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(react_fontawesome_["FontAwesomeIcon"], {
-                icon: free_solid_svg_icons_["faUserGraduate"],
+              children: [/*#__PURE__*/jsx_runtime_.jsx(react_fontawesome_.FontAwesomeIcon, {
+                icon: free_solid_svg_icons_.faUserGraduate,
                 style: {
                   color: '#94d1f5',
                   fontSize: '5.3rem',
                   paddingLeft: '20px',
                   marginBottom: '20px'
                 }
-              }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("h4", {
+              }), /*#__PURE__*/jsx_runtime_.jsx("br", {}), /*#__PURE__*/jsx_runtime_.jsx("h4", {
                 children: " High standards in value education"
               })]
-            }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+            }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
               style: {
                 display: 'flex',
                 alignItems: 'center',
                 margin: 'auto auto'
               },
-              children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(react_fontawesome_["FontAwesomeIcon"], {
-                icon: free_solid_svg_icons_["faUserShield"],
+              children: [/*#__PURE__*/jsx_runtime_.jsx(react_fontawesome_.FontAwesomeIcon, {
+                icon: free_solid_svg_icons_.faUserShield,
                 style: {
                   color: '#94d1f5',
                   fontSize: '5.3rem',
                   paddingLeft: '20px',
                   marginBottom: '20px'
                 }
-              }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("h4", {
+              }), /*#__PURE__*/jsx_runtime_.jsx("br", {}), /*#__PURE__*/jsx_runtime_.jsx("h4", {
                 style: {
                   marginLeft: '5px'
                 },
                 children: " Safety and Discipline"
               })]
-            }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+            }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
               style: {
                 display: 'flex',
                 alignItems: 'center',
                 margin: 'auto auto'
               },
-              children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(react_fontawesome_["FontAwesomeIcon"], {
-                icon: free_solid_svg_icons_["faBookReader"],
+              children: [/*#__PURE__*/jsx_runtime_.jsx(react_fontawesome_.FontAwesomeIcon, {
+                icon: free_solid_svg_icons_.faBookReader,
                 style: {
                   color: '#94d1f5',
                   fontSize: '5.3rem',
                   paddingLeft: '20px',
                   marginBottom: '20px'
                 }
-              }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("h4", {
+              }), /*#__PURE__*/jsx_runtime_.jsx("br", {}), /*#__PURE__*/jsx_runtime_.jsx("h4", {
                 children: " Highest standards of academic and sporting excellence"
               })]
             })]
@@ -1982,7 +1236,7 @@ function Trust() {
 }
 
 /* harmony default export */ var trust_Trust = (Trust);
-// CONCATENATED MODULE: ./components/carousel/Carouselswr.js
+;// CONCATENATED MODULE: ./components/carousel/Carouselswr.js
 
 
  // requires a loader
@@ -2004,22 +1258,22 @@ const Carouselswr = ({
     title: "/images/a9.jpg",
     description: 'Lorem3 ipsum'
   }];
-  return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+  return /*#__PURE__*/jsx_runtime_.jsx("div", {
     className: "slider_media",
-    children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(external_react_responsive_carousel_["Carousel"], {
+    children: /*#__PURE__*/jsx_runtime_.jsx(external_react_responsive_carousel_namespaceObject.Carousel, {
       showThumbs: false,
       autoPlay: true,
       infiniteLoop: true,
       children: (slider_data === null || slider_data === void 0 ? void 0 : (_slider_data$data = slider_data.data) === null || _slider_data$data === void 0 ? void 0 : _slider_data$data.map((item, index) => {
         var _item$image, _item$image$data;
 
-        return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+        return /*#__PURE__*/jsx_runtime_.jsx("div", {
           class: "carousel-inner",
           role: "listbox",
-          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+          children: /*#__PURE__*/jsx_runtime_.jsx("div", {
             className: "carousel items1",
             role: "listbox",
-            children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+            children: /*#__PURE__*/jsx_runtime_.jsx("img", {
               src: item === null || item === void 0 ? void 0 : (_item$image = item.image) === null || _item$image === void 0 ? void 0 : (_item$image$data = _item$image.data) === null || _item$image$data === void 0 ? void 0 : _item$image$data.full_url,
               height: 600,
               width: 1500,
@@ -2028,13 +1282,13 @@ const Carouselswr = ({
           }, index)
         });
       })) || slides.map((slide, index) => {
-        return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+        return /*#__PURE__*/jsx_runtime_.jsx("div", {
           class: "carousel-inner",
           role: "listbox",
-          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+          children: /*#__PURE__*/jsx_runtime_.jsx("div", {
             className: "carousel items1",
             role: "listbox",
-            children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+            children: /*#__PURE__*/jsx_runtime_.jsx("img", {
               src: slide.title,
               height: 500,
               width: 1500,
@@ -2066,18 +1320,12 @@ async function getStaticProps(context) {
 
   };
 }
-// EXTERNAL MODULE: external "react-alice-carousel"
-var external_react_alice_carousel_ = __webpack_require__("dmh7");
-var external_react_alice_carousel_default = /*#__PURE__*/__webpack_require__.n(external_react_alice_carousel_);
-
-// EXTERNAL MODULE: ./node_modules/react-alice-carousel/lib/alice-carousel.css
-var alice_carousel = __webpack_require__("FKgC");
-
+;// CONCATENATED MODULE: external "react-alice-carousel"
+var external_react_alice_carousel_namespaceObject = require("react-alice-carousel");;
+var external_react_alice_carousel_default = /*#__PURE__*/__webpack_require__.n(external_react_alice_carousel_namespaceObject);
 // EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__("YFqc");
-var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
-
-// CONCATENATED MODULE: ./components/schoolgallery/Schoolgallery.js
+var next_link = __webpack_require__(1664);
+;// CONCATENATED MODULE: ./components/schoolgallery/Schoolgallery.js
 
 
 
@@ -2096,11 +1344,11 @@ function Schoolgallery_defineProperty(obj, key, value) { if (key in obj) { Objec
 
 const handleDragStart = e => e.preventDefault();
 
-const Schoolgallery_items = [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+const items = [/*#__PURE__*/jsx_runtime_.jsx("div", {
   style: {
     marginRight: '5px'
   },
-  children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+  children: /*#__PURE__*/jsx_runtime_.jsx("img", {
     src: "/images/c1.jpg",
     onDragStart: handleDragStart,
     className: "yours-custom-class",
@@ -2109,11 +1357,11 @@ const Schoolgallery_items = [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
       width: '100%'
     }
   })
-}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+}), /*#__PURE__*/jsx_runtime_.jsx("div", {
   style: {
     marginRight: '5px'
   },
-  children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+  children: /*#__PURE__*/jsx_runtime_.jsx("img", {
     src: "/images/c2.jpg",
     onDragStart: handleDragStart,
     className: "yours-custom-class",
@@ -2122,11 +1370,11 @@ const Schoolgallery_items = [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
       width: '100%'
     }
   })
-}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+}), /*#__PURE__*/jsx_runtime_.jsx("div", {
   style: {
     marginRight: '5px'
   },
-  children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+  children: /*#__PURE__*/jsx_runtime_.jsx("img", {
     src: "/images/c3.jpg",
     onDragStart: handleDragStart,
     className: "yours-custom-class",
@@ -2135,11 +1383,11 @@ const Schoolgallery_items = [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
       width: '100%'
     }
   })
-}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+}), /*#__PURE__*/jsx_runtime_.jsx("div", {
   style: {
     marginRight: '5px'
   },
-  children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+  children: /*#__PURE__*/jsx_runtime_.jsx("img", {
     src: "/images/c4.jpg",
     onDragStart: handleDragStart,
     className: "yours-custom-class",
@@ -2148,11 +1396,11 @@ const Schoolgallery_items = [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
       width: '100%'
     }
   })
-}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+}), /*#__PURE__*/jsx_runtime_.jsx("div", {
   style: {
     marginRight: '5px'
   },
-  children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+  children: /*#__PURE__*/jsx_runtime_.jsx("img", {
     src: "/images/c5.jpg",
     onDragStart: handleDragStart,
     className: "yours-custom-class",
@@ -2161,11 +1409,11 @@ const Schoolgallery_items = [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
       width: '100%'
     }
   })
-}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+}), /*#__PURE__*/jsx_runtime_.jsx("div", {
   style: {
     marginRight: '5px'
   },
-  children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+  children: /*#__PURE__*/jsx_runtime_.jsx("img", {
     src: "/images/c6.jpg",
     onDragStart: handleDragStart,
     className: "yours-custom-class",
@@ -2174,11 +1422,11 @@ const Schoolgallery_items = [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
       width: '100%'
     }
   })
-}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+}), /*#__PURE__*/jsx_runtime_.jsx("div", {
   style: {
     marginRight: '5px'
   },
-  children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+  children: /*#__PURE__*/jsx_runtime_.jsx("img", {
     src: "/images/c7.jpg",
     onDragStart: handleDragStart,
     className: "yours-custom-class",
@@ -2187,11 +1435,11 @@ const Schoolgallery_items = [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
       width: '100%'
     }
   })
-}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+}), /*#__PURE__*/jsx_runtime_.jsx("div", {
   style: {
     marginRight: '5px'
   },
-  children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+  children: /*#__PURE__*/jsx_runtime_.jsx("img", {
     src: "/images/c8.jpg",
     onDragStart: handleDragStart,
     className: "yours-custom-class",
@@ -2200,11 +1448,11 @@ const Schoolgallery_items = [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
       width: '100%'
     }
   })
-}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+}), /*#__PURE__*/jsx_runtime_.jsx("div", {
   style: {
     marginRight: '5px'
   },
-  children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+  children: /*#__PURE__*/jsx_runtime_.jsx("img", {
     src: "/images/c9.jpg",
     onDragStart: handleDragStart,
     className: "yours-custom-class",
@@ -2213,11 +1461,11 @@ const Schoolgallery_items = [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
       width: '100%'
     }
   })
-}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+}), /*#__PURE__*/jsx_runtime_.jsx("div", {
   style: {
     marginRight: '5px'
   },
-  children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+  children: /*#__PURE__*/jsx_runtime_.jsx("img", {
     src: "/images/c10.jpg",
     onDragStart: handleDragStart,
     className: "yours-custom-class",
@@ -2227,7 +1475,7 @@ const Schoolgallery_items = [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
     }
   })
 })];
-const Schoolgallery_slides = [{
+const slides = [{
   title: "/images/7 ",
   description: 'View Gallery'
 }, {
@@ -2274,23 +1522,23 @@ const Schoolgallery = ({
       }
     }
   };
-  return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+  return /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
     className: "py-4 schoolgallery ",
-    children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("h3", {
+    children: [/*#__PURE__*/jsx_runtime_.jsx("h3", {
       className: "text-center",
-      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("b", {
+      children: /*#__PURE__*/jsx_runtime_.jsx("b", {
         children: " Rukhmani Devi School Gallery "
       })
-    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(external_react_alice_carousel_default.a, _objectSpread({
+    }), /*#__PURE__*/jsx_runtime_.jsx((external_react_alice_carousel_default()), _objectSpread({
       mouseTracking: true,
       items: (gallery_data === null || gallery_data === void 0 ? void 0 : (_gallery_data$data = gallery_data.data) === null || _gallery_data$data === void 0 ? void 0 : _gallery_data$data.length) > 0 ? gallery_data === null || gallery_data === void 0 ? void 0 : gallery_data.data.map((item, i) => {
         var _item$photo, _item$photo$data;
 
-        return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+        return /*#__PURE__*/jsx_runtime_.jsx("div", {
           style: {
             marginRight: '5px'
           },
-          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+          children: /*#__PURE__*/jsx_runtime_.jsx("img", {
             src: item === null || item === void 0 ? void 0 : (_item$photo = item.photo) === null || _item$photo === void 0 ? void 0 : (_item$photo$data = _item$photo.data) === null || _item$photo$data === void 0 ? void 0 : _item$photo$data.full_url,
             className: "yours-custom-class",
             style: {
@@ -2299,12 +1547,12 @@ const Schoolgallery = ({
             }
           })
         });
-      }) : Schoolgallery_slides.map((item, i) => {
-        return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+      }) : slides.map((item, i) => {
+        return /*#__PURE__*/jsx_runtime_.jsx("div", {
           style: {
             marginRight: '5px'
           },
-          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+          children: /*#__PURE__*/jsx_runtime_.jsx("img", {
             src: item === null || item === void 0 ? void 0 : item.title,
             className: "yours-custom-class",
             style: {
@@ -2314,11 +1562,11 @@ const Schoolgallery = ({
           })
         });
       })
-    }, options)), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+    }, options)), /*#__PURE__*/jsx_runtime_.jsx("div", {
       className: "mt-3 text-center ",
-      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
+      children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
         href: "/Gallery",
-        children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("button", {
+        children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("button", {
           style: {
             color: " #212529",
             backgroundColor: "#94d1f5",
@@ -2326,8 +1574,8 @@ const Schoolgallery = ({
             borderRadius: "5px"
           },
           className: "p-1",
-          children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(react_fontawesome_["FontAwesomeIcon"], {
-            icon: free_solid_svg_icons_["faFolder"]
+          children: [/*#__PURE__*/jsx_runtime_.jsx(react_fontawesome_.FontAwesomeIcon, {
+            icon: free_solid_svg_icons_.faFolder
           }), "\xA0View More"]
         })
       })
@@ -2395,12 +1643,10 @@ const Schoolgallery = ({
 // }
 // export default Schoolgallery
 // EXTERNAL MODULE: ./pages/LocateUs.js
-var LocateUs = __webpack_require__("IQIR");
-
+var LocateUs = __webpack_require__(8687);
 // EXTERNAL MODULE: ./pages/Column.js
-var Column = __webpack_require__("1uhO");
-
-// CONCATENATED MODULE: ./pages/index.js
+var Column = __webpack_require__(3715);
+;// CONCATENATED MODULE: ./pages/index.js
 
 
 
@@ -2420,21 +1666,21 @@ function Home({
   about_data,
   gallery_data
 }) {
-  return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-    children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("link", {
+  return /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+    children: [/*#__PURE__*/jsx_runtime_.jsx("link", {
       rel: "preload",
       href: "../public/Fontin_Sans_SC_45b.otf",
       as: "font",
       crossOrigin: ""
-    }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])(Layout["a" /* default */], {
+    }), /*#__PURE__*/(0,jsx_runtime_.jsxs)(Layout/* default */.Z, {
       data_header: data_header,
-      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(carousel_Carouselswr, {
+      children: [/*#__PURE__*/jsx_runtime_.jsx(carousel_Carouselswr, {
         slider_data: slider_data
-      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(aboutinfo_About, {
+      }), /*#__PURE__*/jsx_runtime_.jsx(aboutinfo_About, {
         about_data: about_data
-      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(newseventsection_Eventmain, {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])(schoolaccreditation_Schoolaccreditation, {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])(trust_Trust, {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])(schoolgallery_Schoolgallery, {
+      }), /*#__PURE__*/jsx_runtime_.jsx(newseventsection_Eventmain, {}), /*#__PURE__*/jsx_runtime_.jsx(schoolaccreditation_Schoolaccreditation, {}), /*#__PURE__*/jsx_runtime_.jsx(trust_Trust, {}), /*#__PURE__*/jsx_runtime_.jsx(schoolgallery_Schoolgallery, {
         gallery_data: gallery_data
-      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(Column["default"], {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])(LocateUs["default"], {})]
+      }), /*#__PURE__*/jsx_runtime_.jsx(LocateUs.default, {})]
     })]
   });
 }
@@ -2489,2919 +1735,110 @@ async function pages_getStaticProps(context) {
 
 /***/ }),
 
-/***/ "S3md":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 887:
+/***/ (function(module) {
 
 "use strict";
-
-
-/***/ }),
-
-/***/ "TqRt":
-/***/ (function(module, exports) {
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : {
-    "default": obj
-  };
-}
-
-module.exports = _interopRequireDefault;
+module.exports = require("@fortawesome/free-solid-svg-icons");;
 
 /***/ }),
 
-/***/ "X24+":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 799:
+/***/ (function(module) {
 
 "use strict";
-
-
-exports.__esModule = true;
-exports.removePathTrailingSlash = removePathTrailingSlash;
-exports.normalizePathTrailingSlash = void 0;
-/**
-* Removes the trailing slash of a path if there is one. Preserves the root path `/`.
-*/
-
-function removePathTrailingSlash(path) {
-  return path.endsWith('/') && path !== '/' ? path.slice(0, -1) : path;
-}
-/**
-* Normalizes the trailing slash of a path according to the `trailingSlash` option
-* in `next.config.js`.
-*/
-
-
-const normalizePathTrailingSlash =  false ? undefined : removePathTrailingSlash;
-exports.normalizePathTrailingSlash = normalizePathTrailingSlash;
+module.exports = require("@fortawesome/react-fontawesome");;
 
 /***/ }),
 
-/***/ "YFqc":
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("cTJO")
-
-
-/***/ }),
-
-/***/ "YTqd":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 2376:
+/***/ (function(module) {
 
 "use strict";
-
-
-exports.__esModule = true;
-exports.getRouteRegex = getRouteRegex; // this isn't importing the escape-string-regex module
-// to reduce bytes
-
-function escapeRegex(str) {
-  return str.replace(/[|\\{}()[\]^$+*?.-]/g, '\\$&');
-}
-
-function parseParameter(param) {
-  const optional = param.startsWith('[') && param.endsWith(']');
-
-  if (optional) {
-    param = param.slice(1, -1);
-  }
-
-  const repeat = param.startsWith('...');
-
-  if (repeat) {
-    param = param.slice(3);
-  }
-
-  return {
-    key: param,
-    repeat,
-    optional
-  };
-}
-
-function getRouteRegex(normalizedRoute) {
-  const segments = (normalizedRoute.replace(/\/$/, '') || '/').slice(1).split('/');
-  const groups = {};
-  let groupIndex = 1;
-  const parameterizedRoute = segments.map(segment => {
-    if (segment.startsWith('[') && segment.endsWith(']')) {
-      const {
-        key,
-        optional,
-        repeat
-      } = parseParameter(segment.slice(1, -1));
-      groups[key] = {
-        pos: groupIndex++,
-        repeat,
-        optional
-      };
-      return repeat ? optional ? '(?:/(.+?))?' : '/(.+?)' : '/([^/]+?)';
-    } else {
-      return `/${escapeRegex(segment)}`;
-    }
-  }).join(''); // dead code eliminate for browser since it's only needed
-  // while generating routes-manifest
-
-  if (true) {
-    let routeKeyCharCode = 97;
-    let routeKeyCharLength = 1; // builds a minimal routeKey using only a-z and minimal number of characters
-
-    const getSafeRouteKey = () => {
-      let routeKey = '';
-
-      for (let i = 0; i < routeKeyCharLength; i++) {
-        routeKey += String.fromCharCode(routeKeyCharCode);
-        routeKeyCharCode++;
-
-        if (routeKeyCharCode > 122) {
-          routeKeyCharLength++;
-          routeKeyCharCode = 97;
-        }
-      }
-
-      return routeKey;
-    };
-
-    const routeKeys = {};
-    let namedParameterizedRoute = segments.map(segment => {
-      if (segment.startsWith('[') && segment.endsWith(']')) {
-        const {
-          key,
-          optional,
-          repeat
-        } = parseParameter(segment.slice(1, -1)); // replace any non-word characters since they can break
-        // the named regex
-
-        let cleanedKey = key.replace(/\W/g, '');
-        let invalidKey = false; // check if the key is still invalid and fallback to using a known
-        // safe key
-
-        if (cleanedKey.length === 0 || cleanedKey.length > 30) {
-          invalidKey = true;
-        }
-
-        if (!isNaN(parseInt(cleanedKey.substr(0, 1)))) {
-          invalidKey = true;
-        }
-
-        if (invalidKey) {
-          cleanedKey = getSafeRouteKey();
-        }
-
-        routeKeys[cleanedKey] = key;
-        return repeat ? optional ? `(?:/(?<${cleanedKey}>.+?))?` : `/(?<${cleanedKey}>.+?)` : `/(?<${cleanedKey}>[^/]+?)`;
-      } else {
-        return `/${escapeRegex(segment)}`;
-      }
-    }).join('');
-    return {
-      re: new RegExp(`^${parameterizedRoute}(?:/)?$`),
-      groups,
-      routeKeys,
-      namedRegex: `^${namedParameterizedRoute}(?:/)?$`
-    };
-  }
-
-  return {
-    re: new RegExp(`^${parameterizedRoute}(?:/)?$`),
-    groups
-  };
-}
+module.exports = require("axios");;
 
 /***/ }),
 
-/***/ "a6qw":
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "aYjl":
-/***/ (function(module, exports) {
-
-module.exports = require("swr");
-
-/***/ }),
-
-/***/ "cDcd":
-/***/ (function(module, exports) {
-
-module.exports = require("react");
-
-/***/ }),
-
-/***/ "cDf5":
-/***/ (function(module, exports) {
-
-function _typeof(obj) {
-  "@babel/helpers - typeof";
-
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    module.exports = _typeof = function _typeof(obj) {
-      return typeof obj;
-    };
-  } else {
-    module.exports = _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-  }
-
-  return _typeof(obj);
-}
-
-module.exports = _typeof;
-
-/***/ }),
-
-/***/ "cTJO":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 8417:
+/***/ (function(module) {
 
 "use strict";
-
-
-var _interopRequireWildcard = __webpack_require__("284h");
-
-exports.__esModule = true;
-exports.default = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__("cDcd"));
-
-var _router = __webpack_require__("elyg");
-
-var _router2 = __webpack_require__("nOHt");
-
-let cachedObserver;
-const listeners = new Map();
-const IntersectionObserver = false ? undefined : null;
-const prefetched = {};
-
-function getObserver() {
-  // Return shared instance of IntersectionObserver if already created
-  if (cachedObserver) {
-    return cachedObserver;
-  } // Only create shared IntersectionObserver if supported in browser
-
-
-  if (!IntersectionObserver) {
-    return undefined;
-  }
-
-  return cachedObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (!listeners.has(entry.target)) {
-        return;
-      }
-
-      const cb = listeners.get(entry.target);
-
-      if (entry.isIntersecting || entry.intersectionRatio > 0) {
-        cachedObserver.unobserve(entry.target);
-        listeners.delete(entry.target);
-        cb();
-      }
-    });
-  }, {
-    rootMargin: '200px'
-  });
-}
-
-const listenToIntersections = (el, cb) => {
-  const observer = getObserver();
-
-  if (!observer) {
-    return () => {};
-  }
-
-  observer.observe(el);
-  listeners.set(el, cb);
-  return () => {
-    try {
-      observer.unobserve(el);
-    } catch (err) {
-      console.error(err);
-    }
-
-    listeners.delete(el);
-  };
-};
-
-function prefetch(router, href, as, options) {
-  if (true) return;
-  if (!(0, _router.isLocalURL)(href)) return; // Prefetch the JSON page if asked (only in the client)
-  // We need to handle a prefetch error here since we may be
-  // loading with priority which can reject but we don't
-  // want to force navigation since this is only a prefetch
-
-  router.prefetch(href, as, options).catch(err => {
-    if (false) {}
-  }); // Join on an invalid URI character
-
-  prefetched[href + '%' + as] = true;
-}
-
-function isModifiedEvent(event) {
-  const {
-    target
-  } = event.currentTarget;
-  return target && target !== '_self' || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || // triggers resource download
-  event.nativeEvent && event.nativeEvent.which === 2;
-}
-
-function linkClicked(e, router, href, as, replace, shallow, scroll, locale) {
-  const {
-    nodeName
-  } = e.currentTarget;
-
-  if (nodeName === 'A' && (isModifiedEvent(e) || !(0, _router.isLocalURL)(href))) {
-    // ignore click for browser’s default behavior
-    return;
-  }
-
-  e.preventDefault(); //  avoid scroll for urls with anchor refs
-
-  if (scroll == null) {
-    scroll = as.indexOf('#') < 0;
-  } // replace state instead of push if prop is present
-
-
-  router[replace ? 'replace' : 'push'](href, as, {
-    shallow,
-    locale
-  }).then(success => {
-    if (!success) return;
-
-    if (scroll) {
-      window.scrollTo(0, 0);
-      document.body.focus();
-    }
-  });
-}
-
-function Link(props) {
-  if (false) {}
-
-  const p = props.prefetch !== false;
-
-  const [childElm, setChildElm] = _react.default.useState();
-
-  const router = (0, _router2.useRouter)();
-  const pathname = router && router.pathname || '/';
-
-  const {
-    href,
-    as
-  } = _react.default.useMemo(() => {
-    const [resolvedHref, resolvedAs] = (0, _router.resolveHref)(pathname, props.href, true);
-    return {
-      href: resolvedHref,
-      as: props.as ? (0, _router.resolveHref)(pathname, props.as) : resolvedAs || resolvedHref
-    };
-  }, [pathname, props.href, props.as]);
-
-  _react.default.useEffect(() => {
-    if (p && IntersectionObserver && childElm && childElm.tagName && (0, _router.isLocalURL)(href)) {
-      // Join on an invalid URI character
-      const isPrefetched = prefetched[href + '%' + as];
-
-      if (!isPrefetched) {
-        return listenToIntersections(childElm, () => {
-          prefetch(router, href, as);
-        });
-      }
-    }
-  }, [p, childElm, href, as, router]);
-
-  let {
-    children,
-    replace,
-    shallow,
-    scroll,
-    locale
-  } = props; // Deprecated. Warning shown by propType check. If the children provided is a string (<Link>example</Link>) we wrap it in an <a> tag
-
-  if (typeof children === 'string') {
-    children = /*#__PURE__*/_react.default.createElement("a", null, children);
-  } // This will return the first child, if multiple are provided it will throw an error
-
-
-  const child = _react.Children.only(children);
-
-  const childProps = {
-    ref: el => {
-      if (el) setChildElm(el);
-
-      if (child && typeof child === 'object' && child.ref) {
-        if (typeof child.ref === 'function') child.ref(el);else if (typeof child.ref === 'object') {
-          child.ref.current = el;
-        }
-      }
-    },
-    onClick: e => {
-      if (child.props && typeof child.props.onClick === 'function') {
-        child.props.onClick(e);
-      }
-
-      if (!e.defaultPrevented) {
-        linkClicked(e, router, href, as, replace, shallow, scroll, locale);
-      }
-    }
-  };
-
-  if (p) {
-    childProps.onMouseEnter = e => {
-      if (!(0, _router.isLocalURL)(href)) return;
-
-      if (child.props && typeof child.props.onMouseEnter === 'function') {
-        child.props.onMouseEnter(e);
-      }
-
-      prefetch(router, href, as, {
-        priority: true
-      });
-    };
-  } // If child is an <a> tag and doesn't have a href attribute, or if the 'passHref' property is
-  // defined, we specify the current 'href', so that repetition is not needed by the user
-
-
-  if (props.passHref || child.type === 'a' && !('href' in child.props)) {
-    childProps.href = (0, _router.addBasePath)((0, _router.addLocale)(as, typeof locale !== 'undefined' ? locale : router && router.locale, router && router.defaultLocale));
-  }
-
-  return /*#__PURE__*/_react.default.cloneElement(child, childProps);
-}
-
-var _default = Link;
-exports.default = _default;
+module.exports = require("next/dist/next-server/lib/router-context.js");;
 
 /***/ }),
 
-/***/ "dZ6Y":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 2238:
+/***/ (function(module) {
 
 "use strict";
-
-
-exports.__esModule = true;
-exports.default = mitt;
-/*
-MIT License
-Copyright (c) Jason Miller (https://jasonformat.com/)
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-*/
-// This file is based on https://github.com/developit/mitt/blob/v1.1.3/src/index.js
-// It's been edited for the needs of this script
-// See the LICENSE at the top of the file
-
-function mitt() {
-  const all = Object.create(null);
-  return {
-    on(type, handler) {
-      ;
-      (all[type] || (all[type] = [])).push(handler);
-    },
-
-    off(type, handler) {
-      if (all[type]) {
-        all[type].splice(all[type].indexOf(handler) >>> 0, 1);
-      }
-    },
-
-    emit(type, ...evts) {
-      // eslint-disable-next-line array-callback-return
-      ;
-      (all[type] || []).slice().map(handler => {
-        handler(...evts);
-      });
-    }
-
-  };
-}
+module.exports = require("next/dist/next-server/lib/router/utils/get-asset-path-from-route.js");;
 
 /***/ }),
 
-/***/ "dmh7":
-/***/ (function(module, exports) {
-
-module.exports = require("react-alice-carousel");
-
-/***/ }),
-
-/***/ "elyg":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 701:
+/***/ (function(module) {
 
 "use strict";
-
-
-exports.__esModule = true;
-exports.addLocale = addLocale;
-exports.delLocale = delLocale;
-exports.hasBasePath = hasBasePath;
-exports.addBasePath = addBasePath;
-exports.delBasePath = delBasePath;
-exports.isLocalURL = isLocalURL;
-exports.interpolateAs = interpolateAs;
-exports.resolveHref = resolveHref;
-exports.markLoadingError = markLoadingError;
-exports.default = void 0;
-
-var _normalizeTrailingSlash = __webpack_require__("X24+");
-
-var _denormalizePagePath = __webpack_require__("wkBG");
-
-var _mitt = _interopRequireDefault(__webpack_require__("dZ6Y"));
-
-var _utils = __webpack_require__("g/15");
-
-var _isDynamic = __webpack_require__("/jkW");
-
-var _parseRelativeUrl = __webpack_require__("hS4m");
-
-var _querystring = __webpack_require__("3WeD");
-
-var _resolveRewrites = _interopRequireDefault(__webpack_require__("S3md"));
-
-var _routeMatcher = __webpack_require__("gguc");
-
-var _routeRegex = __webpack_require__("YTqd");
-
-var _escapePathDelimiters = _interopRequireDefault(__webpack_require__("fcRV"));
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : {
-    default: obj
-  };
-}
-/* global __NEXT_DATA__ */
-// tslint:disable:no-console
-
-
-const basePath =  false || '';
-
-function buildCancellationError() {
-  return Object.assign(new Error('Route Cancelled'), {
-    cancelled: true
-  });
-}
-
-function addPathPrefix(path, prefix) {
-  return prefix && path.startsWith('/') ? path === '/' ? (0, _normalizeTrailingSlash.normalizePathTrailingSlash)(prefix) : `${prefix}${path}` : path;
-}
-
-function addLocale(path, locale, defaultLocale) {
-  if (false) {}
-
-  return path;
-}
-
-function delLocale(path, locale) {
-  if (false) {}
-
-  return path;
-}
-
-function hasBasePath(path) {
-  return path === basePath || path.startsWith(basePath + '/');
-}
-
-function addBasePath(path) {
-  // we only add the basepath on relative urls
-  return addPathPrefix(path, basePath);
-}
-
-function delBasePath(path) {
-  return path.slice(basePath.length) || '/';
-}
-/**
-* Detects whether a given url is routable by the Next.js router (browser only).
-*/
-
-
-function isLocalURL(url) {
-  if (url.startsWith('/')) return true;
-
-  try {
-    // absolute urls can be local if they are on the same origin
-    const locationOrigin = (0, _utils.getLocationOrigin)();
-    const resolved = new URL(url, locationOrigin);
-    return resolved.origin === locationOrigin && hasBasePath(resolved.pathname);
-  } catch (_) {
-    return false;
-  }
-}
-
-function interpolateAs(route, asPathname, query) {
-  let interpolatedRoute = '';
-  const dynamicRegex = (0, _routeRegex.getRouteRegex)(route);
-  const dynamicGroups = dynamicRegex.groups;
-  const dynamicMatches = // Try to match the dynamic route against the asPath
-  (asPathname !== route ? (0, _routeMatcher.getRouteMatcher)(dynamicRegex)(asPathname) : '') || // Fall back to reading the values from the href
-  // TODO: should this take priority; also need to change in the router.
-  query;
-  interpolatedRoute = route;
-  const params = Object.keys(dynamicGroups);
-
-  if (!params.every(param => {
-    let value = dynamicMatches[param] || '';
-    const {
-      repeat,
-      optional
-    } = dynamicGroups[param]; // support single-level catch-all
-    // TODO: more robust handling for user-error (passing `/`)
-
-    let replaced = `[${repeat ? '...' : ''}${param}]`;
-
-    if (optional) {
-      replaced = `${!value ? '/' : ''}[${replaced}]`;
-    }
-
-    if (repeat && !Array.isArray(value)) value = [value];
-    return (optional || param in dynamicMatches) && ( // Interpolate group into data URL if present
-    interpolatedRoute = interpolatedRoute.replace(replaced, repeat ? value.map(_escapePathDelimiters.default).join('/') : (0, _escapePathDelimiters.default)(value)) || '/');
-  })) {
-    interpolatedRoute = ''; // did not satisfy all requirements
-    // n.b. We ignore this error because we handle warning for this case in
-    // development in the `<Link>` component directly.
-  }
-
-  return {
-    params,
-    result: interpolatedRoute
-  };
-}
-
-function omitParmsFromQuery(query, params) {
-  const filteredQuery = {};
-  Object.keys(query).forEach(key => {
-    if (!params.includes(key)) {
-      filteredQuery[key] = query[key];
-    }
-  });
-  return filteredQuery;
-}
-/**
-* Resolves a given hyperlink with a certain router state (basePath not included).
-* Preserves absolute urls.
-*/
-
-
-function resolveHref(currentPath, href, resolveAs) {
-  // we use a dummy base url for relative urls
-  const base = new URL(currentPath, 'http://n');
-  const urlAsString = typeof href === 'string' ? href : (0, _utils.formatWithValidation)(href);
-
-  try {
-    const finalUrl = new URL(urlAsString, base);
-    finalUrl.pathname = (0, _normalizeTrailingSlash.normalizePathTrailingSlash)(finalUrl.pathname);
-    let interpolatedAs = '';
-
-    if ((0, _isDynamic.isDynamicRoute)(finalUrl.pathname) && finalUrl.searchParams && resolveAs) {
-      const query = (0, _querystring.searchParamsToUrlQuery)(finalUrl.searchParams);
-      const {
-        result,
-        params
-      } = interpolateAs(finalUrl.pathname, finalUrl.pathname, query);
-
-      if (result) {
-        interpolatedAs = (0, _utils.formatWithValidation)({
-          pathname: result,
-          hash: finalUrl.hash,
-          query: omitParmsFromQuery(query, params)
-        });
-      }
-    } // if the origin didn't change, it means we received a relative href
-
-
-    const resolvedHref = finalUrl.origin === base.origin ? finalUrl.href.slice(finalUrl.origin.length) : finalUrl.href;
-    return resolveAs ? [resolvedHref, interpolatedAs || resolvedHref] : resolvedHref;
-  } catch (_) {
-    return resolveAs ? [urlAsString] : urlAsString;
-  }
-}
-
-const PAGE_LOAD_ERROR = Symbol('PAGE_LOAD_ERROR');
-
-function markLoadingError(err) {
-  return Object.defineProperty(err, PAGE_LOAD_ERROR, {});
-}
-
-function prepareUrlAs(router, url, as) {
-  // If url and as provided as an object representation,
-  // we'll format them into the string version here.
-  return {
-    url: addBasePath(resolveHref(router.pathname, url)),
-    as: as ? addBasePath(resolveHref(router.pathname, as)) : as
-  };
-}
-
-const manualScrollRestoration =  false && false;
-const SSG_DATA_NOT_FOUND_ERROR = 'SSG Data NOT_FOUND';
-
-function fetchRetry(url, attempts) {
-  return fetch(url, {
-    // Cookies are required to be present for Next.js' SSG "Preview Mode".
-    // Cookies may also be required for `getServerSideProps`.
-    //
-    // > `fetch` won’t send cookies, unless you set the credentials init
-    // > option.
-    // https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
-    //
-    // > For maximum browser compatibility when it comes to sending &
-    // > receiving cookies, always supply the `credentials: 'same-origin'`
-    // > option instead of relying on the default.
-    // https://github.com/github/fetch#caveats
-    credentials: 'same-origin'
-  }).then(res => {
-    if (!res.ok) {
-      if (attempts > 1 && res.status >= 500) {
-        return fetchRetry(url, attempts - 1);
-      }
-
-      if (res.status === 404) {
-        // TODO: handle reloading in development from fallback returning 200
-        // to on-demand-entry-handler causing it to reload periodically
-        throw new Error(SSG_DATA_NOT_FOUND_ERROR);
-      }
-
-      throw new Error(`Failed to load static props`);
-    }
-
-    return res.json();
-  });
-}
-
-function fetchNextData(dataHref, isServerRender) {
-  return fetchRetry(dataHref, isServerRender ? 3 : 1).catch(err => {
-    // We should only trigger a server-side transition if this was caused
-    // on a client-side transition. Otherwise, we'd get into an infinite
-    // loop.
-    if (!isServerRender) {
-      markLoadingError(err);
-    }
-
-    throw err;
-  });
-}
-
-class Router {
-  /**
-  * Map of all components loaded in `Router`
-  */
-  // Static Data Cache
-  constructor(_pathname, _query, _as, {
-    initialProps,
-    pageLoader,
-    App,
-    wrapApp,
-    Component,
-    initialStyleSheets,
-    err,
-    subscription,
-    isFallback,
-    locale,
-    locales,
-    defaultLocale
-  }) {
-    this.route = void 0;
-    this.pathname = void 0;
-    this.query = void 0;
-    this.asPath = void 0;
-    this.basePath = void 0;
-    this.components = void 0;
-    this.sdc = {};
-    this.sub = void 0;
-    this.clc = void 0;
-    this.pageLoader = void 0;
-    this._bps = void 0;
-    this.events = void 0;
-    this._wrapApp = void 0;
-    this.isSsr = void 0;
-    this.isFallback = void 0;
-    this._inFlightRoute = void 0;
-    this._shallow = void 0;
-    this.locale = void 0;
-    this.locales = void 0;
-    this.defaultLocale = void 0;
-
-    this.onPopState = e => {
-      const state = e.state;
-
-      if (!state) {
-        // We get state as undefined for two reasons.
-        //  1. With older safari (< 8) and older chrome (< 34)
-        //  2. When the URL changed with #
-        //
-        // In the both cases, we don't need to proceed and change the route.
-        // (as it's already changed)
-        // But we can simply replace the state with the new changes.
-        // Actually, for (1) we don't need to nothing. But it's hard to detect that event.
-        // So, doing the following for (1) does no harm.
-        const {
-          pathname,
-          query
-        } = this;
-        this.changeState('replaceState', (0, _utils.formatWithValidation)({
-          pathname: addBasePath(pathname),
-          query
-        }), (0, _utils.getURL)());
-        return;
-      }
-
-      if (!state.__N) {
-        return;
-      }
-
-      const {
-        url,
-        as,
-        options
-      } = state;
-      const {
-        pathname
-      } = (0, _parseRelativeUrl.parseRelativeUrl)(url); // Make sure we don't re-render on initial load,
-      // can be caused by navigating back from an external site
-
-      if (this.isSsr && as === this.asPath && pathname === this.pathname) {
-        return;
-      } // If the downstream application returns falsy, return.
-      // They will then be responsible for handling the event.
-
-
-      if (this._bps && !this._bps(state)) {
-        return;
-      }
-
-      this.change('replaceState', url, as, Object.assign({}, options, {
-        shallow: options.shallow && this._shallow,
-        locale: options.locale || this.defaultLocale
-      }));
-    }; // represents the current component key
-
-
-    this.route = (0, _normalizeTrailingSlash.removePathTrailingSlash)(_pathname); // set up the component cache (by route keys)
-
-    this.components = {}; // We should not keep the cache, if there's an error
-    // Otherwise, this cause issues when when going back and
-    // come again to the errored page.
-
-    if (_pathname !== '/_error') {
-      this.components[this.route] = {
-        Component,
-        styleSheets: initialStyleSheets,
-        props: initialProps,
-        err,
-        __N_SSG: initialProps && initialProps.__N_SSG,
-        __N_SSP: initialProps && initialProps.__N_SSP
-      };
-    }
-
-    this.components['/_app'] = {
-      Component: App,
-      styleSheets: [
-        /* /_app does not need its stylesheets managed */
-      ]
-    }; // Backwards compat for Router.router.events
-    // TODO: Should be remove the following major version as it was never documented
-
-    this.events = Router.events;
-    this.pageLoader = pageLoader;
-    this.pathname = _pathname;
-    this.query = _query; // if auto prerendered and dynamic route wait to update asPath
-    // until after mount to prevent hydration mismatch
-
-    this.asPath = // @ts-ignore this is temporarily global (attached to window)
-    (0, _isDynamic.isDynamicRoute)(_pathname) && __NEXT_DATA__.autoExport ? _pathname : _as;
-    this.basePath = basePath;
-    this.sub = subscription;
-    this.clc = null;
-    this._wrapApp = wrapApp; // make sure to ignore extra popState in safari on navigating
-    // back from external site
-
-    this.isSsr = true;
-    this.isFallback = isFallback;
-
-    if (false) {}
-
-    if (false) {}
-  }
-
-  reload() {
-    window.location.reload();
-  }
-  /**
-  * Go back in history
-  */
-
-
-  back() {
-    window.history.back();
-  }
-  /**
-  * Performs a `pushState` with arguments
-  * @param url of the route
-  * @param as masks `url` for the browser
-  * @param options object you can define `shallow` and other options
-  */
-
-
-  push(url, as = url, options = {}) {
-    ;
-    ({
-      url,
-      as
-    } = prepareUrlAs(this, url, as));
-    return this.change('pushState', url, as, options);
-  }
-  /**
-  * Performs a `replaceState` with arguments
-  * @param url of the route
-  * @param as masks `url` for the browser
-  * @param options object you can define `shallow` and other options
-  */
-
-
-  replace(url, as = url, options = {}) {
-    ;
-    ({
-      url,
-      as
-    } = prepareUrlAs(this, url, as));
-    return this.change('replaceState', url, as, options);
-  }
-
-  async change(method, url, as, options) {
-    if (!isLocalURL(url)) {
-      window.location.href = url;
-      return false;
-    }
-
-    if (false) {}
-
-    if (!options._h) {
-      this.isSsr = false;
-    } // marking route changes as a navigation start entry
-
-
-    if (_utils.ST) {
-      performance.mark('routeChange');
-    }
-
-    if (this._inFlightRoute) {
-      this.abortComponentLoad(this._inFlightRoute);
-    }
-
-    as = addLocale(as, options.locale, this.defaultLocale);
-    const cleanedAs = delLocale(hasBasePath(as) ? delBasePath(as) : as, this.locale);
-    this._inFlightRoute = as; // If the url change is only related to a hash change
-    // We should not proceed. We should only change the state.
-    // WARNING: `_h` is an internal option for handing Next.js client-side
-    // hydration. Your app should _never_ use this property. It may change at
-    // any time without notice.
-
-    if (!options._h && this.onlyAHashChange(cleanedAs)) {
-      this.asPath = cleanedAs;
-      Router.events.emit('hashChangeStart', as); // TODO: do we need the resolved href when only a hash change?
-
-      this.changeState(method, url, as, options);
-      this.scrollToHash(cleanedAs);
-      this.notify(this.components[this.route]);
-      Router.events.emit('hashChangeComplete', as);
-      return true;
-    } // The build manifest needs to be loaded before auto-static dynamic pages
-    // get their query parameters to allow ensuring they can be parsed properly
-    // when rewritten to
-
-
-    const pages = await this.pageLoader.getPageList();
-    const {
-      __rewrites: rewrites
-    } = await this.pageLoader.promisedBuildManifest;
-    let parsed = (0, _parseRelativeUrl.parseRelativeUrl)(url);
-    let {
-      pathname,
-      query
-    } = parsed;
-    parsed = this._resolveHref(parsed, pages);
-
-    if (parsed.pathname !== pathname) {
-      pathname = parsed.pathname;
-      url = (0, _utils.formatWithValidation)(parsed);
-    } // url and as should always be prefixed with basePath by this
-    // point by either next/link or router.push/replace so strip the
-    // basePath from the pathname to match the pages dir 1-to-1
-
-
-    pathname = pathname ? (0, _normalizeTrailingSlash.removePathTrailingSlash)(delBasePath(pathname)) : pathname; // If asked to change the current URL we should reload the current page
-    // (not location.reload() but reload getInitialProps and other Next.js stuffs)
-    // We also need to set the method = replaceState always
-    // as this should not go into the history (That's how browsers work)
-    // We should compare the new asPath to the current asPath, not the url
-
-    if (!this.urlIsNew(cleanedAs)) {
-      method = 'replaceState';
-    }
-
-    let route = (0, _normalizeTrailingSlash.removePathTrailingSlash)(pathname);
-    const {
-      shallow = false
-    } = options; // we need to resolve the as value using rewrites for dynamic SSG
-    // pages to allow building the data URL correctly
-
-    let resolvedAs = as;
-
-    if (false) {}
-
-    resolvedAs = delLocale(delBasePath(resolvedAs), this.locale);
-
-    if ((0, _isDynamic.isDynamicRoute)(route)) {
-      const parsedAs = (0, _parseRelativeUrl.parseRelativeUrl)(resolvedAs);
-      const asPathname = parsedAs.pathname;
-      const routeRegex = (0, _routeRegex.getRouteRegex)(route);
-      const routeMatch = (0, _routeMatcher.getRouteMatcher)(routeRegex)(asPathname);
-      const shouldInterpolate = route === asPathname;
-      const interpolatedAs = shouldInterpolate ? interpolateAs(route, asPathname, query) : {};
-
-      if (!routeMatch || shouldInterpolate && !interpolatedAs.result) {
-        const missingParams = Object.keys(routeRegex.groups).filter(param => !query[param]);
-
-        if (missingParams.length > 0) {
-          if (false) {}
-
-          throw new Error((shouldInterpolate ? `The provided \`href\` (${url}) value is missing query values (${missingParams.join(', ')}) to be interpolated properly. ` : `The provided \`as\` value (${asPathname}) is incompatible with the \`href\` value (${route}). `) + `Read more: https://err.sh/vercel/next.js/${shouldInterpolate ? 'href-interpolation-failed' : 'incompatible-href-as'}`);
-        }
-      } else if (shouldInterpolate) {
-        as = (0, _utils.formatWithValidation)(Object.assign({}, parsedAs, {
-          pathname: interpolatedAs.result,
-          query: omitParmsFromQuery(query, interpolatedAs.params)
-        }));
-      } else {
-        // Merge params into `query`, overwriting any specified in search
-        Object.assign(query, routeMatch);
-      }
-    }
-
-    Router.events.emit('routeChangeStart', as);
-
-    try {
-      const routeInfo = await this.getRouteInfo(route, pathname, query, as, shallow);
-      let {
-        error,
-        props,
-        __N_SSG,
-        __N_SSP
-      } = routeInfo; // handle redirect on client-transition
-
-      if ((__N_SSG || __N_SSP) && props && props.pageProps && props.pageProps.__N_REDIRECT) {
-        const destination = props.pageProps.__N_REDIRECT; // check if destination is internal (resolves to a page) and attempt
-        // client-navigation if it is falling back to hard navigation if
-        // it's not
-
-        if (destination.startsWith('/')) {
-          const parsedHref = (0, _parseRelativeUrl.parseRelativeUrl)(destination);
-
-          this._resolveHref(parsedHref, pages);
-
-          if (pages.includes(parsedHref.pathname)) {
-            return this.change(method, destination, destination, options);
-          }
-        }
-
-        window.location.href = destination;
-        return new Promise(() => {});
-      }
-
-      Router.events.emit('beforeHistoryChange', as);
-      this.changeState(method, url, addLocale(as, options.locale, this.defaultLocale), options);
-
-      if (false) {}
-
-      await this.set(route, pathname, query, cleanedAs, routeInfo).catch(e => {
-        if (e.cancelled) error = error || e;else throw e;
-      });
-
-      if (error) {
-        Router.events.emit('routeChangeError', error, cleanedAs);
-        throw error;
-      }
-
-      if (false) {}
-
-      Router.events.emit('routeChangeComplete', as);
-      return true;
-    } catch (err) {
-      if (err.cancelled) {
-        return false;
-      }
-
-      throw err;
-    }
-  }
-
-  changeState(method, url, as, options = {}) {
-    if (false) {}
-
-    if (method !== 'pushState' || (0, _utils.getURL)() !== as) {
-      this._shallow = options.shallow;
-      window.history[method]({
-        url,
-        as,
-        options,
-        __N: true
-      }, // Most browsers currently ignores this parameter, although they may use it in the future.
-      // Passing the empty string here should be safe against future changes to the method.
-      // https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState
-      '', as);
-    }
-  }
-
-  async handleRouteInfoError(err, pathname, query, as, loadErrorFail) {
-    if (err.cancelled) {
-      // bubble up cancellation errors
-      throw err;
-    }
-
-    if (PAGE_LOAD_ERROR in err || loadErrorFail) {
-      Router.events.emit('routeChangeError', err, as); // If we can't load the page it could be one of following reasons
-      //  1. Page doesn't exists
-      //  2. Page does exist in a different zone
-      //  3. Internal error while loading the page
-      // So, doing a hard reload is the proper way to deal with this.
-
-      window.location.href = as; // Changing the URL doesn't block executing the current code path.
-      // So let's throw a cancellation error stop the routing logic.
-
-      throw buildCancellationError();
-    }
-
-    try {
-      let Component;
-      let styleSheets;
-      let props;
-      const ssg404 = err.message === SSG_DATA_NOT_FOUND_ERROR;
-
-      if (ssg404) {
-        try {
-          let mod;
-          ({
-            page: Component,
-            styleSheets,
-            mod
-          } = await this.fetchComponent('/404')); // TODO: should we tolerate these props missing and still render the
-          // page instead of falling back to _error?
-
-          if (mod && mod.__N_SSG) {
-            props = await this._getStaticData(this.pageLoader.getDataHref('/404', '/404', true, this.locale));
-          }
-        } catch (_err) {// non-fatal fallback to _error
-        }
-      }
-
-      if (typeof Component === 'undefined' || typeof styleSheets === 'undefined') {
-        ;
-        ({
-          page: Component,
-          styleSheets
-        } = await this.fetchComponent('/_error'));
-      }
-
-      const routeInfo = {
-        props,
-        Component,
-        styleSheets,
-        err: ssg404 ? undefined : err,
-        error: ssg404 ? undefined : err
-      };
-
-      if (!routeInfo.props) {
-        try {
-          routeInfo.props = await this.getInitialProps(Component, {
-            err,
-            pathname,
-            query
-          });
-        } catch (gipErr) {
-          console.error('Error in error page `getInitialProps`: ', gipErr);
-          routeInfo.props = {};
-        }
-      }
-
-      return routeInfo;
-    } catch (routeInfoErr) {
-      return this.handleRouteInfoError(routeInfoErr, pathname, query, as, true);
-    }
-  }
-
-  async getRouteInfo(route, pathname, query, as, shallow = false) {
-    try {
-      const cachedRouteInfo = this.components[route];
-
-      if (shallow && cachedRouteInfo && this.route === route) {
-        return cachedRouteInfo;
-      }
-
-      const routeInfo = cachedRouteInfo ? cachedRouteInfo : await this.fetchComponent(route).then(res => ({
-        Component: res.page,
-        styleSheets: res.styleSheets,
-        __N_SSG: res.mod.__N_SSG,
-        __N_SSP: res.mod.__N_SSP
-      }));
-      const {
-        Component,
-        __N_SSG,
-        __N_SSP
-      } = routeInfo;
-
-      if (false) {}
-
-      let dataHref;
-
-      if (__N_SSG || __N_SSP) {
-        dataHref = this.pageLoader.getDataHref((0, _utils.formatWithValidation)({
-          pathname,
-          query
-        }), delBasePath(as), __N_SSG, this.locale);
-      }
-
-      const props = await this._getData(() => __N_SSG ? this._getStaticData(dataHref) : __N_SSP ? this._getServerData(dataHref) : this.getInitialProps(Component, // we provide AppTree later so this needs to be `any`
-      {
-        pathname,
-        query,
-        asPath: as
-      }));
-      routeInfo.props = props;
-      this.components[route] = routeInfo;
-      return routeInfo;
-    } catch (err) {
-      return this.handleRouteInfoError(err, pathname, query, as);
-    }
-  }
-
-  set(route, pathname, query, as, data) {
-    this.isFallback = false;
-    this.route = route;
-    this.pathname = pathname;
-    this.query = query;
-    this.asPath = as;
-    return this.notify(data);
-  }
-  /**
-  * Callback to execute before replacing router state
-  * @param cb callback to be executed
-  */
-
-
-  beforePopState(cb) {
-    this._bps = cb;
-  }
-
-  onlyAHashChange(as) {
-    if (!this.asPath) return false;
-    const [oldUrlNoHash, oldHash] = this.asPath.split('#');
-    const [newUrlNoHash, newHash] = as.split('#'); // Makes sure we scroll to the provided hash if the url/hash are the same
-
-    if (newHash && oldUrlNoHash === newUrlNoHash && oldHash === newHash) {
-      return true;
-    } // If the urls are change, there's more than a hash change
-
-
-    if (oldUrlNoHash !== newUrlNoHash) {
-      return false;
-    } // If the hash has changed, then it's a hash only change.
-    // This check is necessary to handle both the enter and
-    // leave hash === '' cases. The identity case falls through
-    // and is treated as a next reload.
-
-
-    return oldHash !== newHash;
-  }
-
-  scrollToHash(as) {
-    const [, hash] = as.split('#'); // Scroll to top if the hash is just `#` with no value
-
-    if (hash === '') {
-      window.scrollTo(0, 0);
-      return;
-    } // First we check if the element by id is found
-
-
-    const idEl = document.getElementById(hash);
-
-    if (idEl) {
-      idEl.scrollIntoView();
-      return;
-    } // If there's no element with the id, we check the `name` property
-    // To mirror browsers
-
-
-    const nameEl = document.getElementsByName(hash)[0];
-
-    if (nameEl) {
-      nameEl.scrollIntoView();
-    }
-  }
-
-  urlIsNew(asPath) {
-    return this.asPath !== asPath;
-  }
-
-  _resolveHref(parsedHref, pages, applyBasePath = true) {
-    const {
-      pathname
-    } = parsedHref;
-    const cleanPathname = (0, _normalizeTrailingSlash.removePathTrailingSlash)((0, _denormalizePagePath.denormalizePagePath)(applyBasePath ? delBasePath(pathname) : pathname));
-
-    if (cleanPathname === '/404' || cleanPathname === '/_error') {
-      return parsedHref;
-    } // handle resolving href for dynamic routes
-
-
-    if (!pages.includes(cleanPathname)) {
-      // eslint-disable-next-line array-callback-return
-      pages.some(page => {
-        if ((0, _isDynamic.isDynamicRoute)(page) && (0, _routeRegex.getRouteRegex)(page).re.test(cleanPathname)) {
-          parsedHref.pathname = applyBasePath ? addBasePath(page) : page;
-          return true;
-        }
-      });
-    }
-
-    return parsedHref;
-  }
-  /**
-  * Prefetch page code, you may wait for the data during page rendering.
-  * This feature only works in production!
-  * @param url the href of prefetched page
-  * @param asPath the as path of the prefetched page
-  */
-
-
-  async prefetch(url, asPath = url, options = {}) {
-    let parsed = (0, _parseRelativeUrl.parseRelativeUrl)(url);
-    let {
-      pathname
-    } = parsed;
-    const pages = await this.pageLoader.getPageList();
-    parsed = this._resolveHref(parsed, pages);
-
-    if (parsed.pathname !== pathname) {
-      pathname = parsed.pathname;
-      url = (0, _utils.formatWithValidation)(parsed);
-    } // Prefetch is not supported in development mode because it would trigger on-demand-entries
-
-
-    if (false) {}
-
-    const route = (0, _normalizeTrailingSlash.removePathTrailingSlash)(pathname);
-    await Promise.all([this.pageLoader.prefetchData(url, asPath, this.locale, this.defaultLocale), this.pageLoader[options.priority ? 'loadPage' : 'prefetch'](route)]);
-  }
-
-  async fetchComponent(route) {
-    let cancelled = false;
-
-    const cancel = this.clc = () => {
-      cancelled = true;
-    };
-
-    const componentResult = await this.pageLoader.loadPage(route);
-
-    if (cancelled) {
-      const error = new Error(`Abort fetching component for route: "${route}"`);
-      error.cancelled = true;
-      throw error;
-    }
-
-    if (cancel === this.clc) {
-      this.clc = null;
-    }
-
-    return componentResult;
-  }
-
-  _getData(fn) {
-    let cancelled = false;
-
-    const cancel = () => {
-      cancelled = true;
-    };
-
-    this.clc = cancel;
-    return fn().then(data => {
-      if (cancel === this.clc) {
-        this.clc = null;
-      }
-
-      if (cancelled) {
-        const err = new Error('Loading initial props cancelled');
-        err.cancelled = true;
-        throw err;
-      }
-
-      return data;
-    });
-  }
-
-  _getStaticData(dataHref) {
-    const {
-      href: cacheKey
-    } = new URL(dataHref, window.location.href);
-
-    if ( true && this.sdc[cacheKey]) {
-      return Promise.resolve(this.sdc[cacheKey]);
-    }
-
-    return fetchNextData(dataHref, this.isSsr).then(data => {
-      this.sdc[cacheKey] = data;
-      return data;
-    });
-  }
-
-  _getServerData(dataHref) {
-    return fetchNextData(dataHref, this.isSsr);
-  }
-
-  getInitialProps(Component, ctx) {
-    const {
-      Component: App
-    } = this.components['/_app'];
-
-    const AppTree = this._wrapApp(App);
-
-    ctx.AppTree = AppTree;
-    return (0, _utils.loadGetInitialProps)(App, {
-      AppTree,
-      Component,
-      router: this,
-      ctx
-    });
-  }
-
-  abortComponentLoad(as) {
-    if (this.clc) {
-      Router.events.emit('routeChangeError', buildCancellationError(), as);
-      this.clc();
-      this.clc = null;
-    }
-  }
-
-  notify(data) {
-    return this.sub(data, this.components['/_app'].Component);
-  }
-
-}
-
-exports.default = Router;
-Router.events = (0, _mitt.default)();
+module.exports = require("next/head");;
 
 /***/ }),
 
-/***/ "fcRV":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 9297:
+/***/ (function(module) {
 
 "use strict";
-
-
-exports.__esModule = true;
-exports.default = escapePathDelimiters; // escape delimiters used by path-to-regexp
-
-function escapePathDelimiters(segment) {
-  return segment.replace(/[/#?]/g, char => encodeURIComponent(char));
-}
+module.exports = require("react");;
 
 /***/ }),
 
-/***/ "g/15":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 9614:
+/***/ (function(module) {
 
 "use strict";
-
-
-exports.__esModule = true;
-exports.execOnce = execOnce;
-exports.getLocationOrigin = getLocationOrigin;
-exports.getURL = getURL;
-exports.getDisplayName = getDisplayName;
-exports.isResSent = isResSent;
-exports.loadGetInitialProps = loadGetInitialProps;
-exports.formatWithValidation = formatWithValidation;
-exports.ST = exports.SP = exports.urlObjectKeys = void 0;
-
-var _formatUrl = __webpack_require__("6D7l");
-/**
-* Utils
-*/
-
-
-function execOnce(fn) {
-  let used = false;
-  let result;
-  return (...args) => {
-    if (!used) {
-      used = true;
-      result = fn(...args);
-    }
-
-    return result;
-  };
-}
-
-function getLocationOrigin() {
-  const {
-    protocol,
-    hostname,
-    port
-  } = window.location;
-  return `${protocol}//${hostname}${port ? ':' + port : ''}`;
-}
-
-function getURL() {
-  const {
-    href
-  } = window.location;
-  const origin = getLocationOrigin();
-  return href.substring(origin.length);
-}
-
-function getDisplayName(Component) {
-  return typeof Component === 'string' ? Component : Component.displayName || Component.name || 'Unknown';
-}
-
-function isResSent(res) {
-  return res.finished || res.headersSent;
-}
-
-async function loadGetInitialProps(App, ctx) {
-  if (false) { var _App$prototype; } // when called from _app `ctx` is nested in `ctx`
-
-
-  const res = ctx.res || ctx.ctx && ctx.ctx.res;
-
-  if (!App.getInitialProps) {
-    if (ctx.ctx && ctx.Component) {
-      // @ts-ignore pageProps default
-      return {
-        pageProps: await loadGetInitialProps(ctx.Component, ctx.ctx)
-      };
-    }
-
-    return {};
-  }
-
-  const props = await App.getInitialProps(ctx);
-
-  if (res && isResSent(res)) {
-    return props;
-  }
-
-  if (!props) {
-    const message = `"${getDisplayName(App)}.getInitialProps()" should resolve to an object. But found "${props}" instead.`;
-    throw new Error(message);
-  }
-
-  if (false) {}
-
-  return props;
-}
-
-const urlObjectKeys = ['auth', 'hash', 'host', 'hostname', 'href', 'path', 'pathname', 'port', 'protocol', 'query', 'search', 'slashes'];
-exports.urlObjectKeys = urlObjectKeys;
-
-function formatWithValidation(url) {
-  if (false) {}
-
-  return (0, _formatUrl.formatUrl)(url);
-}
-
-const SP = typeof performance !== 'undefined';
-exports.SP = SP;
-const ST = SP && typeof performance.mark === 'function' && typeof performance.measure === 'function';
-exports.ST = ST;
+module.exports = require("react-toast-notifications");;
 
 /***/ }),
 
-/***/ "gguc":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 9012:
+/***/ (function(module) {
 
 "use strict";
-
-
-exports.__esModule = true;
-exports.getRouteMatcher = getRouteMatcher;
-
-function getRouteMatcher(routeRegex) {
-  const {
-    re,
-    groups
-  } = routeRegex;
-  return pathname => {
-    const routeMatch = re.exec(pathname);
-
-    if (!routeMatch) {
-      return false;
-    }
-
-    const decode = param => {
-      try {
-        return decodeURIComponent(param);
-      } catch (_) {
-        const err = new Error('failed to decode param');
-        err.code = 'DECODE_FAILED';
-        throw err;
-      }
-    };
-
-    const params = {};
-    Object.keys(groups).forEach(slugName => {
-      const g = groups[slugName];
-      const m = routeMatch[g.pos];
-
-      if (m !== undefined) {
-        params[slugName] = ~m.indexOf('/') ? m.split('/').map(entry => decode(entry)) : g.repeat ? [decode(m)] : decode(m);
-      }
-    });
-    return params;
-  };
-}
+module.exports = require("react-toast-notifications/dist/ToastProvider");;
 
 /***/ }),
 
-/***/ "hS4m":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 1067:
+/***/ (function(module) {
 
 "use strict";
-
-
-exports.__esModule = true;
-exports.parseRelativeUrl = parseRelativeUrl;
-
-var _utils = __webpack_require__("g/15");
-
-var _querystring = __webpack_require__("3WeD");
-
-const DUMMY_BASE = new URL(true ? 'http://n' : undefined);
-/**
-* Parses path-relative urls (e.g. `/hello/world?foo=bar`). If url isn't path-relative
-* (e.g. `./hello`) then at least base must be.
-* Absolute urls are rejected with one exception, in the browser, absolute urls that are on
-* the current origin will be parsed as relative
-*/
-
-function parseRelativeUrl(url, base) {
-  const resolvedBase = base ? new URL(base, DUMMY_BASE) : DUMMY_BASE;
-  const {
-    pathname,
-    searchParams,
-    search,
-    hash,
-    href,
-    origin,
-    protocol
-  } = new URL(url, resolvedBase);
-
-  if (origin !== DUMMY_BASE.origin || protocol !== 'http:' && protocol !== 'https:') {
-    throw new Error('invariant: invalid relative URL');
-  }
-
-  return {
-    pathname,
-    query: (0, _querystring.searchParamsToUrlQuery)(searchParams),
-    search,
-    hash,
-    href: href.slice(DUMMY_BASE.origin.length)
-  };
-}
+module.exports = require("react-tooltip");;
 
 /***/ }),
 
-/***/ "n58u":
-/***/ (function(module, exports) {
-
-module.exports = require("react-toast-notifications/dist/ToastProvider");
-
-/***/ }),
-
-/***/ "nOHt":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 5282:
+/***/ (function(module) {
 
 "use strict";
-
-
-var _interopRequireWildcard = __webpack_require__("284h");
-
-var _interopRequireDefault = __webpack_require__("TqRt");
-
-exports.__esModule = true;
-exports.useRouter = useRouter;
-exports.makePublicRouterInstance = makePublicRouterInstance;
-exports.createRouter = exports.withRouter = exports.default = void 0;
-
-var _react = _interopRequireDefault(__webpack_require__("cDcd"));
-
-var _router2 = _interopRequireWildcard(__webpack_require__("elyg"));
-
-exports.Router = _router2.default;
-exports.NextRouter = _router2.NextRouter;
-
-var _routerContext = __webpack_require__("Osoz");
-
-var _withRouter = _interopRequireDefault(__webpack_require__("0Bsm"));
-
-exports.withRouter = _withRouter.default;
-/* global window */
-
-const singletonRouter = {
-  router: null,
-  // holds the actual router instance
-  readyCallbacks: [],
-
-  ready(cb) {
-    if (this.router) return cb();
-
-    if (false) {}
-  }
-
-}; // Create public properties and methods of the router in the singletonRouter
-
-const urlPropertyFields = ['pathname', 'route', 'query', 'asPath', 'components', 'isFallback', 'basePath', 'locale', 'locales', 'defaultLocale'];
-const routerEvents = ['routeChangeStart', 'beforeHistoryChange', 'routeChangeComplete', 'routeChangeError', 'hashChangeStart', 'hashChangeComplete'];
-const coreMethodFields = ['push', 'replace', 'reload', 'back', 'prefetch', 'beforePopState']; // Events is a static property on the router, the router doesn't have to be initialized to use it
-
-Object.defineProperty(singletonRouter, 'events', {
-  get() {
-    return _router2.default.events;
-  }
-
-});
-urlPropertyFields.forEach(field => {
-  // Here we need to use Object.defineProperty because, we need to return
-  // the property assigned to the actual router
-  // The value might get changed as we change routes and this is the
-  // proper way to access it
-  Object.defineProperty(singletonRouter, field, {
-    get() {
-      const router = getRouter();
-      return router[field];
-    }
-
-  });
-});
-coreMethodFields.forEach(field => {
-  // We don't really know the types here, so we add them later instead
-  ;
-
-  singletonRouter[field] = (...args) => {
-    const router = getRouter();
-    return router[field](...args);
-  };
-});
-routerEvents.forEach(event => {
-  singletonRouter.ready(() => {
-    _router2.default.events.on(event, (...args) => {
-      const eventField = `on${event.charAt(0).toUpperCase()}${event.substring(1)}`;
-      const _singletonRouter = singletonRouter;
-
-      if (_singletonRouter[eventField]) {
-        try {
-          _singletonRouter[eventField](...args);
-        } catch (err) {
-          console.error(`Error when running the Router event: ${eventField}`);
-          console.error(`${err.message}\n${err.stack}`);
-        }
-      }
-    });
-  });
-});
-
-function getRouter() {
-  if (!singletonRouter.router) {
-    const message = 'No router instance found.\n' + 'You should only use "next/router" inside the client side of your app.\n';
-    throw new Error(message);
-  }
-
-  return singletonRouter.router;
-} // Export the singletonRouter and this is the public API.
-
-
-var _default = singletonRouter; // Reexport the withRoute HOC
-
-exports.default = _default;
-
-function useRouter() {
-  return _react.default.useContext(_routerContext.RouterContext);
-} // INTERNAL APIS
-// -------------
-// (do not use following exports inside the app)
-// Create a router and assign it as the singleton instance.
-// This is used in client side when we are initilizing the app.
-// This should **not** use inside the server.
-
-
-const createRouter = (...args) => {
-  singletonRouter.router = new _router2.default(...args);
-  singletonRouter.readyCallbacks.forEach(cb => cb());
-  singletonRouter.readyCallbacks = [];
-  return singletonRouter.router;
-}; // This function is used to create the `withRouter` router instance
-
-
-exports.createRouter = createRouter;
-
-function makePublicRouterInstance(router) {
-  const _router = router;
-  const instance = {};
-
-  for (const property of urlPropertyFields) {
-    if (typeof _router[property] === 'object') {
-      instance[property] = Object.assign(Array.isArray(_router[property]) ? [] : {}, _router[property]); // makes sure query is not stateful
-
-      continue;
-    }
-
-    instance[property] = _router[property];
-  } // Events is a static property on the router, the router doesn't have to be initialized to use it
-
-
-  instance.events = _router2.default.events;
-  coreMethodFields.forEach(field => {
-    instance[field] = (...args) => {
-      return _router[field](...args);
-    };
-  });
-  return instance;
-}
+module.exports = require("react/jsx-runtime");;
 
 /***/ }),
 
-/***/ "t30L":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ 7749:
+/***/ (function(module) {
 
 "use strict";
-
-// EXTERNAL MODULE: external "react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__("F5FC");
-
-// CONCATENATED MODULE: ./components/stickyfooter/Stickyfooter.js
-
-
-
-function Stickyfooter() {
-  return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-    children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-      children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-        className: "latestnews",
-        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("h5", {
-          children: "Latest\xA0News"
-        }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("marquee", {
-          children: [" ", /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
-            children: "Our little Grovians have made us proud once again by emerging as the winners of the sub junior hockey tournament! \xA0\xA0\xA0\xA0\xA0\xA0 | \xA0\xA0\xA0\xA0\xA0\xA0 Our Grovians under 19 and under 17 teams were both declared the champions in the CBSE cluster under 19 and under 17 boys basketball tournament. \xA0\xA0\xA0\xA0\xA0\xA0 | \xA0\xA0\xA0\xA0\xA0\xA0 Pinegrove won the 1st MARIAN Cup U-17 \xA0\xA0\xA0\xA0\xA0\xA0 | \xA0\xA0\xA0\xA0\xA0\xA0 Pinegrove girls were runner's up in IPSC under 14 Basketball tournament held at Welham Girls School Dehradun \xA0\xA0\xA0\xA0\xA0\xA0 | \xA0\xA0\xA0\xA0\xA0\xA0 Lavya Bhasin of Pinegrove bagged the First Position In the Mohinder Memorial Bilingual Turncoat Debate 2019 \xA0\xA0\xA0\xA0\xA0\xA0 | \xA0\xA0\xA0\xA0\xA0\xA0 Grovians emerged winners of U 14 state basketball tournament in both categories (boys and girls) \xA0\xA0\xA0\xA0\xA0\xA0 | \xA0\xA0\xA0\xA0\xA0\xA0 Pinegrove won the IPSC Under 15 boys hockey championship \xA0\xA0\xA0\xA0\xA0\xA0 | \xA0\xA0\xA0\xA0\xA0\xA0 Kabir Bedi of Pinegrove was awarded the 1st prize in Drawing and Shading (portrait making) at Milestone SGC, Mussoorie. \xA0\xA0\xA0\xA0\xA0\xA0 | \xA0\xA0\xA0\xA0\xA0\xA0 Pinegrove secured the overall first position in Pic Fiesta Competition organized by St Soldier's Panchkula \xA0\xA0\xA0\xA0\xA0\xA0 | \xA0\xA0\xA0\xA0\xA0\xA0 Grovians were declared the runners up in the Bhupinder Memorial Soccer Tournament 2019."
-          }), " "]
-        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("h5", {
-          children: "Achievements"
-        })]
-      })
-    })
-  });
-}
-
-/* harmony default export */ var stickyfooter_Stickyfooter = (Stickyfooter);
-// EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__("YFqc");
-var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
-
-// EXTERNAL MODULE: external "swr"
-var external_swr_ = __webpack_require__("aYjl");
-var external_swr_default = /*#__PURE__*/__webpack_require__.n(external_swr_);
-
-// EXTERNAL MODULE: external "@fortawesome/react-fontawesome"
-var react_fontawesome_ = __webpack_require__("uhWA");
-
-// EXTERNAL MODULE: external "@fortawesome/free-solid-svg-icons"
-var free_solid_svg_icons_ = __webpack_require__("No/t");
-
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__("cDcd");
-
-// CONCATENATED MODULE: ./components/header/Socialicon.js
-
-
-
-
-const fetcher = (...args) => fetch(...args).then(res => res.json());
-
-function Socialicon() {
-  const url = "https://cms.schoolscoop.co.in/myapp/items/top_icons?fields=top_icons.directus_files_id.data.full_url";
-  const {
-    data,
-    error
-  } = external_swr_default()(url, fetcher);
-
-  if (error) {
-    return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {});
-  }
-
-  if (!data) {
-    return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {});
-  }
-
-  return /*#__PURE__*/Object(jsx_runtime_["jsx"])("ul", {
-    children: data.data[0].top_icons.map((items, i) => {
-      return /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
-          src: items.directus_files_id.data.full_url
-        })
-      }, i);
-    })
-  });
-}
-
-/* harmony default export */ var header_Socialicon = (Socialicon);
-// EXTERNAL MODULE: external "react-tooltip"
-var external_react_tooltip_ = __webpack_require__("E8iq");
-var external_react_tooltip_default = /*#__PURE__*/__webpack_require__.n(external_react_tooltip_);
-
-// CONCATENATED MODULE: ./components/header/Header.js
-
-
-
-
-
-
-
-
-
-
-const Header_fetcher = (...args) => fetch(...args).then(res => res.json());
-
-function Header() {
-  function toggleMenu() {
-    let nav = document.querySelector(".nav");
-    let toggle = document.querySelector(".toggle");
-    nav.classList.toggle("active");
-    toggle.classList.toggle("active");
-    const x = document.getElementById("navigation");
-
-    if (x.style.display === "none") {
-      x.style.display = "block";
-      x.style.position = "absolute";
-      x.style.background = "#002a5c";
-      x.style.zIndex = "100";
-      x.style.width = "94%";
-    } else {
-      x.style.display = "none";
-    }
-
-    document.getElementById("navbar").style.float = "left";
-  } // const url = "https://cms.schoolscoop.co.in/myapp/items/config?fields=title,tagline,address,phone,email,mobile,logo.*";
-  // const { data, error } = useSWR(url, fetcher);
-  // if (error) {
-  //     return <div></div>
-  // }
-  // if (!data) {
-  //     return <div></div>
-  // }
-
-
-  return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-    children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-      className: "header",
-      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-        className: "px-3 container-fluid",
-        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-          className: "contant",
-          children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-            children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-              className: "container-fluid",
-              children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                className: "row",
-                children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                  className: "col-sm-8",
-                  children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                    className: "row",
-                    children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                      className: "p-0 col-md-3 col-sm-5 col-5 head_meadia",
-                      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                        className: "logocontent d-flex justify-content-center",
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                          href: "/",
-                          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                            children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
-                              src: "/images/pglogo.png",
-                              alt: "logo"
-                            })
-                          })
-                        })
-                      })
-                    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                      className: "p-0 col-md-9 col-sm-7 col-7 ",
-                      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                        className: "logocontent",
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                          className: "school_title",
-                          style: {
-                            lineHeight: "20px"
-                          },
-                          children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
-                            style: {
-                              fontFamily: "curveFont"
-                            },
-                            children: "Rukhmani Devi Public School"
-                          }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
-                            className: "place pl-1",
-                            style: {
-                              fontFamily: "curveFont"
-                            },
-                            children: "Bhopal, Madhya Pradesh"
-                          })]
-                        })
-                      })
-                    })]
-                  })
-                }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                  className: "float-right mb-1 col-sm-4",
-                  children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                    className: "display_none",
-                    children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                      className: "d-flex text-light",
-                      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                        href: "#video",
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                          className: " ",
-                          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("p", {
-                            className: "text-light",
-                            children: "Virtual Tour for Rukhmani Devi School"
-                          })
-                        })
-                      }), "\u2002|\u2002", /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                        href: "#footer",
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                          className: "text-light   ",
-                          children: "Contact"
-                        })
-                      })]
-                    })
-                  }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                    className: "row icon_head_logo",
-                    children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(external_react_tooltip_default.a, {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                      className: " col-lg-2 col-md-2 col-sm-2 col-2",
-                      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                        href: "https://indiancc.nic.in/",
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                          target: "_blank",
-                          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
-                            src: "/images/hlogo1.png",
-                            alt: "no_img",
-                            "data-tip": "NCC INDIA",
-                            "data-place": "bottom",
-                            style: {
-                              width: "42px",
-                              height: "42px",
-                              borderRadius: "50%"
-                            }
-                          })
-                        })
-                      })
-                    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                      className: " col-lg-2 col-md-2 col-sm-2 col-2",
-                      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                        href: "https://npscindia.com/",
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                          target: "_blank",
-                          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
-                            src: "/images/hlogo2.jpeg",
-                            alt: "no_img",
-                            "data-tip": "NPSC INDIA",
-                            "data-place": "bottom",
-                            style: {
-                              width: "42px",
-                              height: "42px",
-                              borderRadius: "50%"
-                            }
-                          })
-                        })
-                      })
-                    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                      className: "col-lg-2 col-md-2 col-sm-2 col-2",
-                      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                        href: "https://www.cbse.gov.in/",
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                          target: "_blank",
-                          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
-                            src: "/images/hlogo3.jpeg",
-                            alt: "no_img",
-                            "data-tip": " CBSC",
-                            "data-place": "bottom",
-                            style: {
-                              width: "42px",
-                              height: "42px",
-                              borderRadius: "50%"
-                            }
-                          })
-                        })
-                      })
-                    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                      className: "col-lg-2 col-md-2 col-sm-2 col-2",
-                      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                        href: "https://www.facebook.com/rukhmanidevischool/",
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                          target: "_blank",
-                          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
-                            src: "/images/hfb.png",
-                            alt: "no_img",
-                            "data-tip": "FACEBOOK",
-                            "data-place": "bottom",
-                            style: {
-                              width: "42px",
-                              height: "42px",
-                              borderRadius: "50%"
-                            }
-                          })
-                        })
-                      })
-                    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                      className: "col-lg-2 col-md-2 col-sm-2 col-2",
-                      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                        href: "#",
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
-                            src: "/images/hinsta.jpeg",
-                            alt: "no_img",
-                            "data-tip": "INSTAGRAM",
-                            "data-place": "bottom",
-                            style: {
-                              width: "42px",
-                              height: "42px",
-                              borderRadius: "50%"
-                            }
-                          })
-                        })
-                      })
-                    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                      className: "col-lg-2 col-md-2 col-sm-2 col-2",
-                      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                        href: "https://www.youtube.com/channel/UCIKlH_ibvWaviOlUTrFeQqg",
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                          target: "_blank",
-                          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
-                            src: "/images/hutub.jpeg",
-                            alt: "no_img",
-                            "data-tip": "YOUTUBE",
-                            "data-place": "bottom",
-                            style: {
-                              width: "42px",
-                              height: "42px",
-                              borderRadius: "50%"
-                            }
-                          })
-                        })
-                      })
-                    })]
-                  })]
-                })]
-              })
-            }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-              className: "icons",
-              children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("ul", {
-                children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(header_Socialicon, {})
-              })
-            }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-              className: "toggle",
-              onClick: toggleMenu,
-              children: ["\xA0", /*#__PURE__*/Object(jsx_runtime_["jsx"])(react_fontawesome_["FontAwesomeIcon"], {
-                icon: free_solid_svg_icons_["faBars"]
-              }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
-                children: "\u2002MENU"
-              })]
-            }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-              className: "nav",
-              id: "navbar",
-              children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("ul", {
-                id: "navigation",
-                children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("li", {
-                  children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                    href: "/",
-                    children: "Home"
-                  }), "\u2002|\u2002"]
-                }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("li", {
-                  children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("button", {
-                    className: "dropdownbtn",
-                    children: ["About Us ", /*#__PURE__*/Object(jsx_runtime_["jsx"])(react_fontawesome_["FontAwesomeIcon"], {
-                      icon: free_solid_svg_icons_["faCaretDown"]
-                    }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                      className: "dropdownmenu",
-                      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                          href: "/Location",
-                          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                            children: "Location"
-                          })
-                        })
-                      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                          href: "/Director",
-                          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                            children: "Director's desk"
-                          })
-                        })
-                      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                          href: "/Principal",
-                          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                            children: "principal's desk"
-                          })
-                        })
-                      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                          href: "/Chairman",
-                          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                            children: "Chairman's Desk"
-                          })
-                        })
-                      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                          href: "/FacultysMain",
-                          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                            children: "Faculty"
-                          })
-                        })
-                      })]
-                    })]
-                  }), "\u2002|\u2002"]
-                }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("li", {
-                  children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("button", {
-                    className: "dropdownbtn",
-                    children: ["Branches ", /*#__PURE__*/Object(jsx_runtime_["jsx"])(react_fontawesome_["FontAwesomeIcon"], {
-                      icon: free_solid_svg_icons_["faCaretDown"]
-                    }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                      className: "dropdownmenu",
-                      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                          href: "/Branch1",
-                          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                            children: "Main Branch"
-                          })
-                        })
-                      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                          href: "/Branch2",
-                          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                            children: "Airport Road Branch"
-                          })
-                        })
-                      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                          href: "/Branch3",
-                          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                            children: "Branch 3"
-                          })
-                        })
-                      })]
-                    })]
-                  }), "\u2002|\u2002"]
-                }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("li", {
-                  children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("button", {
-                    className: "dropdownbtn",
-                    children: ["Facilities ", /*#__PURE__*/Object(jsx_runtime_["jsx"])(react_fontawesome_["FontAwesomeIcon"], {
-                      icon: free_solid_svg_icons_["faCaretDown"]
-                    }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                      className: "dropdownmenu",
-                      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                          href: "/AcademicFacilities",
-                          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                            children: "Academic Facilities"
-                          })
-                        })
-                      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                          href: "/GamesSports",
-                          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                            children: "Games & Sports"
-                          })
-                        })
-                      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                          href: "/Activities",
-                          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                            children: "Activities"
-                          })
-                        })
-                      })]
-                    })]
-                  }), "\u2002|\u2002"]
-                }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("li", {
-                  children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("button", {
-                    className: "dropdownbtn",
-                    children: ["ACADEMICS ", /*#__PURE__*/Object(jsx_runtime_["jsx"])(react_fontawesome_["FontAwesomeIcon"], {
-                      icon: free_solid_svg_icons_["faCaretDown"]
-                    }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                      className: "dropdownmenu",
-                      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                          href: "/AdmissionProcess",
-                          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                            children: "Admission Process"
-                          })
-                        })
-                      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-                        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                          href: "/TransferCertificate",
-                          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                            children: "Transfer Certificate"
-                          })
-                        })
-                      })]
-                    })]
-                  }), "\u2002|\u2002"]
-                }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-                  children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                    href: "/Gallery",
-                    children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                      children: "Gallery \u2002|\u2002"
-                    })
-                  })
-                }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {}), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("li", {
-                  children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                    href: "/Mandatory",
-                    children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                      children: "Mandatory Disclosure"
-                    })
-                  }), "\u2002|\u2002"]
-                }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("li", {
-                  children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                    href: "/Rules",
-                    children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                      children: "Rules"
-                    })
-                  }), "\u2002|\u2002"]
-                }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-                  children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-                    href: "/#",
-                    children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-                      children: "Login"
-                    })
-                  })
-                })]
-              })
-            })]
-          })
-        })
-      })
-    })
-  });
-}
-
-/* harmony default export */ var header_Header = (Header);
-// EXTERNAL MODULE: external "react-toast-notifications"
-var external_react_toast_notifications_ = __webpack_require__("C1xe");
-
-// EXTERNAL MODULE: external "react-icons/fa"
-var fa_ = __webpack_require__("5mtF");
-
-// CONCATENATED MODULE: ./components/footer/Footer.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-const Footer_fetcher = (...args) => fetch(...args).then(res => res.json());
-
-function Footer({
-  data_header
-}) {
-  const {
-    addToast
-  } = Object(external_react_toast_notifications_["useToasts"])();
-  const {
-    0: name,
-    1: setName
-  } = Object(external_react_["useState"])("");
-  const {
-    0: email,
-    1: setEmail
-  } = Object(external_react_["useState"])("");
-  const {
-    0: mobile,
-    1: setMobile
-  } = Object(external_react_["useState"])("");
-  const {
-    0: message,
-    1: setMessage
-  } = Object(external_react_["useState"])("");
-  const {
-    0: nameErr,
-    1: setNameErr
-  } = Object(external_react_["useState"])({});
-  const {
-    0: emailErr,
-    1: setEmailErr
-  } = Object(external_react_["useState"])({});
-  const {
-    0: mobileErr,
-    1: setMobileErr
-  } = Object(external_react_["useState"])({});
-  const {
-    0: messageErr,
-    1: setMessageErr
-  } = Object(external_react_["useState"])({});
-  var pattern = new RegExp(/^[0-9\b]+$/);
-
-  const submit = e => {
-    e.preventDefault();
-    const isValid = formValidation();
-
-    if (isValid) {
-      fetch(`${"https://cms.schoolscoop.co.in"}/${"rukhmani"}/items/contact_form`, {
-        method: "POST",
-        body: JSON.stringify({
-          full_name: name,
-          email,
-          mobile,
-          message
-        }),
-        headers: {
-          "Content-type": "application/json; charset=UTF-8"
-        }
-      }).then(response => {
-        response.json();
-
-        if (response.status === 200) {
-          setName("");
-          setEmail("");
-          setMobile("");
-          setMessage("");
-        }
-      }).then(json => addToast("form submitted Sucessfully", {
-        appearance: 'success',
-        autoDismiss: true
-      })).catch(err => console.log(err));
-    }
-  };
-
-  const formValidation = () => {
-    const nameErr = {};
-    const emailErr = {};
-    const mobileErr = {};
-    const messageErr = {};
-    let isValid = true;
-
-    if (name === '') {
-      nameErr.firstNameEmpty = "Name is required";
-      isValid = false;
-    } else if (name.trim().length < 5) {
-      nameErr.firstNameShort = "Full name is too short";
-      isValid = false;
-    }
-
-    if (email === '') {
-      emailErr.emailEmpty = "Email is required";
-      isValid = false;
-    } else if (!email.includes("@")) {
-      emailErr.emailerror = "You have entered a wrong email";
-      isValid = false;
-    }
-
-    if (mobile === '') {
-      mobileErr.mobileEmpty = "Contact is required";
-      isValid = false;
-    } else if (!pattern.test(mobile)) {
-      mobileErr.mobilenumbershort = "Mobile number should be numeric";
-      isValid = false;
-    } else if (mobile.trim().length != 10) {
-      mobileErr.mobilenumbershort = "Mobile number should be in ten digit";
-      isValid = false;
-    }
-
-    if (message === '') {
-      messageErr.messageEmpty = "Message is required";
-      isValid = false;
-    } else if (message.trim().length < 5) {
-      messageErr.mobilenumbershort = "Message length should be 5 words or more";
-      isValid = false;
-    }
-
-    setNameErr(nameErr);
-    setEmailErr(emailErr);
-    setMobileErr(mobileErr);
-    setMessageErr(messageErr);
-    return isValid;
-  };
-
-  const url = `${"https://cms.schoolscoop.co.in"}/${"rukhmani"}/items/config?fields=*,logo.data.full_url`;
-  const {
-    data,
-    error
-  } = external_swr_default()(url, Footer_fetcher);
-
-  if (error) {
-    return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-      children: "Error..."
-    });
-  }
-
-  if (!data) {
-    return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-      children: "No Data..."
-    });
-  }
-
-  return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-    children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-      className: "footerbg",
-      id: "footer",
-      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-        className: "container",
-        children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-          className: "row",
-          children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-            className: "col-sm-4",
-            children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-              style: {
-                paddingTop: '40px'
-              },
-              children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                style: {
-                  display: 'flex'
-                },
-                children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
-                  src: "/images/pglogo.png",
-                  alt: "logo",
-                  style: {
-                    height: "53px"
-                  }
-                }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                  style: {
-                    lineHeight: '20px'
-                  },
-                  children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
-                    style: {
-                      fontSize: "19px",
-                      fontFamily: "curveFont"
-                    },
-                    children: "Rukhmani Devi Public School"
-                  }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
-                    style: {
-                      fontSize: "13px",
-                      fontFamily: "curveFont"
-                    },
-                    className: "place",
-                    children: "Bhopal, Madhya Pradesh"
-                  })]
-                })]
-              }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("p", {
-                children: "Rukhmani Devi School, established in 2007, is a Co-educational, Day Boarding English medium public school affiliated to the Central Board of Secondary Education (CBSE), Delhi, up to 10th and 12th Grades. Pinegrove is a Regional Member of the Round Square, is accredited with ISO 9001:2008 (BSI) and is a member of the prestigious Indian Public Schools` Conference (IPSC)."
-              })]
-            })
-          }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-            className: "col-sm-4",
-            children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-              className: "contactus",
-              children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("h5", {
-                  children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
-                    children: "|\xA0"
-                  }), "Connect with us"]
-                }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("h5", {
-                  className: "text-light",
-                  children: "Main Branch"
-                }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("ul", {
-                  children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-                    children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("a", {
-                      href: "tel:8871018886",
-                      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(fa_["FaPhoneAlt"], {}), "\xA0 8871018886"]
-                    })
-                  }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-                    children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("a", {
-                      href: "tel:8878954637",
-                      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(fa_["FaPhoneAlt"], {}), "\xA0 8878954637 "]
-                    })
-                  }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-                    children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("a", {
-                      href: "",
-                      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(react_fontawesome_["FontAwesomeIcon"], {
-                        icon: free_solid_svg_icons_["faMapMarkerAlt"]
-                      }), "\xA0NH-46 BHOPAL- Narsinghgarh Road Near Jharkheda."]
-                    })
-                  })]
-                }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("h5", {
-                  className: "text-light",
-                  children: "Airport Road Branch"
-                }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("ul", {
-                  children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-                    children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("a", {
-                      href: "tel:9926188840",
-                      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(fa_["FaPhoneAlt"], {}), "\xA0 9926188840"]
-                    })
-                  }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-                    children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("a", {
-                      href: "tel:8109048886",
-                      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(fa_["FaPhoneAlt"], {}), "\xA0 8109048886"]
-                    })
-                  }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-                    children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("a", {
-                      href: "",
-                      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(react_fontawesome_["FontAwesomeIcon"], {
-                        icon: free_solid_svg_icons_["faMapMarkerAlt"]
-                      }), "\xA0Airport Road Data colony Bhopal postal code:  462030 "]
-                    })
-                  })]
-                })]
-              })
-            })
-          }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-            className: "col-sm-4",
-            children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-              className: "emailus",
-              children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("h5", {
-                children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
-                  children: "|\xA0"
-                }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("svg", {
-                  xmlns: "http://www.w3.org/2000/svg",
-                  class: "h-6 w-6",
-                  fill: "none",
-                  viewBox: "0 0 24 24",
-                  stroke: "currentColor",
-                  style: {
-                    width: "25px",
-                    color: "white"
-                  },
-                  children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("path", {
-                    "stroke-linecap": "round",
-                    "stroke-linejoin": "round",
-                    "stroke-width": "2",
-                    d: "M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  })
-                }), "\xA0 Connect with us"]
-              }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                className: "form-group",
-                id: "contact-bottom",
-                children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                  className: "mb-2 input-group",
-                  children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                    className: "input-group-prepend",
-                    children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                      className: "input-group-text",
-                      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(react_fontawesome_["FontAwesomeIcon"], {
-                        icon: free_solid_svg_icons_["faUser"]
-                      })
-                    })
-                  }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("input", {
-                    name: "name",
-                    type: "text",
-                    id: "txtname1",
-                    value: name,
-                    onChange: e => setName(e.target.value),
-                    placeholder: "Full Name",
-                    className: "form-control"
-                  })]
-                }), Object.keys(nameErr).map(key => {
-                  return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                    style: {
-                      color: "red",
-                      fontWeight: '700',
-                      fontSize: '15px'
-                    },
-                    children: nameErr[key]
-                  });
-                })]
-              }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                className: "form-group",
-                id: "contact-bottom",
-                children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                  className: "mb-2 input-group",
-                  children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                    className: "input-group-prepend",
-                    children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                      className: "input-group-text",
-                      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(react_fontawesome_["FontAwesomeIcon"], {
-                        icon: free_solid_svg_icons_["faEnvelope"]
-                      })
-                    })
-                  }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("input", {
-                    name: "email",
-                    type: "text",
-                    id: "txtname2",
-                    value: email,
-                    onChange: e => setEmail(e.target.value),
-                    placeholder: "Email@gmail.com",
-                    className: "form-control"
-                  })]
-                }), Object.keys(emailErr).map(key => {
-                  return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                    style: {
-                      color: "red",
-                      fontWeight: '700',
-                      fontSize: '15px'
-                    },
-                    children: emailErr[key]
-                  });
-                })]
-              }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                className: "form-group",
-                id: "contact-bottom",
-                children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                  className: "mb-2 input-group",
-                  children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                    className: "input-group-prepend",
-                    children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                      className: "input-group-text",
-                      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(react_fontawesome_["FontAwesomeIcon"], {
-                        icon: free_solid_svg_icons_["faPhone"]
-                      })
-                    })
-                  }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("input", {
-                    name: "mobile",
-                    type: "text",
-                    id: "txtname3",
-                    value: mobile,
-                    onChange: e => setMobile(e.target.value),
-                    placeholder: "Contact Number",
-                    className: "form-control"
-                  })]
-                }), Object.keys(mobileErr).map(key => {
-                  return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                    style: {
-                      color: "red",
-                      fontWeight: '700',
-                      fontSize: '15px'
-                    },
-                    children: mobileErr[key]
-                  });
-                })]
-              }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                className: "form-group",
-                id: "contact-bottom",
-                children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-                  className: "mb-2 input-group",
-                  children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                    className: "input-group-prepend",
-                    children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                      className: "input-group-text",
-                      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(react_fontawesome_["FontAwesomeIcon"], {
-                        icon: free_solid_svg_icons_["faComment"]
-                      })
-                    })
-                  }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("input", {
-                    name: "message",
-                    type: "text",
-                    id: "txtname4",
-                    value: message,
-                    onChange: e => setMessage(e.target.value),
-                    placeholder: "Your Message",
-                    className: "form-control"
-                  })]
-                }), Object.keys(messageErr).map(key => {
-                  return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                    style: {
-                      color: "red",
-                      fontWeight: '700',
-                      fontSize: '15px'
-                    },
-                    children: messageErr[key]
-                  });
-                })]
-              }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-                className: "text-center",
-                children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("button", {
-                  type: "submit",
-                  name: "submit",
-                  onClick: submit,
-                  value: "send",
-                  id: "btnsubmit1",
-                  className: "py-2 btn btn-info btn-block rounded-0",
-                  style: {
-                    backgroundColor: '#94d1f5',
-                    color: 'black'
-                  },
-                  children: "send"
-                })
-              })]
-            })
-          })]
-        })
-      })
-    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-      className: "subfooter",
-      children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-        className: "text-center text-light ",
-        children: ["Rukhmani Devi School\xA0|\xA0 Design & Maintained with \xA0\xA0", /*#__PURE__*/Object(jsx_runtime_["jsx"])(react_fontawesome_["FontAwesomeIcon"], {
-          style: {
-            color: 'red'
-          },
-          icon: free_solid_svg_icons_["faHeart"]
-        }), " \xA0 by \xA0", /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-          href: "http://maitretech.com/",
-          target: "_blank",
-          children: " maitretech.com"
-        })]
-      })
-    })]
-  });
-}
-
-/* harmony default export */ var footer_Footer = (Footer);
-async function getStaticProps(context) {
-  let data_header;
-
-  try {
-    const response = await fetch(`${"https://cms.schoolscoop.co.in"}/${"rukhmani"}/items/config?fields=*,logo.data.full_url`);
-    data_header = await response.json();
-  } catch (error) {
-    data_header = false;
-  }
-
-  return {
-    props: {
-      data_header
-    },
-    revalidate: 2 // will be passed to the page component as props
-
-  };
-}
-// EXTERNAL MODULE: external "react-toast-notifications/dist/ToastProvider"
-var ToastProvider_ = __webpack_require__("n58u");
-
-// EXTERNAL MODULE: external "next/head"
-var head_ = __webpack_require__("xnum");
-var head_default = /*#__PURE__*/__webpack_require__.n(head_);
-
-// CONCATENATED MODULE: ./components/layouts/Layout.js
-
-
-
-
-
-
- // import Headercontant from '../header/Headercontant'
-
-const Layout = ({
-  children,
-  data_header
-}) => {
-  return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-    children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])(head_default.a, {
-      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("title", {
-        children: "Rukhmani Devi Public School"
-      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("link", {
-        rel: "icon",
-        type: "image/jpg",
-        href: "/images/fullogo.png"
-      })]
-    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(header_Header, {}), children, /*#__PURE__*/Object(jsx_runtime_["jsx"])(ToastProvider_["ToastProvider"], {
-      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(footer_Footer, {
-        data_header: data_header
-      })
-    })]
-  });
-};
-
-/* harmony default export */ var layouts_Layout = __webpack_exports__["a"] = (Layout);
-
-/***/ }),
-
-/***/ "uhWA":
-/***/ (function(module, exports) {
-
-module.exports = require("@fortawesome/react-fontawesome");
-
-/***/ }),
-
-/***/ "wkBG":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-exports.__esModule=true;exports.normalizePathSep=normalizePathSep;exports.denormalizePagePath=denormalizePagePath;function normalizePathSep(path){return path.replace(/\\/g,'/');}function denormalizePagePath(page){page=normalizePathSep(page);if(page.startsWith('/index/')){page=page.slice(6);}else if(page==='/index'){page='/';}return page;}
-//# sourceMappingURL=denormalize-page-path.js.map
-
-/***/ }),
-
-/***/ "wy2R":
-/***/ (function(module, exports) {
-
-module.exports = require("moment");
-
-/***/ }),
-
-/***/ "xnum":
-/***/ (function(module, exports) {
-
-module.exports = require("next/head");
-
-/***/ }),
-
-/***/ "zr5I":
-/***/ (function(module, exports) {
-
-module.exports = require("axios");
+module.exports = require("swr");;
 
 /***/ })
 
-/******/ });
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../webpack-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
+var __webpack_exports__ = __webpack_require__.X(0, [664,610,665,687,715], function() { return __webpack_exec__(472); });
+module.exports = __webpack_exports__;
+
+})();

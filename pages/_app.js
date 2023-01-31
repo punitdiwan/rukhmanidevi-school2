@@ -1,7 +1,7 @@
-import '../style/style.css'
-import 'bootstrap/dist/css/bootstrap.css';
-import '../style/calender.css'
-import '@fortawesome/fontawesome-svg-core/styles.css';
+import "../style/style.css";
+import "bootstrap/dist/css/bootstrap.css";
+import "../style/calender.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import SimpleReactLightbox from "simple-react-lightbox";
 
@@ -13,4 +13,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp
+export default MyApp;
