@@ -91,12 +91,12 @@ const items = [
 ];
 
 const slides = [
-  { title: "/images/7 ", description: "View Gallery" },
-  { title: "/images/8   ", description: "View Gallery" },
-  { title: " /images/9  ", description: "View Gallery" },
-  { title: "/images/11   ", description: "View Gallery" },
-  { title: " /images/12  ", description: "View Gallery" },
-  { title: "/images/14   ", description: "View Gallery" },
+  { title: "/images/7.jpg ", description: "View Gallery" },
+  { title: "/images/8.jpg   ", description: "View Gallery" },
+  { title: " /images/9.jpg  ", description: "View Gallery" },
+  { title: "/images/11.jpg   ", description: "View Gallery" },
+  { title: " /images/12.jpg  ", description: "View Gallery" },
+  { title: "/images/14.jpg   ", description: "View Gallery" },
 ];
 const Schoolgallery = ({ gallery_data }) => {
   const options = {

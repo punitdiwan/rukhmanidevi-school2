@@ -175,7 +175,7 @@ const Location = () => {
               </div>
             </div>
             <div className="col-sm-6 then-img">
-              <img src="/images/1" style={{ width: "100%", height: "350px" }} />
+              <img src="/images/1.jpg" style={{ width: "100%", height: "350px" }} />
 
               <div className="col-sm-12">
                 {/* <div>

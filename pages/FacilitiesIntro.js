@@ -59,7 +59,7 @@ const FacilitiesIntro = () => {
                         </div>
                         <div className="col-md-3">
                             <div className="then-imgx4">
-                                <img src="/images/18" alt="no_img" />
+                                <img src="/images/18.jpg" alt="no_img" />
                             </div>
                         </div>
 
