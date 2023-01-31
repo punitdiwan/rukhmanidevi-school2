@@ -12,9 +12,15 @@ import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { useToasts } from "react-toast-notifications";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import useSWR from "swr";
-import { FaPhoneAlt,FaHome,FaRegImage,FaFutbol,FaClipboardList } from "react-icons/fa";
-import {HiAcademicCap} from "react-icons/hi";
-import {TbCertificate} from "react-icons/tb";
+import {
+  FaPhoneAlt,
+  FaHome,
+  FaRegImage,
+  FaFutbol,
+  FaClipboardList,
+} from "react-icons/fa";
+import { HiAcademicCap } from "react-icons/hi";
+import { TbCertificate } from "react-icons/tb";
 import ReCAPTCHA from "react-google-recaptcha";
 import Link from "next/link";
 
@@ -118,14 +124,14 @@ function Footer({ data_header }) {
     return isValid;
   };
 
-  // const url = `${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/config?fields=*,logo.data.full_url`;
-  // const { data, error } = useSWR(url, fetcher);
-  // if (error) {
-  //   return <div>Error...</div>;
-  // }
-  // if (!data) {
-  //   return <div>No Data...</div>;
-  // }
+  const url = `${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/config?fields=*,logo.data.full_url`;
+  const { data, error } = useSWR(url, fetcher);
+  if (error) {
+    return <div>Error...</div>;
+  }
+  if (!data) {
+    return <div>No Data...</div>;
+  }
 
   return (
     <div>
@@ -153,7 +159,7 @@ function Footer({ data_header }) {
                     </span>
                   </div>
                 </div>
-                <p style={{lineHeight:'2rem'}}>
+                <p style={{ lineHeight: "2rem" }}>
                   Rukhmani Devi School, established in 2007, is a
                   Co-educational, Day Boarding English medium public school
                   affiliated to the Central Board of Secondary Education (CBSE),
@@ -166,7 +172,7 @@ function Footer({ data_header }) {
             </div>
             <div className="col-sm-4">
               <div className="contactus">
-                <div >
+                <div id ="new-contact">
                   <h5>
                     <span>|&nbsp;</span>
                     <FontAwesomeIcon icon={faNetworkWired} />
@@ -174,118 +180,70 @@ function Footer({ data_header }) {
                   </h5>
                   <ul>
                     <li>
-                      <Link href="/">  <h6 className="new-p">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FaHome/>&nbsp; Home</h6></Link>
+                      <Link href="/">
+                        
+                        <h6 className="new-p">
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FaHome />
+                          &nbsp; Home
+                        </h6>
+                      </Link>
                     </li>
                     <li>
-                      <Link href="/Gallery">  <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FaRegImage/>&nbsp; Gallery</h6></Link>
+                      <Link href="/Gallery">
+                        
+                        <h6>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FaRegImage />
+                          &nbsp; Gallery
+                        </h6>
+                      </Link>
                     </li>
                     <li>
                       <Link href="/Activities">
-                         <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FaClipboardList/> &nbsp;Activities</h6>
+                        <h6>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <FaClipboardList /> &nbsp;Activities
+                        </h6>
                       </Link>
                     </li>
                     <li>
                       <Link href="/AcademicFacilities">
-                         <h6> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<HiAcademicCap/> &nbsp;Academic Facilities</h6>
+                        <h6>
+                          
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <HiAcademicCap /> &nbsp;Academic Facilities
+                        </h6>
                       </Link>
                     </li>
                     <li>
                       <Link href="/GamesSports">
-                         <h6> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FaFutbol/>&nbsp; Games & Sports</h6>
+                        <h6>
+                          
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <FaFutbol />
+                          &nbsp; Games & Sports
+                        </h6>
                       </Link>
                     </li>
                     <li>
                       <Link href="/AdmissionProcess">
-                         <h6> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<HiAcademicCap/>&nbsp; Academic Process</h6>
+                        <h6>
+                          
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <HiAcademicCap />
+                          &nbsp; Academic Process
+                        </h6>
                       </Link>
                     </li>
                     <li>
                       <Link href="/TransferCertificate">
-                         <h6> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<TbCertificate/>&nbsp; Transfer Certificate</h6>
+                        <h6>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <TbCertificate />
+                          &nbsp; Transfer Certificate
+                        </h6>
                       </Link>
                     </li>
                   </ul>
-                  {/* <span>|&nbsp;</span> */}
-                  {/* <FontAwesomeIcon icon={faNetworkWired} /> */}
-                  {/* Connect with us
-                  {/* <ul>
-                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;{data_header?.data ? data_header?.data[0]?.phone : "9999911111"}</a></li>
-                                        <li><a href=''><FontAwesomeIcon icon={faPhone} />&nbsp;{data_header?.data ? data_header?.data[0]?.mobile : "999999999"}</a></li>
-                                        <li><a href=''><FontAwesomeIcon icon={faEnvelopeOpenText} />&nbsp;{data_header?.data ? data_header?.data[0]?.email : "maitretech@example.com"}</a></li>
-                                        <li><a href=''><FontAwesomeIcon icon={faMapMarkerAlt} />&nbsp;{data_header?.data ? data_header?.data[0]?.address : " Demo Address , Demo Address, Madhya Pradesh 111111"}</a></li>
-                                    </ul> */}
-                  {/* <h5 className="text-light">Main Branch</h5>
-                  <ul>
-                    <li>
-                      <a href="tel:8871018886">
-                        <FaPhoneAlt />
-                        &nbsp; 8871018886
-                      </a>
-                    </li>
-                    <li>
-                      <a href="tel:8878954637">
-                        <FaPhoneAlt />
-                        &nbsp; 8878954637
-                      </a>
-                    </li> */}
-                  {/* <li><a href=''><FontAwesomeIcon icon={faEnvelopeOpenText} />
-                                        &nbsp;{  data?.data[0]?.email }</a></li> */}
-                  {/* <li>
-                      <a href="">
-                        <FontAwesomeIcon icon={faMapMarkerAlt} />
-                        &nbsp;NH-46 BHOPAL- Narsinghgarh Road Near Jharkheda.
-                      </a>
-                    </li>
-                  </ul> */}
-
-                  {/* <h5 className="text-light">Airport Road Branch</h5>
-                  <ul>
-                    <li>
-                      <a href="tel:9926188840">
-                        <FaPhoneAlt />
-                        &nbsp; 9926188840
-                      </a>
-                    </li>
-                    <li>
-                      <a href="tel:8109048886">
-                        <FaPhoneAlt />
-                        &nbsp; 8109048886
-                      </a>
-                    </li> */}
-                  {/* <li><a href=''><FontAwesomeIcon icon={faEnvelopeOpenText} />
-                                        &nbsp;{  data?.data[0]?.email }</a></li> */}
-                  {/* <li>
-                      <a href="">
-                        <FontAwesomeIcon icon={faMapMarkerAlt} />
-                        &nbsp;Airport Road Data colony Bhopal postal code:
-                        462030
-                      </a>
-                    </li>
-                  </ul>
-                  <h5 className="text-light">Aakriti Ecocity Branch</h5>
-                  <ul>
-                    <li>
-                      <a href="tel:9926188840">
-                        <FaPhoneAlt />
-                        &nbsp; 9926188840
-                      </a>
-                    </li>
-                    <li>
-                      <a href="tel:8109048886">
-                        <FaPhoneAlt />
-                        &nbsp; 8109048886
-                      </a>
-                    </li> */}
-                  {/* <li><a href=''><FontAwesomeIcon icon={faEnvelopeOpenText} />
-                                        &nbsp;{  data?.data[0]?.email }</a></li> */}
-                  {/* <li>
-                      <a href="">
-                        <FontAwesomeIcon icon={faMapMarkerAlt} />
-                        &nbsp;Aakriti Ecocity, Salaiya, Bhopal postal code:
-                        462026
-                      </a>
-                    </li>
-                  </ul> */}
                 </div>
               </div>
             </div>
@@ -481,21 +439,21 @@ function Footer({ data_header }) {
 
 export default Footer;
 
-// export async function getStaticProps(context) {
-//   let data_header;
-//   try {
-//     const response = await fetch(
-//       `${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/config?fields=*,logo.data.full_url`
-//     );
+export async function getStaticProps(context) {
+  let data_header;
+  try {
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/config?fields=*,logo.data.full_url`
+    );
 
-//     data_header = await response.json();
-//   } catch (error) {
-//     data_header = false;
-//   }
+    data_header = await response.json();
+  } catch (error) {
+    data_header = false;
+  }
 
-//   return {
-//     props: { data_header },
-//     revalidate: 2, 
-//   };
-// }
+  return {
+    props: { data_header },
+    revalidate: 2,
+  };
+}
 // will be passed to the page component as props
