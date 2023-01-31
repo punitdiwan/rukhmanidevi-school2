@@ -118,14 +118,14 @@ function Footer({ data_header }) {
     return isValid;
   };
 
-  const url = `${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/config?fields=*,logo.data.full_url`;
-  const { data, error } = useSWR(url, fetcher);
-  if (error) {
-    return <div>Error...</div>;
-  }
-  if (!data) {
-    return <div>No Data...</div>;
-  }
+  // const url = `${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/config?fields=*,logo.data.full_url`;
+  // const { data, error } = useSWR(url, fetcher);
+  // if (error) {
+  //   return <div>Error...</div>;
+  // }
+  // if (!data) {
+  //   return <div>No Data...</div>;
+  // }
 
   return (
     <div>
@@ -481,20 +481,21 @@ function Footer({ data_header }) {
 
 export default Footer;
 
-export async function getStaticProps(context) {
-  let data_header;
-  try {
-    const response = await fetch(
-      `${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/config?fields=*,logo.data.full_url`
-    );
+// export async function getStaticProps(context) {
+//   let data_header;
+//   try {
+//     const response = await fetch(
+//       `${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/config?fields=*,logo.data.full_url`
+//     );
 
-    data_header = await response.json();
-  } catch (error) {
-    data_header = false;
-  }
+//     data_header = await response.json();
+//   } catch (error) {
+//     data_header = false;
+//   }
 
-  return {
-    props: { data_header },
-    revalidate: 2, // will be passed to the page component as props
-  };
-}
+//   return {
+//     props: { data_header },
+//     revalidate: 2, 
+//   };
+// }
+// will be passed to the page component as props
