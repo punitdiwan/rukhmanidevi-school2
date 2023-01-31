@@ -172,7 +172,7 @@ function Footer({ data_header }) {
                     <li>
                       <a href="tel:8878954637">
                         <FaPhoneAlt />
-                        &nbsp; 8878954637{" "}
+                        &nbsp; 8878954637
                       </a>
                     </li>
                     {/* <li><a href=''><FontAwesomeIcon icon={faEnvelopeOpenText} />
@@ -205,7 +205,7 @@ function Footer({ data_header }) {
                       <a href="">
                         <FontAwesomeIcon icon={faMapMarkerAlt} />
                         &nbsp;Airport Road Data colony Bhopal postal code:
-                        462030{" "}
+                        462030
                       </a>
                     </li>
                   </ul>
@@ -232,7 +232,7 @@ function Footer({ data_header }) {
                     />
                   </svg>
                   {/* <FontAwesomeIcon icon={faEnvelope} /> */}
-                  &nbsp; Connect with us
+                  &nbsp; &nbsp; Connect with us
                 </h5>
                 <div className="form-group" id="contact-bottom">
                   <div className="mb-2 input-group">
@@ -387,7 +387,6 @@ function Footer({ data_header }) {
           <FontAwesomeIcon style={{ color: "red" }} icon={faHeart} /> &nbsp; by
           &nbsp;
           <a href="http://maitretech.com/" target="_blank">
-            {" "}
             maitretech.com
           </a>
         </div>
