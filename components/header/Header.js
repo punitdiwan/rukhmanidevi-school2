@@ -250,23 +250,23 @@ function Header() {
                     </button>
                     &ensp;|&ensp;
                   </li>
-                  {/* <li>
+                  <li>
                     <button className="dropdownbtn">
                       Branches <FontAwesomeIcon icon={faCaretDown} />
                       <div className="dropdownmenu">
                         <li>
-                          <Link href="/Branch1">Main Branch</Link>
+                          <Link href="/Branch1">Jharkheda</Link>
                         </li>
                         <li>
-                          <Link href="/Branch2">Airport Road Branch</Link>
+                          <Link href="/Branch2">Airport Road </Link>
                         </li>
                         <li>
-                          <Link href="/Branch3">Aakriti Ecocity Branch</Link>
+                          <Link href="/Branch3">Aakriti Ecocity</Link>
                         </li>
                       </div>
                     </button>
                     &ensp;|&ensp;
-                  </li> */}
+                  </li>
 
                   <li>
                     <button className="dropdownbtn">

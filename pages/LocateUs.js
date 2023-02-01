@@ -64,7 +64,6 @@ export const LocateUs = () => {
               </svg>
               &nbsp;&nbsp;
               <p>
-                
                 Rukhmani Devi Public School, CTO Rd,Singarcholi, Data Colony,
                 Lalghati, Bhopal, Madhya Pradesh 462030
               </p>
@@ -104,22 +103,21 @@ export const LocateUs = () => {
               </svg>
               &nbsp;&nbsp;
               <p>
-                
                 Rukhmani Devi Public School Aakriti Ecocity, Salaiya, Bhopal,
                 Madhya Pradesh 462026
               </p>
             </div>
           </div>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.9979729226147!2d77.43655361497044!3d23.170274084878564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7a33daee3a092e64!2zMjPCsDEwJzEzLjAiTiA3N8KwMjYnMTkuNSJF!5e0!3m2!1sen!2sin!4v1675070490391!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1834.003540425385!2d77.43844523391964!3d23.169941665792805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43e12234a6d3%3A0x7d83d9f5b4afca27!2sRukhmani%20Devi%20Public%20School%20%2C%20Aakriti%20EcoCity%20Salaiya%20Branch!5e0!3m2!1sen!2sin!4v1675246231334!5m2!1sen!2sin"
             width="600"
             height="450"
             style={{
-                width: "100%",
-                height: "200px",
-                border: "5px solid black",
-                borderRadius: "10px",
-              }}
+              width: "100%",
+              height: "200px",
+              border: "5px solid black",
+              borderRadius: "10px",
+            }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
