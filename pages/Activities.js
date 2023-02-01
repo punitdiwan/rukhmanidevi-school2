@@ -45,42 +45,42 @@ function Activities() {
 
                         <div className='row'>
                             <div className='col-sm-3'>
-                                <img className='activityimg' src="/images/11" />
+                                <img className='activityimg' src="/images/11.jpg" />
                             </div>
                             <div className='col-sm-3'>
-                                <img className='activityimg' src="/images/12" />
+                                <img className='activityimg' src="/images/12.jpg" />
                             </div>
                             <div className='col-sm-3'>
-                                <img className='activityimg' src="/images/6" />
+                                <img className='activityimg' src="/images/6.jpg" />
                             </div>
                             <div className='col-sm-3'>
-                                <img className='activityimg' src="/images/7" />
+                                <img className='activityimg' src="/images/7.jpg" />
                             </div>
                         </div>
                         <p>All children are encouraged to pursue some Socially Useful Productive Work (SUPW) apart from their usual academic and other physical activities. These activities are conducted during hobby sessions, which are an integral part of the school curriculum. These activities provide ample opportunity to the children for developing their artistic ability, technical skills and aesthetic sense.</p>
                         <p>The activities also improve the co-ordination of the body and mind and are very important for building a sound physique, an upright and correct posture and for smart deportment, turn out and discipline.</p>
                         <div className='row'>
                             <div className='col-sm-6'>
-                                <img className='activityimg' src="/images/9" />
+                                <img className='activityimg' src="/images/9.jpg" />
                             </div>
                             <div className='col-sm-6'>
-                                <img className='activityimg' src="/images/8" />
+                                <img className='activityimg' src="/images/8.jpg" />
                             </div>
                         </div>
                         <h4>Inter-House and Inter-School Activities:</h4>
                         <p>Inter-House competitions are regularly held in various co-curricular and extra-curricular activities. These competitions give the children ample opportunity to display their skills and are conducted through activities such as House Shows (cultural programmes), Poem Recitations, Story Telling, Debates, Declamations, Quiz, Rangoli, Dancing, Group Singing, Mass PT, Orchestra etc.</p>
                         <div className='row'>
                             <div className='col-sm-3'>
-                                <img className='activityimg' src="/images/2" />
+                                <img className='activityimg' src="/images/2.jpg" />
                             </div>
                             <div className='col-sm-3'>
-                                <img className='activityimg' src="/images/3" />
+                                <img className='activityimg' src="/images/3.jpg" />
                             </div>
                             <div className='col-sm-3'>
-                                <img className='activityimg' src="/images/4" />
+                                <img className='activityimg' src="/images/4.jpg" />
                             </div>
                             <div className='col-sm-3'>
-                                <img className='activityimg' src="/images/5" />
+                                <img className='activityimg' src="/images/5.jpg" />
                             </div>
                         </div>
 
@@ -89,10 +89,10 @@ function Activities() {
 
                         <div className='row'>
                             <div className='col-sm-6'>
-                                <img className='activityimg' src="/images/6" />
+                                <img className='activityimg' src="/images/6.jpg" />
                             </div>
                             <div className='col-sm-6'>
-                                <img className='activityimg' src="/images/9" />
+                                <img className='activityimg' src="/images/9.jpg" />
                             </div>
                         </div>
                         <h4>Camps and excursions:</h4>
@@ -103,10 +103,10 @@ function Activities() {
 
                         <div className='row'>
                             <div className='col-sm-6'>
-                                <img className='activityimg' src="/images/6" />
+                                <img className='activityimg' src="/images/6.jpg" />
                             </div>
                             <div className='col-sm-6'>
-                                <img className='activityimg' src="/images/9" />
+                                <img className='activityimg' src="/images/9.jpg" />
                             </div>
                         </div>
 

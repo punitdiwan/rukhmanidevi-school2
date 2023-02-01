@@ -394,7 +394,6 @@ function Footer({ data_header }) {
                 </div>
                 <ReCAPTCHA
                   sitekey="6LcNK0IkAAAAAOjqYoggblFFfEScxADF_AL1DOvz"
-                  // 6LdpIEIkAAAAAF4ZBhCAM8jpg8kQf6gbCXsIwrGV
                   onChange={onChange}
                   className="form-group"
                 />

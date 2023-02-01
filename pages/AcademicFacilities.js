@@ -53,7 +53,7 @@ const AcademicFacilities = () => {
                         </span>&nbsp;&nbsp;&nbsp;
                     </div>
                     <div className="location_header">
-                        <h3>Faculties</h3>
+                        <h3>Facilties</h3>
                     </div>
                     <div className="row">
                         <div className="col-sm-12">
