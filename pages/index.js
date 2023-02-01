@@ -42,11 +42,13 @@ export async function getStaticProps(context) {
   let data_header;
 
   try {
+    alert(data_header)
     const response = await fetch(
       `${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/config?fields=*,logo.data.full_url`
     );
 
     data_header = await response.json();
+    alert(data_header)
   } catch (error) {
     data_header = false;
   }

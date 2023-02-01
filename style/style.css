@@ -104,7 +104,14 @@ margin-top: 30px;
   font-weight: 700;
   font-family: 'Langar', cursive;
 }
-
+#new-contact{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+.form-group{
+  width: 100%;
+}
 .logocontent .place {
    
   margin: 0px;

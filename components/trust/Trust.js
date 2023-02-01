@@ -11,7 +11,7 @@ function Trust() {
                 <div className="py-3">
                     <div className="row">
                         <div className="col-sm-6">
-                            <video style={{ width: "100%", height: "400px" }} controls  poster="/images/26">
+                            <video style={{ width: "100%", height: "400px" }} controls  poster="/images/26.jpg">
                                 <source src="/videos/movie.mp4" type="video/mp4" />
 
                                 Your browser does not support the video tag.

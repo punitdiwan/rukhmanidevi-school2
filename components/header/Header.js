@@ -7,9 +7,7 @@ import Socialicon from "./Socialicon";
 import ReactTooltip from "react-tooltip";
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
-
 function Header() {
-  
   function toggleMenu() {
     let nav = document.querySelector(".nav");
     let toggle = document.querySelector(".toggle");
@@ -29,14 +27,15 @@ function Header() {
     document.getElementById("navbar").style.float = "left";
   }
 
-  // const url = "https://cms.schoolscoop.co.in/myapp/items/config?fields=title,tagline,address,phone,email,mobile,logo.*";
-  // const { data, error } = useSWR(url, fetcher);
-  // if (error) {
-  //     return <div></div>
-  // }
-  // if (!data) {
-  //     return <div></div>
-  // }
+  const url =
+    "https://cms.schoolscoop.co.in/myapp/items/config?fields=title,tagline,address,phone,email,mobile,logo.*";
+  const { data, error } = useSWR(url, fetcher);
+  if (error) {
+    return <div></div>;
+  }
+  if (!data) {
+    return <div></div>;
+  }
   return (
     <div>
       <div className="header">
@@ -85,11 +84,9 @@ function Header() {
                     <div className="display_none">
                       <div className="d-flex text-light">
                         <Link href="#video">
-                          
-                            <p className="text-light">
-                              Virtual Tour for Rukhmani Devi School
-                            </p>
-                          
+                          <p className="text-light">
+                            Virtual Tour for Rukhmani Devi School
+                          </p>
                         </Link>
                         &ensp;|&ensp;
                         <Link href="#footer" className="text-light   ">
@@ -103,71 +100,66 @@ function Header() {
 
                       <div className=" col-lg-2 col-md-2 col-sm-2 col-2">
                         <Link href="https://indiancc.nic.in/" target="_blank">
-                          
-                            <img
-                              src="/images/hlogo1.png"
-                              alt="no_img"
-                              datatip="NCC INDIA"
-                              dataplace="bottom"
-                              style={{
-                                width: "42px",
-                                height: "42px",
-                                borderRadius: "50%",
-                              }}
-                            />
-                        
+                          <img
+                            src="/images/hlogo1.png"
+                            alt="no_img"
+                            datatip="NCC INDIA"
+                            dataplace="bottom"
+                            style={{
+                              width: "42px",
+                              height: "42px",
+                              borderRadius: "50%",
+                            }}
+                          />
                         </Link>
                       </div>
 
                       <div className=" col-lg-2 col-md-2 col-sm-2 col-2">
                         <Link href="https://npscindia.com/" target="_blank">
-                          
-                            <img
-                              src="/images/hlogo2.jpeg"
-                              alt="no_img"
-                              data-tip="NPSC INDIA"
-                              data-place="bottom"
-                              style={{
-                                width: "42px",
-                                height: "42px",
-                                borderRadius: "50%",
-                              }}
-                            />
-                          
+                          <img
+                            src="/images/hlogo2.jpeg"
+                            alt="no_img"
+                            data-tip="NPSC INDIA"
+                            data-place="bottom"
+                            style={{
+                              width: "42px",
+                              height: "42px",
+                              borderRadius: "50%",
+                            }}
+                          />
                         </Link>
                       </div>
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2">
-                        <Link  href="https://www.cbse.gov.in/" target="_blank">
-                          
-                            <img
-                              src="/images/hlogo3.jpeg"
-                              alt="no_img"
-                              datatip=" CBSC"
-                              dataplace="bottom"
-                              style={{
-                                width: "42px",
-                                height: "42px",
-                                borderRadius: "50%",
-                              }}
-                            />
-                          
+                        <Link href="https://www.cbse.gov.in/" target="_blank">
+                          <img
+                            src="/images/hlogo3.jpeg"
+                            alt="no_img"
+                            datatip=" CBSC"
+                            dataplace="bottom"
+                            style={{
+                              width: "42px",
+                              height: "42px",
+                              borderRadius: "50%",
+                            }}
+                          />
                         </Link>
                       </div>
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2">
-                        <Link   href="https://www.facebook.com/rukhmanidevischool/" target="_blank">
-                          
-                            <img
-                              src="/images/hfb.png"
-                              alt="no_img"
-                              datatip="FACEBOOK"
-                              dataplace="bottom"
-                              style={{
-                                width: "42px",
-                                height: "42px",
-                                borderRadius: "50%",
-                              }}
-                            />
-                        
+                        <Link
+                          href="https://www.facebook.com/rukhmanidevischool/"
+                          target="_blank"
+                        >
+                          <img
+                            src="/images/hfb.png"
+                            alt="no_img"
+                            datatip="FACEBOOK"
+                            dataplace="bottom"
+                            style={{
+                              width: "42px",
+                              height: "42px",
+                              borderRadius: "50%",
+                            }}
+                          />
                         </Link>
                       </div>
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2">
@@ -186,20 +178,21 @@ function Header() {
                         </Link>
                       </div>
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2">
-                        <Link  href="https://www.youtube.com/channel/UCIKlH_ibvWaviOlUTrFeQqg" target="_blank">
-                          
-                            <img
-                              src="/images/hutub.jpeg"
-                              alt="no_img"
-                              datatip="YOUTUBE"
-                              dataplace="bottom"
-                              style={{
-                                width: "42px",
-                                height: "42px",
-                                borderRadius: "50%",
-                              }}
-                            />
-                          
+                        <Link
+                          href="https://www.youtube.com/channel/UCIKlH_ibvWaviOlUTrFeQqg"
+                          target="_blank"
+                        >
+                          <img
+                            src="/images/hutub.jpeg"
+                            alt="no_img"
+                            datatip="YOUTUBE"
+                            dataplace="bottom"
+                            style={{
+                              width: "42px",
+                              height: "42px",
+                              borderRadius: "50%",
+                            }}
+                          />
                         </Link>
                       </div>
                     </div>
@@ -257,7 +250,7 @@ function Header() {
                     </button>
                     &ensp;|&ensp;
                   </li>
-                  <li>
+                  {/* <li>
                     <button className="dropdownbtn">
                       Branches <FontAwesomeIcon icon={faCaretDown} />
                       <div className="dropdownmenu">
@@ -273,7 +266,7 @@ function Header() {
                       </div>
                     </button>
                     &ensp;|&ensp;
-                  </li>
+                  </li> */}
 
                   <li>
                     <button className="dropdownbtn">

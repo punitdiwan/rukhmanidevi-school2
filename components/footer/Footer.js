@@ -107,7 +107,7 @@ function Footer({ data_header }) {
       mobileErr.mobilenumbershort = "Mobile number should be numeric";
       isValid = false;
     } else if (mobile.trim().length != 10) {
-      mobileErr.mobilenumbershort = "Mobile number should be in ten digit";
+      mobileErr.mobilenumbershort = "Mobile number should be of ten digit";
       isValid = false;
     }
     if (message === "") {
@@ -172,7 +172,7 @@ function Footer({ data_header }) {
             </div>
             <div className="col-sm-4">
               <div className="contactus">
-                <div id ="new-contact">
+                <div id="new-contact">
                   <h5>
                     <span>|&nbsp;</span>
                     <FontAwesomeIcon icon={faNetworkWired} />
@@ -181,7 +181,6 @@ function Footer({ data_header }) {
                   <ul>
                     <li>
                       <Link href="/">
-                        
                         <h6 className="new-p">
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FaHome />
                           &nbsp; Home
@@ -190,7 +189,6 @@ function Footer({ data_header }) {
                     </li>
                     <li>
                       <Link href="/Gallery">
-                        
                         <h6>
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FaRegImage />
                           &nbsp; Gallery
@@ -208,7 +206,6 @@ function Footer({ data_header }) {
                     <li>
                       <Link href="/AcademicFacilities">
                         <h6>
-                          
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                           <HiAcademicCap /> &nbsp;Academic Facilities
                         </h6>
@@ -217,7 +214,6 @@ function Footer({ data_header }) {
                     <li>
                       <Link href="/GamesSports">
                         <h6>
-                          
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                           <FaFutbol />
                           &nbsp; Games & Sports
@@ -227,7 +223,6 @@ function Footer({ data_header }) {
                     <li>
                       <Link href="/AdmissionProcess">
                         <h6>
-                          
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                           <HiAcademicCap />
                           &nbsp; Academic Process
@@ -398,7 +393,8 @@ function Footer({ data_header }) {
                   })}
                 </div>
                 <ReCAPTCHA
-                  sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                  sitekey="6LdpIEIkAAAAAF4ZBhCAM8jpg8kQf6gbCXsIwrGV"
+                  // 6LdpIEIkAAAAAF4ZBhCAM8jpg8kQf6gbCXsIwrGV 
                   onChange={onChange}
                   className="form-group"
                 />
