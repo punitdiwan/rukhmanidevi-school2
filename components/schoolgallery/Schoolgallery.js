@@ -68,7 +68,7 @@ const items = [
     <img
       src="/images/c8.jpg"
       onDragStart={handleDragStart}
-      className="yours-custom-class"
+      class="yours-custom-class"
       style={{ height: "12.5rem", width: "100%" }}
     />
   </div>,
@@ -76,7 +76,7 @@ const items = [
     <img
       src="/images/c9.jpg"
       onDragStart={handleDragStart}
-      className="yours-custom-class"
+      class="yours-custom-class"
       style={{ height: "12.5rem", width: "100%" }}
     />
   </div>,
@@ -84,7 +84,7 @@ const items = [
     <img
       src="/images/c10.jpg"
       onDragStart={handleDragStart}
-      className="yours-custom-class"
+      class="yours-custom-class"
       style={{ height: "12.5rem", width: "100%" }}
     />
   </div>,

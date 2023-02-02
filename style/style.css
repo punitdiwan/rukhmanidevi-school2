@@ -1086,6 +1086,13 @@ margin-top: 30px;
 
 .emailus {
   margin-top: 35px;
+  display: flex;
+  flex-direction:column;
+}
+.recaptcha{
+  width: 93%;
+  /* border: 2px solid red; */
+  padding-left: 1.4rem;
 }
 
 .emailus h5 {

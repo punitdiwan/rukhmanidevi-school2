@@ -6,9 +6,6 @@ import {
   faComment,
   faHeart,
 } from "@fortawesome/free-solid-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
-import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { useToasts } from "react-toast-notifications";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import useSWR from "swr";
@@ -392,6 +389,7 @@ function Footer({ data_header }) {
                     );
                   })}
                 </div>
+
                 <ReCAPTCHA
                   sitekey="6LcNK0IkAAAAAOjqYoggblFFfEScxADF_AL1DOvz"
                   onChange={onChange}

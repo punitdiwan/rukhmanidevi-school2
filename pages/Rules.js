@@ -26,7 +26,7 @@ function Rules() {
                         </span>&nbsp;&nbsp;&nbsp;
                     </div>
                     <div className="location_header">
-                        <h3>GENERAL RULES & REGULATIONS OF Rukhmani Devi Public School</h3>
+                        <h3>GENERAL RULES & REGULATIONS OF RUKHMANI DEVI PUBLIC SCHOOL</h3>
                     </div>
                     <div className="row">
                         <div className="col-sm-12">
