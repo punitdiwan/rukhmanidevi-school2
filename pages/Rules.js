@@ -26,13 +26,13 @@ function Rules() {
                         </span>&nbsp;&nbsp;&nbsp;
                     </div>
                     <div className="location_header">
-                        <h3>GENERAL RULES & REGULATIONS OF PINEGROVE SCHOOL</h3>
+                        <h3>GENERAL RULES & REGULATIONS OF Rukhmani Devi Public School</h3>
                     </div>
                     <div className="row">
                         <div className="col-sm-12">
 
                         <div class="col-md-12 py-3 pr-5 pl-5">
-                          <p>The Rules and Regulations of Pinegrove School have been framed to make the parents aware of what is expected of them and their children. It is imperative that all parents abide by a certain code of conduct in the best interest of their children and to facilitate the smooth functioning of the school.</p>
+                          <p>The Rules and Regulations of Rukhmani Devi Public School have been framed to make the parents aware of what is expected of them and their children. It is imperative that all parents abide by a certain code of conduct in the best interest of their children and to facilitate the smooth functioning of the school.</p>
                           
                             <h4><strong> ADMISSIONS</strong></h4>
                             <p>1. The School Management reserves the rights of admission.</p>
@@ -110,7 +110,7 @@ function Rules() {
                             <p>56. Parents/Guardians are advised to come to collect their children themselves at the start of vacations to enhance their interaction with staff members.</p>
                             <p>57. Whenever parents/guardians come to the school they must make it a point to visit the School Office.</p>
                             <p>58. Any change of address/telephone numbers must be informed in writing to the School Office at the earliest, keeping in view emergencies and other matters of significance and importance.</p>
-                            <p>59. The photographs and videos of the school children clicked inside the school or outside on school trips/camps/excursions/tournaments etc are copyright of the school and the school reserves the right to use them as it deems fit for its own promotion or use. Parents are advised to refrain from posting/sharing pictures/videos of Pinegrove School children on social media. If these pictures are misused technologically, in any manner whatsoever, the school will not be responsible for the same.</p>
+                            <p>59. The photographs and videos of the school children clicked inside the school or outside on school trips/camps/excursions/tournaments etc are copyright of the school and the school reserves the right to use them as it deems fit for its own promotion or use. Parents are advised to refrain from posting/sharing pictures/videos of Rukhmani Devi Public School children on social media. If these pictures are misused technologically, in any manner whatsoever, the school will not be responsible for the same.</p>
                             <p>60. In case of any dispute the jurisdiction shall be the District/Sessions Court of Solan District only.</p>
                             <p>61. The school's management reserves the right to change, amend, add or delete any of the above mentioned rules and regulations at any time without any prior notice.</p>
                             <p>62. Parents are requested not to communicate directly with teachers/matrons through telephone/email/social media or otherwise. Any communication through these routes is not permitted. Communication should be addressed to the School Office, the Head of School or the respective Head only.</p>
