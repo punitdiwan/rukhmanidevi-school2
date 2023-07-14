@@ -106,9 +106,9 @@ function Header() {
                             datatip="NCC INDIA"
                             dataplace="bottom"
                             style={{
-                              width: "42px",
-                              height: "42px",
-                              borderRadius: "50%",
+                              width: "52px",
+                              height: "52px",
+                              borderRadius: "60%",
                             }}
                           />
                         </Link>
