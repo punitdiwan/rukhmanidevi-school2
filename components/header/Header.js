@@ -27,9 +27,10 @@ function Header() {
     document.getElementById("navbar").style.float = "left";
   }
 
-  const url =
-    "https://cms.schoolscoop.co.in/myapp/items/config?fields=title,tagline,address,phone,email,mobile,logo.*";
-  const { data, error } = useSWR(url, fetcher);
+  const url ="https://cms.maitretech.com/myapp/items/config?fields=title,tagline,address,phone,email,mobile,logo.*";
+  
+    const { data, error } = useSWR(url, fetcher);
+
   if (error) {
     return <div></div>;
   }

@@ -3,7 +3,7 @@ import useSWR from 'swr';
 
 const fetcher = (...args) => fetch(...args).then(res => res.json());
 function Schoolaccreditation() {
-    const url = "https://cms.schoolscoop.co.in/myapp/items/acridation?fields=*.*.* ";
+    const url = "https://cms.maitretech.com/myapp/items/acridation?fields=*.*.* ";
     const { data, error } = useSWR(url, fetcher);
     if (error) {
         return <div>Error...</div>

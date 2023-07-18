@@ -4,7 +4,7 @@ const fetcher = (...args) => fetch(...args).then(res => res.json());
 
 
 function Socialicon() {
-    const url = "https://cms.schoolscoop.co.in/myapp/items/top_icons?fields=top_icons.directus_files_id.data.full_url";
+    const url = "https://cms.maitretech.com/myapp/items/top_icons?fields=top_icons.directus_files_id.data.full_url";
     const { data, error } = useSWR(url, fetcher);
     if (error) {
         return <div></div>
