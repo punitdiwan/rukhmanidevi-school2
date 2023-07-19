@@ -6,7 +6,7 @@ import Layout from '../components/layouts/Layout'
 
 const fetcher = (...args) => fetch(...args).then(res => res.json());
 function Faculty() {
-    const url = "https://cms.schoolscoop.co.in/myapp/items/faculty?status=published&fields=*.*";
+    const url = `${process.env.NEXT_PUBLIC_BASE_URL}/myapp/items/faculty?status=published&fields=*.*`;
     const { data, error } = useSWR(url, fetcher);
     if (error) {
         return <div>Error...</div>

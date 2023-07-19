@@ -145,16 +145,16 @@ const AcademicFacilities = () => {
               <h4 style={{ color: "#0063a6" }}>
                 <b>Affiliation:</b>
               </h4>
-              <p style={{ color: "#5b5b5b", fontSize: "17px" }}>
+              <h6 style={{ color: "#5b5b5b", fontSize: "17px" }}>
                 Both locations of the school are affiliated to the Central Board
                 of Secondary Education, Delhi (CBSE), and the Sr School is
                 affiliated till the senior secondary level (+2).
-              </p>
+              </h6>
               <br />
               <h4 style={{ color: "#0063a6" }}>
                 <b>ACourses of Study: </b>
               </h4>
-              <p style={{ color: "#5b5b5b", fontSize: "17px" }}>
+              <h6 style={{ color: "#5b5b5b", fontSize: "17px" }}>
                 Courses of study as laid down by the National Council of
                 Educational Research and Training (NCERT) and the syllabi framed
                 by the Central Board of Secondary Education (CBSE), of the
@@ -166,7 +166,7 @@ const AcademicFacilities = () => {
                 Social Science. SUPW (Hobbies and Work Experience), Music, Art
                 Education and Physical Education are compulsory. From Class III
                 to Class VIII a third language is also taught.
-              </p>
+              </h6>
             </div>
           </div>
           <div className="row">
@@ -182,7 +182,7 @@ const AcademicFacilities = () => {
               );
             })}
             <div className="col-sm-12">
-              <p style={{ color: "#5b5b5b", fontSize: "17px" }}>
+              <h6 style={{ color: "#5b5b5b", fontSize: "17px" }}>
                 Presently the school is offering Science (Medical and
                 Non-Medical) and Commerce stream with or without Computer
                 Education (Informatics Practices). Physical Education and
@@ -190,7 +190,7 @@ const AcademicFacilities = () => {
                 textbooks and stationery are provided free of cost. Any special
                 item like atlases, geometry boxes, pens, colours, dictionaries
                 etc are charged to the child''s personal account.
-              </p>
+              </h6>
 
               <h4 style={{ color: "#0063a6" }}>
                 <b> Classrooms and Teacher-Student ratio:</b>
@@ -208,7 +208,7 @@ const AcademicFacilities = () => {
                   );
                 })}
                 <div>
-                  <p style={{ color: "#5b5b5b", fontSize: "17px" }}>
+                  <h6 style={{ color: "#5b5b5b", fontSize: "17px" }}>
                     The classrooms are very modern, large and airy with proper
                     lighting and provide the most conducive atmosphere for
                     learning. All secondary classes in Rukhmani Devi are
@@ -227,7 +227,7 @@ const AcademicFacilities = () => {
                     the highest levels of academic excellence the school
                     maintains a class-section average strength of just 25 pupils
                     in junior classes and 30 pupils in senior classes.
-                  </p>
+                  </h6>
 
                   {/* <p>
                     <b>The teacher-student ratio is a fantastic 1:12. </b>
@@ -275,7 +275,7 @@ const AcademicFacilities = () => {
                     <h4 style={{ color: "#0063a6" }}>
                       <b>Library:</b>
                     </h4>
-                    <p style={{ color: "#5b5b5b", fontSize: "17px" }}>
+                    <h6 style={{ color: "#5b5b5b", fontSize: "17px" }}>
                       The classrooms are very modern, large and airy with proper
                       lighting and provide the most conducive atmosphere for
                       learning. All secondary classes in Rukhmani Devi are
@@ -295,7 +295,7 @@ const AcademicFacilities = () => {
                       school maintains a class-section average strength of just
                       25 pupils in junior classes and 30 pupils in senior
                       classes.
-                    </p>
+                    </h6>
 
                     <div className="row">
                       {slides1.map((item, i) => {
@@ -329,7 +329,7 @@ const AcademicFacilities = () => {
                         );
                       })}
                       <div className="col-sm-12">
-                        <p style={{ color: "#5b5b5b", fontSize: "17px" }}>
+                        <h6 style={{ color: "#5b5b5b", fontSize: "17px" }}>
                           Modern and well-equipped science laboratories are
                           available in both schools.The Labs have the requisite
                           essential equipment for conducting practicals for the
@@ -341,12 +341,12 @@ const AcademicFacilities = () => {
                           themselves have preserved a large variety of specimens
                           in the laboratories and take keen interest in making
                           science projects.
-                        </p>
+                        </h6>
 
                         <h4 style={{ color: "#0063a6" }}>
                           <b>Evaluation System:</b>
                         </h4>
-                        <p style={{ color: "#5b5b5b", fontSize: "17px" }}>
+                        <h6 style={{ color: "#5b5b5b", fontSize: "17px" }}>
                           Over the last few years there has been a countrywide
                           debate amongst pedagogues, parents, teachers and
                           members of various educational boards regarding a
@@ -357,12 +357,12 @@ const AcademicFacilities = () => {
                           CBSE has introduced the CCE (Continuous and
                           Comprehensive Evaluation) and introduced CGPA and
                           Grading System in schools.
-                        </p>
+                        </h6>
 
                         <h4 style={{ color: "#0063a6" }}>
                           <b>Tests and Examinations:</b>
                         </h4>
-                        <p style={{ color: "#5b5b5b", fontSize: "17px" }}>
+                        <h6 style={{ color: "#5b5b5b", fontSize: "17px" }}>
                           Over the last few years there has been a countrywide
                           debate amongst pedagogues, parents, teachers and
                           members of various educational boards regarding a
@@ -373,7 +373,7 @@ const AcademicFacilities = () => {
                           CBSE has introduced the CCE (Continuous and
                           Comprehensive Evaluation) and introduced CGPA and
                           Grading System in schools.
-                        </p>
+                        </h6>
 
                         <h4 style={{ color: "#0063a6" }}>
                           <b>Stars:</b>
@@ -393,7 +393,7 @@ const AcademicFacilities = () => {
                           })} */}
 
                           <div className="col-sm-12">
-                            <p style={{ color: "#5b5b5b", fontSize: "17px" }}>
+                            <h6 style={{ color: "#5b5b5b", fontSize: "17px" }}>
                               Over the last few years there has been a
                               countrywide debate amongst pedagogues, parents,
                               teachers and members of various educational boards
@@ -404,12 +404,12 @@ const AcademicFacilities = () => {
                               the public at large, the CBSE has introduced the
                               CCE (Continuous and Comprehensive Evaluation) and
                               introduced CGPA and Grading System in schools.
-                            </p>
+                            </h6>
 
                             <h4 style={{ color: "#0063a6" }}>
                               <b>Diamond Star:</b>
                             </h4>
-                            <p style={{ color: "#5b5b5b", fontSize: "17px" }}>
+                            <h6 style={{ color: "#5b5b5b", fontSize: "17px" }}>
                               Over the last few years there has been a
                               countrywide debate amongst pedagogues, parents,
                               teachers and members of various educational boards
@@ -420,12 +420,12 @@ const AcademicFacilities = () => {
                               the public at large, the CBSE has introduced the
                               CCE (Continuous and Comprehensive Evaluation) and
                               introduced CGPA and Grading System in schools.
-                            </p>
+                            </h6>
 
                             <h4 style={{ color: "#0063a6" }}>
                               <b>Parent-Teacher Meetings:</b>
                             </h4>
-                            <p style={{ color: "#5b5b5b", fontSize: "17px" }}>
+                            <h6 style={{ color: "#5b5b5b", fontSize: "17px" }}>
                               Over the last few years there has been a
                               countrywide debate amongst pedagogues, parents,
                               teachers and members of various educational boards
@@ -436,12 +436,12 @@ const AcademicFacilities = () => {
                               the public at large, the CBSE has introduced the
                               CCE (Continuous and Comprehensive Evaluation) and
                               introduced CGPA and Grading System in schools.
-                            </p>
+                            </h6>
 
                             <h4 style={{ color: "#0063a6" }}>
                               <b>Tuitions:</b>
                             </h4>
-                            <p style={{ color: "#5b5b5b", fontSize: "17px" }}>
+                            <h6 style={{ color: "#5b5b5b", fontSize: "17px" }}>
                               Over the last few years there has been a
                               countrywide debate amongst pedagogues, parents,
                               teachers and members of various educational boards
@@ -452,11 +452,10 @@ const AcademicFacilities = () => {
                               the public at large, the CBSE has introduced the
                               CCE (Continuous and Comprehensive Evaluation) and
                               introduced CGPA and Grading System in schools.
-                            </p>
+                            </h6>
                           </div>
                         </div>
                       </div>
-                      <div></div>
                     </div>
                   </div>
                 </div>

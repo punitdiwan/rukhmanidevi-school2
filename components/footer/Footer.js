@@ -156,6 +156,7 @@ function Footer({ data_header }) {
                     </span>
                   </div>
                 </div>
+                <div>
                 <p style={{ lineHeight: "2rem" }}>
                   Rukhmani Devi School, established in 2007, is a
                   Co-educational, Day Boarding English medium public school
@@ -165,6 +166,7 @@ function Footer({ data_header }) {
                   ISO 9001:2008 (BSI) and is a member of the prestigious Indian
                   Public Schools` Conference (IPSC).
                 </p>
+                </div>
               </div>
             </div>
             <div className="col-sm-4">

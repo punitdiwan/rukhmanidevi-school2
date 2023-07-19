@@ -1,4 +1,3 @@
-import Head from "next/head";
 import "bootstrap/dist/css/bootstrap.css";
 import Layout from "../components/layouts/Layout";
 import About from "../components/aboutinfo/About";
@@ -8,7 +7,7 @@ import Trust from "../components/trust/Trust";
 import Carouselswr from "../components/carousel/Carouselswr";
 import Schoolgallery from "../components/schoolgallery/Schoolgallery";
 import LocateUs from "../pages/LocateUs";
-import Column from "../components/Column";
+
 
 export default function Home({
   data_header,

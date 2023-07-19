@@ -98,35 +98,36 @@ const slides = [
   { title: " /images/12.jpg  ", description: "View Gallery" },
   { title: "/images/14.jpg   ", description: "View Gallery" },
 ];
-const Schoolgallery = ({ gallery_data }) => {
-  const options = {
-    responsiveClass: true,
-    dots: false,
-    smartSpeed: 1000,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      400: {
-        items: 1,
-      },
-      600: {
-        items: 1,
-      },
-      700: {
-        items: 1,
-      },
-      1000: {
-        items: 5,
-      },
+const Schoolgallery = ({ }) => {
+  
+  const responsive = {
+    0: {
+      items: 1,
     },
-  };
+    400: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    700: {
+      items: 1,
+    },
+    1000: {
+      items: 5,
+    },
+
+
+};
+
+
+
   return (
     <div className="py-4 schoolgallery ">
       <h3 className="text-center">
         <b> Rukhmani Devi School Gallery </b>
       </h3>
-      <AliceCarousel
+      {/* <AliceCarousel
         mouseTracking
         items={
           gallery_data?.data?.length > 0
@@ -154,6 +155,13 @@ const Schoolgallery = ({ gallery_data }) => {
               })
         }
         {...options}
+      /> */}
+      <AliceCarousel
+       
+       items={items}
+       controlsStrategy="alternate"
+       responsive={responsive}
+       
       />
 
       <div className="mt-3 text-center ">

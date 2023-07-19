@@ -14,7 +14,7 @@ const Carouselswr = ({ slider_data }) => {
       <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
         {slider_data?.data?.map((item, index) => {
           return (
-            <div className="carousel-inner" role="listbox">
+            <div className="carousel-inner" role="listbox" key={index}> 
               <div className="carousel items1" key={index} role="listbox">
                 <img
                   src={item?.image?.data?.full_url}
