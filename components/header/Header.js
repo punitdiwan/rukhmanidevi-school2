@@ -26,8 +26,9 @@ function Header() {
 
     document.getElementById("navbar").style.float = "left";
   }
-
-  const url ="https://cms.maitretech.com/myapp/items/config?fields=title,tagline,address,phone,email,mobile,logo.*";
+ 
+  const url =`${process.env.NEXT_PUBLIC_BASE_URL}/myapp/items/config?fields=title,tagline,address,phone,email,mobile,logo.*`;
+  
   
     const { data, error } = useSWR(url, fetcher);
 
