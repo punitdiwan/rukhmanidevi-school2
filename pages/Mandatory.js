@@ -140,6 +140,11 @@ const Mandatory = ({ data_header }) => {
                                             <td>COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES</td>
                                             <td><a href="assets/pdf/SBT-B8-COPIES-OF-VALID-WATER-HEALTH-AND-SANITATION-CERTIFICATES.pdf" target="_blank">View</a></td>
                                         </tr>
+                                         <tr>
+                                            <td>9</td>
+                                            <td>SECTION INCREASING DOCUMENTS</td>
+                                            <td><a href="section.pdf" target="_blank">View</a></td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
