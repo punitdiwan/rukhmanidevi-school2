@@ -100,10 +100,16 @@ const Mandatory = ({ data_header }) => {
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        {/* <tr>
                                             <td>1</td>
                                             <td>COPIES OF AFFILIATION/UPGRADATION LETTER AND RECENT EXTENSION OF AFFILIATION, IF ANY</td>
-                                            <td><a href="assets/pdf/SBT-B1- COPIES-OF-AFFILIATIONUPGRADATION-LETTER-AND-RECENT-EXTENSION-OF-AFFILIATION.pdf" target="_blank">View</a></td>
+                                            <td><a href="CBSE AFFLIATION  GRANT LETTER.pdf" target="_blank">View</a></td>
+                                        </tr> */}
+
+<tr>
+                                            <td>1</td>
+                                            <td>COPIES OF AFFILIATION/UPGRADATION LETTER AND RECENT EXTENSION OF AFFILIATION, IF ANY</td>
+                                            <td><a href="Epf registration.pdf" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
@@ -113,7 +119,7 @@ const Mandatory = ({ data_header }) => {
                                         <tr>
                                             <td>3</td>
                                             <td>COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT./UT</td>
-                                            <td><a href="https://rukhmanidevi.maitretech.com/DPI -  NOC Certificate.pdf" target="_blank">View</a></td>
+                                            <td><a href="DPI -  NOC Certificate.pdf" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
@@ -133,17 +139,32 @@ const Mandatory = ({ data_header }) => {
                                         <tr>
                                             <td>7</td>
                                             <td>COPY OF THE DEO CERTIFICATE SUBMITTED BY THE SCHOOL FOR AFFILIATION/UPGRADATION/EXTENSION OF AFFILIATIONOR SELF CERTIFICATION BY SCHOOL</td>
-                                            <td><a href="assets/pdf/SBT-B7-COPY-OF-THE-DEO-CERTIFICATE-SUBMITTED-By- THE-SCHOOL-FOR-AFFILIATION.pdf" target="_blank">View</a></td>
+                                            <td><a href="New Document(3).pdf" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
                                             <td>8</td>
                                             <td>COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES</td>
-                                            <td><a href="Water and sanitary certificate.pdf" target="_blank">View</a></td>
+                                            <td><a href="Water and sanitary certificate.pdf" target="_blank">View</a> <a href="water testing laboratoary report.pdf" target="_blank">View</a></td>
                                         </tr>
-                                         <tr>
+                                        <tr>
                                             <td>9</td>
                                             <td>SECTION INCREASING DOCUMENTS</td>
                                             <td><a href="section.pdf" target="_blank">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>LAND CERTIFICATE</td>
+                                            <td><a href="land certificate copy.pdf" target="_blank">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>REGISTRATION PAGE</td>
+                                            <td><a href="registration page.pdf" target="_blank">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>SAMITI PANJIYAN PRAMAAN PATRA</td>
+                                            <td><a href="samiti panjiyan pramaan patra.pdf" target="_blank">View</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -167,7 +188,7 @@ const Mandatory = ({ data_header }) => {
                                         <tr>
                                             <td>1</td>
                                             <td>FEE STRUCTURE OF THE SCHOOL</td>
-                                            <td><a href="#" target="_blank">View</a></td>
+                                            <td><a href="fee structure.pdf" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
@@ -177,15 +198,20 @@ const Mandatory = ({ data_header }) => {
                                         <tr>
                                             <td>3</td>
                                             <td>LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)</td>
-                                            <td><a href="smc.aspx" target="_blank">View</a></td>
+                                            <td><a href="managing comity member list 2019-20.pdf" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
+                                            <td>STAFF LIST</td>
+                                            <td><a href="staff list 2019-20.pdf" target="_blank">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
                                             <td>LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS</td>
                                             <td></td>
                                         </tr>
                                         <tr>
-                                            <td>5</td>
+                                            <td>6</td>
                                             <td>LAST THREE-YEAR RESULT OF THE BOARD EXAMINATION AS PER APPLICABLILITY</td>
                                             <td></td>
                                         </tr>
