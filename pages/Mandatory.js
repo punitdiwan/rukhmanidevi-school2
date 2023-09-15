@@ -123,12 +123,12 @@ const Mandatory = ({ data_header }) => {
                                         <tr>
                                             <td>5</td>
                                             <td>COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE</td>
-                                            <td><a href="assets/pdf/SBT-B5-COPY-OF-VALID-BUILDING-SAFETY-CERTIFICATEAS-PER-THE-NATIONAL-BUILDING-CODE.pdf" target="_blank">View</a></td>
+                                            <td><a href="building safety certificate.pdf" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
                                             <td>6</td>
                                             <td>COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY</td>
-                                            <td><a href="assets/pdf/SBT-B6-COPY-OF-VALID-FIRE-SAFETY-CERTIFICATE-ISSUED-BY-THE-COMPETENT-AUTHORITY.pdf" target="_blank">View</a></td>
+                                            <td><a href="fire. certificate.pdf" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
                                             <td>7</td>
@@ -138,7 +138,7 @@ const Mandatory = ({ data_header }) => {
                                         <tr>
                                             <td>8</td>
                                             <td>COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES</td>
-                                            <td><a href="assets/pdf/SBT-B8-COPIES-OF-VALID-WATER-HEALTH-AND-SANITATION-CERTIFICATES.pdf" target="_blank">View</a></td>
+                                            <td><a href="Water and sanitary certificate.pdf" target="_blank">View</a></td>
                                         </tr>
                                          <tr>
                                             <td>9</td>
