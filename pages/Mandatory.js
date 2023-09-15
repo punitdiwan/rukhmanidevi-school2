@@ -114,17 +114,17 @@ const Mandatory = ({ data_header }) => {
                                         <tr>
                                             <td>2</td>
                                             <td>COPIES OF SOCIETIES/TRUST/COMPANY REGISTRATION/RENEWAL CERTIFICATE, AS APPLICABLE</td>
-                                            <td><a href="https://rukhmanidevi.maitretech.com/Society Ragistration.pdf" target="_blank">View</a></td>
+                                            <td>View</td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
                                             <td>COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT./UT</td>
-                                            <td><a href="DPI -  NOC Certificate.pdf" target="_blank">View</a></td>
+                                            <td>View</td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
                                             <td>COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT, 2009, AND IT’S RENEWAL IF APPLICABLE</td>
-                                            <td><a href="assets/pdf/SBT-B4-COPIES-OF-RECOGNITION-CERTIFICATE-UNDERRTE-ACT-2009.pdf" target="_blank">View</a></td>
+                                            <td>View</td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
