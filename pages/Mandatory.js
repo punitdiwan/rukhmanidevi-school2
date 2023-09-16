@@ -298,7 +298,8 @@ const Mandatory = ({ data_header }) => {
                                             <td> 90.0 </td>
                                             <td>  </td>
                                         </tr>
-                                        <tr><td> 2 </td>
+                                        <tr>
+                                            <td> 2 </td>
                                             <td> 2019 </td>
                                             <td> 73 </td>
                                             <td> 72 </td>
@@ -335,21 +336,21 @@ const Mandatory = ({ data_header }) => {
                                         <tr>
                                             <td> 1 </td>
                                             <td> PRINCIPAL </td>
-                                            <td>  </td>
+                                            <td> HARMEET SINGH </td>
 
                                         </tr>
                                         <tr>
                                             <td rowspan="3">2</td>
                                             <td>PGT</td>
-                                            <td> </td>
+                                            <td> 8</td>
                                         </tr>
                                         <tr>
                                             <td>TGT</td>
-                                            <td> </td>
+                                            <td> 8</td>
                                         </tr>
                                         <tr>
                                             <td>PRT</td>
-                                            <td> </td>
+                                            <td>12 </td>
                                         </tr>
 
                                         <tr>
@@ -365,11 +366,11 @@ const Mandatory = ({ data_header }) => {
                                         <tr>
                                             <td>5</td>
                                             <td>TEACHERS SECTION RATIO</td>
-                                            <td>1:10</td>
+                                            <td>1</td>
                                         </tr>
                                         <tr><td> 6 </td>
                                             <td> TOTAL NO. OF TEACHERS </td>
-                                            <td> 53 </td>
+                                            <td> 28 </td>
 
                                         </tr>
 
