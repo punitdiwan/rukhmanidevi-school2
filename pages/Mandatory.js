@@ -109,22 +109,22 @@ const Mandatory = ({ data_header }) => {
 <tr>
                                             <td>1</td>
                                             <td>COPIES OF AFFILIATION/UPGRADATION LETTER AND RECENT EXTENSION OF AFFILIATION, IF ANY</td>
-                                            <td><a href="Epf registration.pdf" target="_blank">View</a></td>
+                                            <td><a href="1)COPIES OF AFFLIATION-UPGRADATION LETTER AND RECENT EXTENSION-20230916103538.pdf" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
                                             <td>COPIES OF SOCIETIES/TRUST/COMPANY REGISTRATION/RENEWAL CERTIFICATE, AS APPLICABLE</td>
-                                            <td>View</td>
+                                            <td><a href="2)COPIES OF SOCIETIES-TRUST-COMPANY-20230916104441.pdf" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
                                             <td>COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT./UT</td>
-                                            <td>View</td>
+                                            <td><a href="3) COPIES OF NO OBJECTION (NOC).pdf" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
                                             <td>COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT, 2009, AND IT’S RENEWAL IF APPLICABLE</td>
-                                            <td>View</td>
+                                            <td><a href="4)COPIES OF SCHOOL RECOGNITION CERTIFICATE.pdf">View</a></td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
@@ -205,13 +205,20 @@ const Mandatory = ({ data_header }) => {
                                             <td>STAFF LIST</td>
                                             <td><a href="staff list 2019-20.pdf" target="_blank">View</a></td>
                                         </tr>
+
                                         <tr>
                                             <td>5</td>
+                                            <td>STAFF DETAILS</td>
+                                            <td><a href="D)STAFF DETAIL.pdf" target="_blank">View</a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>6</td>
                                             <td>LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS</td>
                                             <td></td>
                                         </tr>
                                         <tr>
-                                            <td>6</td>
+                                            <td>7</td>
                                             <td>LAST THREE-YEAR RESULT OF THE BOARD EXAMINATION AS PER APPLICABLILITY</td>
                                             <td></td>
                                         </tr>
