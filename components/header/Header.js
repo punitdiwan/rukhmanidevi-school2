@@ -66,7 +66,7 @@ function Header() {
                                 fontFamily: "curveFont",
                               }}
                             >
-                              Rukhmani Devi Public School
+                              RUKHMANI DEVI PUBLIC SCHOOL
                             </span>
                             <br />
                             <span
