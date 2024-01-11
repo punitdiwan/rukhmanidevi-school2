@@ -64,6 +64,8 @@ function Header() {
                             <span
                               style={{
                                 fontFamily: "curveFont",
+                                fontSize:35,
+                                fontWeight:"bold"
                               }}
                             >
                               RUKHMANI DEVI PUBLIC SCHOOL
