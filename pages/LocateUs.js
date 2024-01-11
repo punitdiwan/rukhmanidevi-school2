@@ -31,7 +31,7 @@ export const LocateUs = () => {
                 Rukhmani Devi Public School, BHOPAL- NARSINGHGARH ROAD,
                 JHARKHEDA, Sehore, Madhya Pradesh 466661
                 <b> Contact us :</b>{" "}
-                <p style={{ color: "#4B4747" }}>
+                <p style={{ color: "#4B4747",fontWeight:"bold" }}>
                   9993392708 , 7089202000 , 8878954637{" "}
                 </p>
               </p>
@@ -71,7 +71,7 @@ export const LocateUs = () => {
                 Rukhmani Devi Public School, CTO Rd,Singarcholi, Data Colony,
                 Lalghati, Bhopal, Madhya Pradesh 462030
                 <b> Contact us :</b>{" "}
-                <p style={{ color: "#4B4747" }}>
+                <p style={{ color: "#4B4747",fontWeight:"bold" }}>
                   9926188840 , 8109048886
                 </p>
               </p>
@@ -114,7 +114,7 @@ export const LocateUs = () => {
                 Rukhmani Devi Public School      Aakriti Ecocity,      Salaiya, Bhopal,
                             Madhya Pradesh 462026
                 <p><b> Contact us :</b> </p>
-                <p style={{ color: "#4B4747"  ,marginTop:-17}}>
+                <p style={{ color: "#4B4747",fontWeight:"bold"  ,marginTop:-17}}>
                 7489311048
                 </p>
               </p>
