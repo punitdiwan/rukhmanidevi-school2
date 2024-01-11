@@ -61,15 +61,17 @@ function Header() {
                             className="school_title"
                             style={{ lineHeight: "22px" }}
                           >
-                            <span
+                            <div
                               style={{
-                                fontFamily: "curveFont",
+                                
                                 fontSize:35,
-                                fontWeight:"bold"
+                                fontWeight:"bold",
+                                color:"white"
                               }}
                             >
-                              RUKHMANI DEVI PUBLIC SCHOOL
-                            </span>
+                              {/* RUKHMANI D PUBLIC SCHOOL */}
+                              <span style={{fontFamily:"sans-serif"}}>R</span><span style={{fontSize:35,fontFamily:"sans-serif"}}>UKHMANI</span> <span style={{fontFamily:"sans-serif"}}>D</span><span style={{fontSize:35,fontFamily:"sans-serif"}}>EVI</span> <span style={{fontFamily:"sans-serif"}}>P</span><span style={{fontSize:35,fontFamily:"sans-serif"}}>UBLIC</span> <span style={{fontFamily:"sans-serif"}}>S</span><span style={{fontSize:35,fontFamily:"sans-serif"}}>CHOOL</span>
+                            </div>
                             <br />
                             <span
                               className="place pl-1"
