@@ -59,7 +59,7 @@ function Header() {
                         <div className="logocontent">
                           <div
                             className="school_title"
-                            style={{ lineHeight: "20px" }}
+                            style={{ lineHeight: "22px" }}
                           >
                             <span
                               style={{
