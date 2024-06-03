@@ -188,37 +188,42 @@ const Mandatory = ({ data_header }) => {
                                         <tr>
                                             <td>1</td>
                                             <td>FEE STRUCTURE OF THE SCHOOL</td>
-                                            <td><a href="fee structure.pdf" target="_blank">View</a></td>
+                                            <td><a href="RDPS FEE STRUCTURE 2024-25.pdf" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
+                                            <td>BOOK LIST</td>
+                                            <td><a href="Book list 2024-25 from class nursery To 12th.pdf" target="_blank">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
                                             <td>ANNUAL ACADEMIC CALANDER.</td>
                                             <td><a href="Event.htm" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
-                                            <td>3</td>
+                                            <td>4</td>
                                             <td>LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)</td>
                                             <td><a href="managing comity member list 2019-20.pdf" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
-                                            <td>4</td>
+                                            <td>5</td>
                                             <td>STAFF LIST</td>
                                             <td><a href="staff list 2019-20.pdf" target="_blank">View</a></td>
                                         </tr>
 
                                         <tr>
-                                            <td>5</td>
+                                            <td>6</td>
                                             <td>STAFF DETAILS</td>
                                             <td><a href="D)STAFF DETAIL.pdf" target="_blank">View</a></td>
                                         </tr>
 
                                         <tr>
-                                            <td>6</td>
+                                            <td>7</td>
                                             <td>LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS</td>
                                             <td></td>
                                         </tr>
                                         <tr>
-                                            <td>7</td>
+                                            <td>8</td>
                                             <td>LAST THREE-YEAR RESULT OF THE BOARD EXAMINATION AS PER APPLICABLILITY</td>
                                             <td></td>
                                         </tr>
