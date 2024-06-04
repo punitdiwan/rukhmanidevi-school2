@@ -134,7 +134,7 @@ const Mandatory = ({ data_header }) => {
                                         <tr>
                                             <td>6</td>
                                             <td>COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY</td>
-                                            <td><a href="fire. certificate.pdf" target="_blank">View</a></td>
+                                            <td><a href="FIRE SAFETY CERTIFICATE (1).pdf" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
                                             <td>7</td>
