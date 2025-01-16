@@ -26,11 +26,11 @@ function Header() {
 
     document.getElementById("navbar").style.float = "left";
   }
- 
-  const url =`${process.env.NEXT_PUBLIC_BASE_URL}/myapp/items/config?fields=title,tagline,address,phone,email,mobile,logo.*`;
-  
-  
-    const { data, error } = useSWR(url, fetcher);
+
+  const url = `${process.env.NEXT_PUBLIC_BASE_URL}/myapp/items/config?fields=title,tagline,address,phone,email,mobile,logo.*`;
+
+
+  const { data, error } = useSWR(url, fetcher);
 
   if (error) {
     return <div></div>;
@@ -63,14 +63,14 @@ function Header() {
                           >
                             <div
                               style={{
-                                
-                                fontSize:35,
-                                fontWeight:"bold",
-                                color:"white"
+
+                                fontSize: 35,
+                                fontWeight: "bold",
+                                color: "white"
                               }}
                             >
                               {/* RUKHMANI D PUBLIC SCHOOL */}
-                              <span style={{fontFamily:"sans-serif"}}>R</span><span style={{fontSize:35,fontFamily:"sans-serif"}}>UKHMANI</span> <span style={{fontFamily:"sans-serif"}}>D</span><span style={{fontSize:35,fontFamily:"sans-serif"}}>EVI</span> <span style={{fontFamily:"sans-serif"}}>P</span><span style={{fontSize:35,fontFamily:"sans-serif"}}>UBLIC</span> <span style={{fontFamily:"sans-serif"}}>S</span><span style={{fontSize:35,fontFamily:"sans-serif"}}>CHOOL</span>
+                              <span style={{ fontFamily: "sans-serif" }}>R</span><span style={{ fontSize: 35, fontFamily: "sans-serif" }}>UKHMANI</span> <span style={{ fontFamily: "sans-serif" }}>D</span><span style={{ fontSize: 35, fontFamily: "sans-serif" }}>EVI</span> <span style={{ fontFamily: "sans-serif" }}>P</span><span style={{ fontSize: 35, fontFamily: "sans-serif" }}>UBLIC</span> <span style={{ fontFamily: "sans-serif" }}>S</span><span style={{ fontSize: 35, fontFamily: "sans-serif" }}>CHOOL</span>
                             </div>
                             <br />
                             <span
@@ -266,9 +266,9 @@ function Header() {
                         <li>
                           <Link href="/Branch2">Airport Road </Link>
                         </li>
-                        <li>
+                        { /*  <li>
                           <Link href="/Branch3">Aakriti Ecocity</Link>
-                        </li>
+                        </li> */}
                       </div>
                     </button>
                     &ensp;|&ensp;

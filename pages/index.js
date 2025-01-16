@@ -7,6 +7,7 @@ import Trust from "../components/trust/Trust";
 import Carouselswr from "../components/carousel/Carouselswr";
 import Schoolgallery from "../components/schoolgallery/Schoolgallery";
 import LocateUs from "../pages/LocateUs";
+import AdmissionBanner from "./AdmissionBanner";
 
 
 export default function Home({
@@ -23,6 +24,8 @@ export default function Home({
         as="font"
         crossOrigin=""
       />
+      <AdmissionBanner />
+
       <Layout data_header={data_header}>
         <Carouselswr slider_data={slider_data} />
         <About about_data={about_data} />

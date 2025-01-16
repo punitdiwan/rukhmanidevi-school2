@@ -31,7 +31,7 @@ export const LocateUs = () => {
                 Rukhmani Devi Public School, BHOPAL- NARSINGHGARH ROAD,
                 JHARKHEDA, Sehore, Madhya Pradesh 466661
                 <b> Contact us :</b>{" "}
-                <p style={{ color: "#4B4747",fontWeight:"bold" }}>
+                <p style={{ color: "#4B4747", fontWeight: "bold" }}>
                   9993392708 , 7089202000 , 8878954637{" "}
                 </p>
               </p>
@@ -71,7 +71,7 @@ export const LocateUs = () => {
                 Rukhmani Devi Public School, CTO Rd,Singarcholi, Data Colony,
                 Lalghati, Bhopal, Madhya Pradesh 462030
                 <b> Contact us :</b>{" "}
-                <p style={{ color: "#4B4747",fontWeight:"bold" }}>
+                <p style={{ color: "#4B4747", fontWeight: "bold" }}>
                   9926188840 , 8109048886
                 </p>
               </p>
@@ -92,7 +92,7 @@ export const LocateUs = () => {
           {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58638.59860336714!2d77.29036829850183!3d23.28263205720051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c6708dd535d83%3A0x47957df2e725f7f6!2sBairagarh%2C%20Bhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1675170063617!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
         </div>
 
-        <div id="new-add1">
+        {  /* <div id="new-add1">
           <div className="new-add2">
             <h2>Aakriti Ecocity</h2>
             <div className="new-add-1">
@@ -135,7 +135,7 @@ export const LocateUs = () => {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
-        </div>
+        </div>  */}
       </div>
     </div>
   );
