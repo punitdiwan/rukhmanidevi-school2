@@ -1,10 +1,10 @@
 import Layout from '../components/layouts/Layout'
-import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import useSWR from 'swr';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const fetcher = (...args) => fetch(...args).then(res => res.json()); 
+const fetcher = (...args) => fetch(...args).then(res => res.json());
 const TransferCertificate = () => {
     const [allData, setAllData] = useState([]);
     const [filteredData, setFilteredData] = useState(allData);
@@ -15,7 +15,7 @@ const TransferCertificate = () => {
         // axios('https://cms.schoolscoop.co.in/myapp/items/transfer_certificate?fields=*.*.*')
         axios(`${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/transfer_certificate?fields=*.*.*`)
             .then(response => {
-                
+
                 setAllData(response?.data?.data);
                 setFilteredData(response?.data?.data);
             })
@@ -26,7 +26,7 @@ const TransferCertificate = () => {
         sethide("none")
     }, []);
 
-     
+
 
     const filteredData1 = [
         {
@@ -76,7 +76,7 @@ const TransferCertificate = () => {
                                 <th className="r3">Admission No</th>
                                 <th className="r3">Downloads</th>
                             </tr>
-                            {filteredData.length> 0 ? (<>
+                            {filteredData.length > 0 ? (<>
                                 {filteredData?.map((ei, i) =>
 
                                 (
@@ -103,7 +103,7 @@ const TransferCertificate = () => {
                                 //     </tr>
                                 // )
                                 // )
- 
+
                                 <td colSpan='4'>
                                     <div id="my_box">
                                         <p>No Data Found!!</p>
