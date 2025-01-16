@@ -1,7 +1,8 @@
 import React from 'react'
-import { Link } from '@material-ui/core';
+// import { Link } from '@material-ui/core';
 import Layout from '../components/layouts/Layout'
 import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
+import Link from 'next/link'
 
 const Boarding = () => {
 

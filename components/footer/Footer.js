@@ -6,7 +6,7 @@ import {
   faComment,
   faHeart,
 } from "@fortawesome/free-solid-svg-icons";
-import { useToasts } from "react-toast-notifications";
+// import { useToasts } from "react-toast-notifications";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import useSWR from "swr";
 import {
@@ -31,7 +31,7 @@ function Footer({ data_header }) {
 
   const [disable, setDisable] = useState(false);
 
-  const { addToast } = useToasts();
+  // const { addToast } = useToasts();
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -67,10 +67,8 @@ function Footer({ data_header }) {
           }
         })
         .then((json) =>
-          addToast("form submitted Sucessfully", {
-            appearance: "success",
-            autoDismiss: true,
-          })
+          console.log(json)
+
         )
         .catch((err) => console.log(err));
     }
@@ -157,15 +155,15 @@ function Footer({ data_header }) {
                   </div>
                 </div>
                 <div>
-                <p style={{ lineHeight: "2rem" }}>
-                  Rukhmani Devi School, established in 2007, is a
-                  Co-educational, Day Boarding English medium public school
-                  affiliated to the Central Board of Secondary Education (CBSE),
-                  Delhi, up to 10th and 12th Grades. Rukhmani Devi Public School
-                  is a Regional Member of the Round Square, is accredited with
-                  ISO 9001:2008 (BSI) and is a member of the prestigious Indian
-                  Public Schools` Conference (IPSC).
-                </p>
+                  <p style={{ lineHeight: "2rem" }}>
+                    Rukhmani Devi School, established in 2007, is a
+                    Co-educational, Day Boarding English medium public school
+                    affiliated to the Central Board of Secondary Education (CBSE),
+                    Delhi, up to 10th and 12th Grades. Rukhmani Devi Public School
+                    is a Regional Member of the Round Square, is accredited with
+                    ISO 9001:2008 (BSI) and is a member of the prestigious Indian
+                    Public Schools` Conference (IPSC).
+                  </p>
                 </div>
               </div>
             </div>
