@@ -1,7 +1,8 @@
-import { Link } from "@material-ui/core";
+// import { Link } from "@material-ui/core";
 import React from "react";
 import useSWR from "swr";
 import Layout from "../components/layouts/Layout";
+import Link from 'next/link'
 
 const Location = () => {
   return (

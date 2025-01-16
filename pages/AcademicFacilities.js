@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from "@material-ui/core";
+// import { Link } from "@material-ui/core";
 import Layout from "../components/layouts/Layout";
+import Link from 'next/link'
 
 const AcademicFacilities = () => {
   const slides = [

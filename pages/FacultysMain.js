@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "@material-ui/core";
+// import { Link } from "@material-ui/core";
 import Layout from "../components/layouts/Layout";
+import Link from 'next/link'
 
 const FacultysMain = ({ Teacher_data }) => {
   const [Teacher, setTeacher] = useState("");
@@ -135,109 +136,109 @@ const FacultysMain = ({ Teacher_data }) => {
           <div className="row">
             {Teacher?.length > 0
               ? Teacher.map((item, i) => {
-                  return (
-                    <div className="col-sm-4">
-                      <div class="flip-card1">
-                        <div class="flip-card-inner1">
-                          <div class="flip-card-front1">
-                            <img
-                              src={item?.photo?.data?.full_url}
-                              alt="Avatar"
-                              style={{
-                                width: "155px",
-                                height: "190px",
-                                borderRadius: "50%",
-                              }}
-                            />
+                return (
+                  <div className="col-sm-4">
+                    <div class="flip-card1">
+                      <div class="flip-card-inner1">
+                        <div class="flip-card-front1">
+                          <img
+                            src={item?.photo?.data?.full_url}
+                            alt="Avatar"
+                            style={{
+                              width: "155px",
+                              height: "190px",
+                              borderRadius: "50%",
+                            }}
+                          />
 
-                            <h4
-                              style={{ marginTop: "18px", color: "#004eb5 " }}
+                          <h4
+                            style={{ marginTop: "18px", color: "#004eb5 " }}
+                          >
+                            {item.full_name}
+                          </h4>
+                          <h6 style={{ marginTop: "10px" }}>
+                            {item.teacher_position}
+                          </h6>
+                          <div className="d-flex justify-content-center text-light">
+                            <span
+                              style={{
+                                backgroundColor: "#3f5a74",
+                                height: "30px",
+                                width: "30px",
+                                borderRadius: "4px",
+                              }}
                             >
-                              {item.full_name}
-                            </h4>
-                            <h6 style={{ marginTop: "10px" }}>
-                              {item.teacher_position}
-                            </h6>
-                            <div className="d-flex justify-content-center text-light">
-                              <span
-                                style={{
-                                  backgroundColor: "#3f5a74",
-                                  height: "30px",
-                                  width: "30px",
-                                  borderRadius: "4px",
-                                }}
-                              >
-                                <b style={{ fontSize: "20px" }}> +</b>
-                              </span>
-                            </div>
+                              <b style={{ fontSize: "20px" }}> +</b>
+                            </span>
                           </div>
-                          <div class="flip-card-back1">
-                            <h4
-                              style={{ marginTop: "30px", color: "#004eb5 " }}
-                            >
-                              {item.full_name}
-                            </h4>
-                            <p style={{ fontSize: "13px", padding: "20px" }}>
-                              {item.description}
-                            </p>
-                          </div>
+                        </div>
+                        <div class="flip-card-back1">
+                          <h4
+                            style={{ marginTop: "30px", color: "#004eb5 " }}
+                          >
+                            {item.full_name}
+                          </h4>
+                          <p style={{ fontSize: "13px", padding: "20px" }}>
+                            {item.description}
+                          </p>
                         </div>
                       </div>
                     </div>
-                  );
-                })
+                  </div>
+                );
+              })
               : slides.map((item, i) => {
-                  return (
-                    <div className="col-sm-4">
-                      <div class="flip-card1">
-                        <div class="flip-card-inner1">
-                          <div class="flip-card-front1">
-                            <img
-                              src={item.title}
-                              alt="Avatar"
-                              style={{
-                                width: "155px",
-                                height: "190px",
-                                borderRadius: "50%",
-                              }}
-                            />
+                return (
+                  <div className="col-sm-4">
+                    <div class="flip-card1">
+                      <div class="flip-card-inner1">
+                        <div class="flip-card-front1">
+                          <img
+                            src={item.title}
+                            alt="Avatar"
+                            style={{
+                              width: "155px",
+                              height: "190px",
+                              borderRadius: "50%",
+                            }}
+                          />
 
-                            <h4
-                              style={{ marginTop: "18px", color: "#004eb5 " }}
+                          <h4
+                            style={{ marginTop: "18px", color: "#004eb5 " }}
+                          >
+                            {item.name}
+                          </h4>
+                          <h6 style={{ marginTop: "10px" }}>
+                            {item.position}
+                          </h6>
+                          <div className="d-flex justify-content-center text-light">
+                            <span
+                              style={{
+                                backgroundColor: "#3f5a74",
+                                height: "30px",
+                                width: "30px",
+                                borderRadius: "4px",
+                              }}
                             >
-                              {item.name}
-                            </h4>
-                            <h6 style={{ marginTop: "10px" }}>
-                              {item.position}
-                            </h6>
-                            <div className="d-flex justify-content-center text-light">
-                              <span
-                                style={{
-                                  backgroundColor: "#3f5a74",
-                                  height: "30px",
-                                  width: "30px",
-                                  borderRadius: "4px",
-                                }}
-                              >
-                                <b style={{ fontSize: "20px" }}> +</b>
-                              </span>
-                            </div>
+                              <b style={{ fontSize: "20px" }}> +</b>
+                            </span>
                           </div>
-                          <div class="flip-card-back1">
-                            <h4
-                              style={{ marginTop: "30px", color: "#004eb5 " }}
-                            >
-                              {item.name}
-                            </h4>
-                            <p style={{ fontSize: "13px", padding: "20px" }}>
-                              {item.details}
-                            </p>
-                          </div>
+                        </div>
+                        <div class="flip-card-back1">
+                          <h4
+                            style={{ marginTop: "30px", color: "#004eb5 " }}
+                          >
+                            {item.name}
+                          </h4>
+                          <p style={{ fontSize: "13px", padding: "20px" }}>
+                            {item.details}
+                          </p>
                         </div>
                       </div>
                     </div>
-                  );
-                })}
+                  </div>
+                );
+              })}
           </div>
         </div>
       </div>
