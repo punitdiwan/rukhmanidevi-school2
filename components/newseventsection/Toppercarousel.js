@@ -12,7 +12,7 @@ function Toppercarousel() {
 
   useEffect(() => {
     axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/toppers?fields=*,photo.*`)
-      .then((response) => { 
+      .then((response) => {
         if (response?.data?.data?.length > 0) {
           setdata(response)
         }
@@ -26,10 +26,10 @@ function Toppercarousel() {
 
 
   const slides = [
-    { title: "/images/a3.jpg ", class: 'Demo Class', name: 'Demo Name', subject: 'Demo subject',percent:"percent %" },
-    { title: " /images/a5.jpg", class: 'Demo Class', name: 'Demo Name', subject: 'Demo subject',percent:"percent %"},
+    { title: "/images/a3.jpg ", class: 'Demo Class', name: 'Demo Name', subject: 'Demo subject', percent: "percent %" },
+    { title: " /images/a5.jpg", class: 'Demo Class', name: 'Demo Name', subject: 'Demo subject', percent: "percent %" },
   ];
- 
+
   return (
     <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true} showIndicators={false} style={{ padding: '0px 10px', margin: '5px 5px' }}>
 
@@ -40,7 +40,7 @@ function Toppercarousel() {
             <center className='toppername'> {item.name} </center>
             <img
               className="d-block"
-              src={item?.photo?.data?.full_url}
+              src={item?.photo?.data?.full_url.replace('http://', 'https://')}
               alt="First slide"
               style={{
                 width: '85%',
@@ -54,10 +54,10 @@ function Toppercarousel() {
                 borderRadius: '5px'
               }}
             />
-            <p className='classpercent'> <b>  {item.class } <br /> {item.subject  } ({item.percent}%) </b></p>
+            <p className='classpercent'> <b>  {item.class} <br /> {item.subject} ({item.percent}%) </b></p>
           </div>
 
-        }):slides.map((item, i) => {
+        }) : slides.map((item, i) => {
           return <div style={{ background: '#e9e9e9' }} key={i}>
             <center className='toppername'> {item.name} </center>
             <img
@@ -76,11 +76,11 @@ function Toppercarousel() {
                 borderRadius: '5px'
               }}
             />
-            <p className='classpercent'> <b> {item.class} <br /> {item.subject} ({item.percent } ) </b></p>
+            <p className='classpercent'> <b> {item.class} <br /> {item.subject} ({item.percent} ) </b></p>
           </div>
 
         })
-      
+
       }
 
     </Carousel>

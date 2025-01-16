@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import {Carousel}  from "react-responsive-carousel";
+import { Carousel } from "react-responsive-carousel";
 
 const Carouselswr = ({ slider_data }) => {
   const slides = [
@@ -14,10 +14,10 @@ const Carouselswr = ({ slider_data }) => {
       <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
         {slider_data?.data?.map((item, index) => {
           return (
-            <div className="carousel-inner" role="listbox" key={index}> 
+            <div className="carousel-inner" role="listbox" key={index}>
               <div className="carousel items1" key={index} role="listbox">
                 <img
-                  src={item?.image?.data?.full_url}
+                  src={item?.image?.data?.full_url.replace('http://', 'https://')}
                   height={600}
                   width={1500}
                   alt="sorry_no_img"

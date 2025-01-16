@@ -19,29 +19,29 @@ const Gallery = ({ data_header, gallery_data }) => {
             <div className="mb-3 row">
               {gallery_data?.data?.length > 0
                 ? gallery_data?.data.map((item, i) => {
-                    return (
-                      <div key={i} className="col-lg-3 col-md-4 col-sm-6 ">
-                        <img
-                          src={item?.photo?.data?.full_url}
-                          className="mt-3 imght "
-                          alt="no_img"
-                          style={{ width: "100%", height: "250px" }}
-                        />
-                      </div>
-                    );
-                  })
+                  return (
+                    <div key={i} className="col-lg-3 col-md-4 col-sm-6 ">
+                      <img
+                        src={item?.photo?.data?.full_url.replace('http://', 'https://')}
+                        className="mt-3 imght "
+                        alt="no_img"
+                        style={{ width: "100%", height: "250px" }}
+                      />
+                    </div>
+                  );
+                })
                 : slides.map((item, i) => {
-                    return (
-                      <div key={i} className="col-lg-3 col-md-4 col-sm-6">
-                        <img
-                          src={item?.title}
-                          className="mt-3 imght "
-                          alt="no_img"
-                          style={{ width: "100%", height: "250px" }}
-                        />
-                      </div>
-                    );
-                  })}
+                  return (
+                    <div key={i} className="col-lg-3 col-md-4 col-sm-6">
+                      <img
+                        src={item?.title}
+                        className="mt-3 imght "
+                        alt="no_img"
+                        style={{ width: "100%", height: "250px" }}
+                      />
+                    </div>
+                  );
+                })}
             </div>
           </div>
         </SRLWrapper>
