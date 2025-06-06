@@ -159,7 +159,7 @@ const Mandatory = ({ data_header }) => {
                                         <tr>
                                             <td>11</td>
                                             <td>REGISTRATION PAGE</td>
-                                            <td><a href="registration page.pdf" target="_blank">View</a></td>
+                                            <td><a href="Mandatory Disclosure Details _ SARAS 6.0.pdf" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
                                             <td>12</td>
