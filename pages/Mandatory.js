@@ -106,7 +106,7 @@ const Mandatory = ({ data_header }) => {
                                             <td><a href="CBSE AFFLIATION  GRANT LETTER.pdf" target="_blank">View</a></td>
                                         </tr> */}
 
-<tr>
+                                        <tr>
                                             <td>1</td>
                                             <td>COPIES OF AFFILIATION/UPGRADATION LETTER AND RECENT EXTENSION OF AFFILIATION, IF ANY</td>
                                             <td><a href="1)COPIES OF AFFLIATION-UPGRADATION LETTER AND RECENT EXTENSION-20230916103538.pdf" target="_blank">View</a></td>
@@ -129,12 +129,12 @@ const Mandatory = ({ data_header }) => {
                                         <tr>
                                             <td>5</td>
                                             <td>COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE</td>
-                                            <td><a href="building safety certificate.pdf" target="_blank">View</a></td>
+                                            <td><a href="Building safety certificate.pdf" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
                                             <td>6</td>
                                             <td>COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY</td>
-                                            <td><a href="FIRE SAFETY CERTIFICATE (1).pdf" target="_blank">View</a></td>
+                                            <td><a href="FIRE CERTIFICATE.pdf" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
                                             <td>7</td>
@@ -144,7 +144,7 @@ const Mandatory = ({ data_header }) => {
                                         <tr>
                                             <td>8</td>
                                             <td>COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES</td>
-                                            <td><a href="Water and sanitary certificate.pdf" target="_blank">View</a> <a href="water testing laboratoary report.pdf" target="_blank">View</a></td>
+                                            <td><a href="Safe Drinking water and sanitation certificate.pdf" target="_blank">View</a> <a href="water testing laboratoary report.pdf" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
                                             <td>9</td>
@@ -154,7 +154,7 @@ const Mandatory = ({ data_header }) => {
                                         <tr>
                                             <td>10</td>
                                             <td>LAND CERTIFICATE</td>
-                                            <td><a href="land certificate copy.pdf" target="_blank">View</a></td>
+                                            <td><a href="Land Certificate.pdf" target="_blank">View</a></td>
                                         </tr>
                                         <tr>
                                             <td>11</td>
@@ -416,10 +416,10 @@ const Mandatory = ({ data_header }) => {
 
                                         </tr>
                                         <tr>
-                                             
+
                                             <td>Physics Lab</td>
                                             <td> 1</td>
-                                             
+
                                         </tr>
                                         <tr>
                                             <td>Chemistry Lab</td>
