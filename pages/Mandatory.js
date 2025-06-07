@@ -1,6 +1,8 @@
 import React from 'react'
 import Layout from '../components/layouts/Layout'
 import Link from 'next/link'
+import DocumentsSection from '../components/docInfo/docInfo'
+import Result_Academic from '../components/docInfo/result_academic'
 
 const Mandatory = ({ data_header }) => {
     return (
@@ -86,153 +88,10 @@ const Mandatory = ({ data_header }) => {
                                 </table>
                             </div>
                         </div>
-                        <div className="col-sm-12">
-                            <h2><strong>B: DOCUMENTS AND INFORMATION:</strong></h2>
 
-
-                            <div style={{ overflowX: "auto" }}>
-                                <table class="table table-bordered1">
-                                    <thead>
-                                        <tr>
-                                            <th>S.NO.</th>
-                                            <th>DOCUMENTS/INFORMATION</th>
-                                            <th>UPLOAD DOCUMENTS</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {/* <tr>
-                                            <td>1</td>
-                                            <td>COPIES OF AFFILIATION/UPGRADATION LETTER AND RECENT EXTENSION OF AFFILIATION, IF ANY</td>
-                                            <td><a href="CBSE AFFLIATION  GRANT LETTER.pdf" target="_blank">View</a></td>
-                                        </tr> */}
-
-                                        <tr>
-                                            <td>1</td>
-                                            <td>COPIES OF AFFILIATION/UPGRADATION LETTER AND RECENT EXTENSION OF AFFILIATION, IF ANY</td>
-                                            <td><a href="1)COPIES OF AFFLIATION-UPGRADATION LETTER AND RECENT EXTENSION-20230916103538.pdf" target="_blank">View</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>COPIES OF SOCIETIES/TRUST/COMPANY REGISTRATION/RENEWAL CERTIFICATE, AS APPLICABLE</td>
-                                            <td><a href="2)COPIES OF SOCIETIES-TRUST-COMPANY-20230916104441.pdf" target="_blank">View</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT./UT</td>
-                                            <td><a href="3) COPIES OF NO OBJECTION (NOC).pdf" target="_blank">View</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT, 2009, AND IT’S RENEWAL IF APPLICABLE</td>
-                                            <td><a href="4)COPIES OF SCHOOL RECOGNITION CERTIFICATE.pdf">View</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE</td>
-                                            <td><a href="Building safety certificate.pdf" target="_blank">View</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY</td>
-                                            <td><a href="FIRE CERTIFICATE.pdf" target="_blank">View</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td>COPY OF THE DEO CERTIFICATE SUBMITTED BY THE SCHOOL FOR AFFILIATION/UPGRADATION/EXTENSION OF AFFILIATIONOR SELF CERTIFICATION BY SCHOOL</td>
-                                            <td><a href="New Document(3).pdf" target="_blank">View</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>8</td>
-                                            <td>COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES</td>
-                                            <td><a href="Safe Drinking water and sanitation certificate.pdf" target="_blank">View</a> <a href="water testing laboratoary report.pdf" target="_blank">View</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>9</td>
-                                            <td>SECTION INCREASING DOCUMENTS</td>
-                                            <td><a href="section.pdf" target="_blank">View</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>10</td>
-                                            <td>LAND CERTIFICATE</td>
-                                            <td><a href="Land Certificate.pdf" target="_blank">View</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>11</td>
-                                            <td>REGISTRATION PAGE</td>
-                                            <td><a href="Mandatory Disclosure Details _ SARAS 6.0.pdf" target="_blank">View</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>12</td>
-                                            <td>SAMITI PANJIYAN PRAMAAN PATRA</td>
-                                            <td><a href="samiti panjiyan pramaan patra.pdf" target="_blank">View</a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-                        <div className="col-sm-12">
-                            <h2><strong>C: RESULT AND ACADEMICS:</strong></h2>
-
-
-                            <div style={{ overflowX: "auto" }}>
-                                <table class="table table-bordered1">
-                                    <thead>
-                                        <tr>
-                                            <th>S.NO.</th>
-                                            <th>DOCUMENTS/INFORMATION</th>
-                                            <th>UPLOAD DOCUMENTS</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>FEE STRUCTURE OF THE SCHOOL</td>
-                                            <td><a href="RDPS FEE STRUCTURE 2024-25.pdf" target="_blank">View</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>BOOK LIST</td>
-                                            <td><a href="Book list 2024-25 from class nursery To 12th.pdf" target="_blank">View</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>ANNUAL ACADEMIC CALANDER.</td>
-                                            <td><a href="Event.htm" target="_blank">View</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)</td>
-                                            <td><a href="managing comity member list 2019-20.pdf" target="_blank">View</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>STAFF LIST</td>
-                                            <td><a href="staff list 2019-20.pdf" target="_blank">View</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>6</td>
-                                            <td>STAFF DETAILS</td>
-                                            <td><a href="D)STAFF DETAIL.pdf" target="_blank">View</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>7</td>
-                                            <td>LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>8</td>
-                                            <td>LAST THREE-YEAR RESULT OF THE BOARD EXAMINATION AS PER APPLICABLILITY</td>
-                                            <td></td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
+                        {/* dynamic from cms */}
+                         <DocumentsSection/>
+                         <Result_Academic/>
                         <div className="col-sm-12">
                             <h2><strong>RESULT CLASS: X</strong></h2>
 
