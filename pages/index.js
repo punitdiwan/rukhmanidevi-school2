@@ -11,7 +11,7 @@ import AdmissionBanner from "./AdmissionBanner";
 import ReactGA from "react-ga4";
 
 // Initialize GA once
-ReactGA.initialize("G-XXXXXXXXXX");
+ReactGA.initialize("G-T3YVY8D5R2");
 
 export default function Home({
   data_header,
