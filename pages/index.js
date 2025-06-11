@@ -8,7 +8,10 @@ import Carouselswr from "../components/carousel/Carouselswr";
 import Schoolgallery from "../components/schoolgallery/Schoolgallery";
 import LocateUs from "../pages/LocateUs";
 import AdmissionBanner from "./AdmissionBanner";
+import ReactGA from "react-ga4";
 
+// Initialize GA once
+ReactGA.initialize("G-XXXXXXXXXX");
 
 export default function Home({
   data_header,
