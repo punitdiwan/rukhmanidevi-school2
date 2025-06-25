@@ -17,12 +17,14 @@ const resultX = [
   { year: '2018', registered: 66, passed: 66, percentage: 100, remarks: '' },
   { year: '2019', registered: 89, passed: 88, percentage: 99.0, remarks: '' },
   { year: '2020', registered: 57, passed: 56, percentage: 99.0, remarks: '' },
+  { year: '2024-25', registered: 41, passed: 31, percentage: 75.60, remarks: '' },
 ];
 
 const resultClassXII = [
   { year: '2018', registered: 40, passed: 36, percentage: 90.0, remarks: '' },
   { year: '2019', registered: 73, passed: 72, percentage: 99.0, remarks: '' },
   { year: '2020', registered: 70, passed: 70, percentage: 100, remarks: '' },
+  { year: '2024-25', registered: 76, passed: 65, percentage: 85.52, remarks: '' },
 ];
 
 const staffTeaching = [
@@ -39,7 +41,7 @@ const staffTeaching = [
 const schoolInfra = [
     { sno: '1', info: 'TOTAL CAMPUS AREA OF THE SCHOOL (IN SQUARE MTR)', details: '8305 Sq.mtrs.' },
     { sno: '2', info: 'NO. AND SIZE OF THE CLASS ROOMS (IN SQ MTR)', details: '24 & SIZE 47 Sq.mtrs.' },
-    { sno: '3', info: 'NO. AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS ', details: '6' },
+    { sno: '3', info: 'NO. AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (IN SQ MTR) ', details: '6 & 58 Sq.mtrs' },
     { sno: '3', info: 'Physics Lab', details: '1' },
     { sno: '3', info: 'Chemistry Lab', details: '1' },
     { sno: '3', info: 'Biology Lab', details: '1' },
@@ -47,7 +49,7 @@ const schoolInfra = [
     { sno: '4', info: 'INTERNET FACILITY (Y/N)', details: 'Yes' },
     { sno: '5', info: 'NO. OF GIRLS TOILETS', details: '10' },
     { sno: '6', info: 'NO. OF BOYS TOILETS', details: '10' },
-    { sno: '7', info: 'LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL', details: <a href="https://www.youtube.com/channel/UCIKlH_ibvWaviOlUTrFeQqg" target="_blank">View</a> },
+    { sno: '7', info: 'LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL', details: <a href="https://youtu.be/zGL-VfkycNI?si=XZJYEYM2B1tFI-Jk" target="_blank">View</a> },
 ];
 const Mandatory = ({ data_header }) => {
     return (
