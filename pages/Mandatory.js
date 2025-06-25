@@ -31,11 +31,11 @@ const generalInfo = [
   },
 ];
 const resultX = [
-  { year: "2022", registered: 66, passed: 66, percentage: 100, remarks: "" },
-  { year: "2023", registered: 89, passed: 88, percentage: 99.0, remarks: "" },
-  { year: "2024", registered: 57, passed: 56, percentage: 99.0, remarks: "" },
+
+  { year: "2022", registered: 89, passed: 88, percentage: 99.0, remarks: "" },
+  { year: "2023", registered: 57, passed: 56, percentage: 99.0, remarks: "" },
   {
-    year: "2025-26",
+    year: "2024-25",
     registered: 41,
     passed: 31,
     percentage: 75.6,
@@ -44,11 +44,11 @@ const resultX = [
 ];
 
 const resultClassXII = [
-  { year: "2022", registered: 40, passed: 36, percentage: 90.0, remarks: "" },
-  { year: "2023", registered: 73, passed: 72, percentage: 99.0, remarks: "" },
-  { year: "2024", registered: 70, passed: 70, percentage: 100, remarks: "" },
+
+  { year: "2022", registered: 73, passed: 72, percentage: 99.0, remarks: "" },
+  { year: "2023", registered: 70, passed: 70, percentage: 100, remarks: "" },
   {
-    year: "2025-26",
+    year: "2024-25",
     registered: 76,
     passed: 65,
     percentage: 85.52,
