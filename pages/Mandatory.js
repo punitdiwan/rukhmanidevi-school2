@@ -37,9 +37,9 @@ const staffTeaching = [
 ];
 
 const schoolInfra = [
-    { sno: '1', info: 'TOTAL CAMPUS AREA OF THE SCHOOL (IN SQUARE MTR)', details: '8255.58 Sq.mtrs.' },
-    { sno: '2', info: 'NO. AND SIZE OF THE CLASS ROOMS (IN SQ MTR)', details: '24 & 1115' },
-    { sno: '3', info: 'NO. AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (IN SQ MTR)', details: '4' },
+    { sno: '1', info: 'TOTAL CAMPUS AREA OF THE SCHOOL (IN SQUARE MTR)', details: '8305 Sq.mtrs.' },
+    { sno: '2', info: 'NO. AND SIZE OF THE CLASS ROOMS (IN SQ MTR)', details: '24 & SIZE 47 Sq.mtrs.' },
+    { sno: '3', info: 'NO. AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS ', details: '6' },
     { sno: '3', info: 'Physics Lab', details: '1' },
     { sno: '3', info: 'Chemistry Lab', details: '1' },
     { sno: '3', info: 'Biology Lab', details: '1' },
