@@ -30,7 +30,7 @@ function Faculty() {
                                     <div className="flip-card-inner">
                                         <div className="flip-card-front">
                                             <div>
-                                                <img className='img-fluid' src={item.photo.data.full_url} alt="facylty" />
+                                                <img className='img-fluid' src={item.photo.data.full_url?.replace('http://', 'https://')} alt="facylty" />
                                                 <h4 className="card-title">{item.full_name}</h4>
                                                 <p className="card-text">{item.position}</p>
                                                 <button style={{ color: '#fff', border: 'none', fontSize: '15px', padding: '.25rem .5rem', borderRadius: '5px', backgroundColor: '#3f5a74', borderColor: '#3f5a74' }}><FontAwesomeIcon icon={faPlus} /></button>

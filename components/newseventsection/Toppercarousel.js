@@ -40,7 +40,7 @@ function Toppercarousel() {
             <center className='toppername'> {item.name} </center>
             <img
               className="d-block"
-              src={item?.photo?.data?.full_url.replace('http://', 'https://')}
+              src={item?.photo?.data?.full_url?.replace('http://', 'https://')}
               alt="First slide"
               style={{
                 width: '85%',

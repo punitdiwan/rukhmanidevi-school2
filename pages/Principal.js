@@ -30,7 +30,7 @@ import Layout from '../components/layouts/Layout'
 
                             <div className='directorimg' sm='4'>
                                 <div className='thennow'>
-                                    <img src={principal_data?.data?.length > 0 ? principal_data?.data[0]?.photo?.data?.full_url : "/images/a1.jpg"}
+                                    <img src={principal_data?.data?.length > 0 ? principal_data?.data[0]?.photo?.data?.full_url?.replace('http://', 'https://') : "/images/a1.jpg"}
                                         alt='director' style={{ width: "110%", height: "350px" }} />
                                      <h2 className="text-center">
                                         <b> {principal_data?.data?.length > 0 ? principal_data?.data[0]?.full_name : "Demo Name"} </b>

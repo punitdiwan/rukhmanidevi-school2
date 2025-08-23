@@ -24,7 +24,7 @@ function Schoolaccreditation() {
                             }
                             else {
                                 return <a href=''> 
-                                    <img src={item.directus_files_id.data.full_url} alt='ncc' />
+                                    <img src={item.directus_files_id.data.full_url?.replace('http://', 'https://')} alt='ncc' />
 
                                 </a>
                             }

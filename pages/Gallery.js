@@ -1,83 +1,97 @@
+"use client";
 import Layout from "../components/layouts/Layout";
+import { useState, useMemo } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 const Gallery = ({ data_header, gallery_data }) => {
-  const slides = [
-    { title: "/images/a1.jpg", description: "View Gallery" },
-    { title: "/images/column-4.jpg", description: "View Gallery" },
-    { title: "/images/column-1.jpg", description: "View Gallery" },
-    { title: "/images/column-2.jpg", description: "View Gallery" },
-    { title: "/images/column-3.jpg", description: "View Gallery" },
-    { title: "/images/column-5.jpg", description: "View Gallery" },
+  const [open, setOpen] = useState(false);
+  const [index, setIndex] = useState(-1);
+
+  // Transform gallery data into slide format
+  const images = useMemo(() => {
+    return gallery_data?.data?.map((item) => ({
+      src: item?.photo?.data?.full_url?.replace("http://", "https://"),
+    })) || [];
+  }, [gallery_data]);
+
+  const fallbackSlides = [
+    { src: "/images/a1.jpg" },
+    { src: "/images/column-4.jpg" },
+    { src: "/images/column-1.jpg" },
+    { src: "/images/column-2.jpg" },
+    { src: "/images/column-3.jpg" },
+    { src: "/images/column-5.jpg" },
   ];
 
+  const displayImages = images.length > 0 ? images : fallbackSlides;
+
   return (
-    <>
-      <Layout>
-        <div className="container-fluid media_top">
-          <div className="mb-3 row">
-            {gallery_data?.data?.length > 0
-              ? gallery_data?.data.map((item, i) => {
-                return (
-                  <div key={i} className="col-lg-3 col-md-4 col-sm-6 ">
-                    <img
-                      src={item?.photo?.data?.full_url.replace('http://', 'https://')}
-                      className="mt-3 imght "
-                      alt="no_img"
-                      style={{ width: "100%", height: "250px" }}
-                    />
-                  </div>
-                );
-              })
-              : slides.map((item, i) => {
-                return (
-                  <div key={i} className="col-lg-3 col-md-4 col-sm-6">
-                    <img
-                      src={item?.title}
-                      className="mt-3 imght "
-                      alt="no_img"
-                      style={{ width: "100%", height: "250px" }}
-                    />
-                  </div>
-                );
-              })}
-          </div>
+    <Layout>
+      <div className="container-fluid media_top">
+        <div className="row mb-3">
+          {displayImages.map((item, i) => (
+            <div key={i} className="col-lg-3 col-md-4 col-sm-6">
+              <img
+                src={item.src}
+                className="mt-3 imght"
+                alt={`gallery-${i}`}
+                style={{ width: "100%", height: "250px", cursor: "pointer" }}
+                onClick={() => {
+                  setIndex(i);
+                  setOpen(true);
+                }}
+              />
+            </div>
+          ))}
         </div>
-      </Layout>
-    </>
+
+        {open && (
+          <Lightbox
+            open={open}
+            close={() => setOpen(false)}
+            slides={displayImages}
+            index={index}
+            on={{ view: ({ index }) => setIndex(index) }}
+            plugins={[Thumbnails]}
+          />
+        )}
+      </div>
+    </Layout>
   );
 };
 
 export default Gallery;
 
-export async function getStaticProps(context) {
-  let data_header;
+export async function getStaticProps() {
+  let data_header = null;
+  let gallery_data = null;
 
   try {
-    const response = await fetch(
+    const resHeader = await fetch(
       `${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/config?fields=*,logo.data.full_url`
     );
-
-    data_header = await response.json();
-  } catch (error) {
-    data_header = false;
+    data_header = await resHeader.json();
+  } catch (err) {
+    console.error("Header fetch error:", err);
   }
 
-  /////////
-
-  let gallery_data;
-
   try {
-    const response1 = await fetch(
+    const resGallery = await fetch(
       `${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/gallery?fields=*.*.*`
     );
-
-    gallery_data = await response1.json();
-  } catch (error) {
-    gallery_data = false;
+    gallery_data = await resGallery.json();
+  } catch (err) {
+    console.error("Gallery fetch error:", err);
   }
 
   return {
-    props: { data_header, gallery_data },
-    revalidate: 1, // will be passed to the page component as props
+    props: {
+      data_header,
+      gallery_data,
+    },
+    revalidate: 60,
   };
 }

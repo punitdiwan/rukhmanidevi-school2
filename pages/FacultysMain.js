@@ -142,7 +142,7 @@ const FacultysMain = ({ Teacher_data }) => {
                       <div class="flip-card-inner1">
                         <div class="flip-card-front1">
                           <img
-                            src={item?.photo?.data?.full_url}
+                            src={item?.photo?.data?.full_url?.replace('http://', 'https://')}
                             alt="Avatar"
                             style={{
                               width: "155px",

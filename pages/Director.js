@@ -31,7 +31,7 @@ const Director = ({ data_header, director_data }) => {
 
                             <div className='directorimg' sm='4'>
                                 <div className='thennow'>
-                                    <img src={director_data?.data?.length > 0 ? director_data?.data[1]?.photo?.data?.full_url.replace('http://', 'https://') : "/images/a1.jpg"}
+                                    <img src={director_data?.data?.length > 0 ? director_data?.data[1]?.photo?.data?.full_url?.replace('http://', 'https://') : "/images/a1.jpg"}
                                         alt='director' style={{ width: "110%", height: "350px" }} />
                                     <h2 className="text-center">
                                         <b> {director_data?.data?.length > 0 ? director_data?.data[1]?.full_name : "Demo Name"} </b>

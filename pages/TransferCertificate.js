@@ -83,7 +83,7 @@ const TransferCertificate = () => {
                                     <tr key={i}><td>{i + 1}</td>
                                         <td>{ei.full_name}</td>
                                         <td>{ei.admission_number}</td>
-                                        <td><a id="download_iframe" href={ei?.transfer_certificate?.data?.full_url} target="_blank">
+                                        <td><a id="download_iframe" href={ei?.transfer_certificate?.data?.full_url?.replace('http://', 'https://')} target="_blank">
                                             <PictureAsPdfIcon style={{ color: "red" }} />Download</a></td>
 
                                     </tr>

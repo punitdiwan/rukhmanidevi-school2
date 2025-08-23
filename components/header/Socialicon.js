@@ -17,7 +17,7 @@ function Socialicon() {
             {data.data[0].top_icons.map((items, i) => {
                 return <li key={i}>
 
-                    <img src={items.directus_files_id.data.full_url} />
+                    <img src={items.directus_files_id.data.full_url?.replace('http://', 'https://')} />
                 </li>
             })}
         </ul>
