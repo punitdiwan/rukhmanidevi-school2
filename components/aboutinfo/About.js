@@ -53,7 +53,7 @@ const About = ({ about_data }) => {
                                 </div>
                                 <div style={{ width: '25%' }}>
                                     {items?.images?.map((img, index) => {
-                                        return <div className='founderdiv' key={index}><img src={img?.directus_files_id?.data?.full_url} alt='now' width='250px' height='auto' /></div>
+                                        return <div className='founderdiv' key={index}><img src={img?.directus_files_id?.data?.full_url?.replace('http://', 'https://')} alt='now' width='250px' height='auto' /></div>
                                     })}
                                 </div>
                             </div>
@@ -73,7 +73,7 @@ const About = ({ about_data }) => {
                                 </div>
                                 <div style={{ width: '25%' }}>
                                     {items?.images?.map((img, index) => {
-                                        return <div className='founderdiv' key={index}><img src={img?.directus_files_id?.data?.full_url} alt='now' width='250px' height='auto' /></div>
+                                        return <div className='founderdiv' key={index}><img src={img?.directus_files_id?.data?.full_url?.replace('http://', 'https://')} alt='now' width='250px' height='auto' /></div>
                                     })}
                                 </div>
                             </div>

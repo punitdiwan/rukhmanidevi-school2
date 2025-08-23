@@ -1,13 +1,16 @@
 import "bootstrap/dist/css/bootstrap.css";
-import Layout from "../components/layouts/Layout";
-import About from "../components/aboutinfo/About";
-import Eventmain from "../components/newseventsection/Eventmain";
-import Schoolaccreditation from "../components/schoolaccreditation/Schoolaccreditation";
-import Trust from "../components/trust/Trust";
-import Carouselswr from "../components/carousel/Carouselswr";
-import Schoolgallery from "../components/schoolgallery/Schoolgallery";
-import LocateUs from "../pages/LocateUs";
-import AdmissionBanner from "./AdmissionBanner";
+import dynamic from "next/dynamic";
+
+const About = dynamic(() => import("../components/aboutinfo/About"));
+const Eventmain = dynamic(() => import("../components/newseventsection/Eventmain"));
+const Schoolaccreditation = dynamic(() => import("../components/schoolaccreditation/Schoolaccreditation"));
+const Trust = dynamic(() => import("../components/trust/Trust"));
+const Carouselswr = dynamic(() => import("../components/carousel/Carouselswr"));
+const Schoolgallery = dynamic(() => import("../components/schoolgallery/Schoolgallery"));
+const LocateUs = dynamic(() => import("../pages/LocateUs"));
+const AdmissionBanner = dynamic(() => import("./AdmissionBanner"));
+const Layout = dynamic(() => import("../components/layouts/Layout"), { ssr: false }); // if you want client-side only
+
 import ReactGA from "react-ga4";
 
 // Initialize GA once
@@ -23,7 +26,7 @@ export default function Home({
     <div>
       <link
         rel="preload"
-        href="../public/Fontin_Sans_SC_45b.otf"
+        href="/Fontin_Sans_SC_45b.otf"
         as="font"
         crossOrigin=""
       />

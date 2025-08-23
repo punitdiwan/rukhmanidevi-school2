@@ -31,7 +31,7 @@ const Chairman = ({ data_header, chairman_data }) => {
                             <div className='directorimg' sm='4'>
                                 <div className='thennow'>
                                     <img
-                                        src={chairman_data?.data?.length > 0 ? chairman_data?.data[2]?.photo?.data?.full_url : "/images/demo1.jpg"}
+                                        src={chairman_data?.data?.length > 0 ? chairman_data?.data[2]?.photo?.data?.full_url?.replace('http://', 'https://') : "/images/demo1.jpg"}
                                         alt='chairman'
                                         style={{ width: "110%", height: "350px" }} />
                                     <h2 className="text-center"><b>    {chairman_data?.data?.length > 0 ? chairman_data?.data[2]?.full_name : "Demo Name"} </b> </h2>

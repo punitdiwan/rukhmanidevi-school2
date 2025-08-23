@@ -64,30 +64,30 @@ const items = [
       style={{ height: "12.5rem", width: "100%" }}
     />
   </div>,
-  <div style={{ marginRight: "5px" }}>
-    <img
-      src="/images/c8.jpg"
-      onDragStart={handleDragStart}
-      class="yours-custom-class"
-      style={{ height: "12.5rem", width: "100%" }}
-    />
-  </div>,
-  <div style={{ marginRight: "5px" }}>
-    <img
-      src="/images/c9.jpg"
-      onDragStart={handleDragStart}
-      class="yours-custom-class"
-      style={{ height: "12.5rem", width: "100%" }}
-    />
-  </div>,
-  <div style={{ marginRight: "5px" }}>
-    <img
-      src="/images/c10.jpg"
-      onDragStart={handleDragStart}
-      class="yours-custom-class"
-      style={{ height: "12.5rem", width: "100%" }}
-    />
-  </div>,
+  // <div style={{ marginRight: "5px" }}>
+  //   <img
+  //     src="/images/c8.jpg"
+  //     onDragStart={handleDragStart}
+  //     class="yours-custom-class"
+  //     style={{ height: "12.5rem", width: "100%" }}
+  //   />
+  // </div>,
+  // <div style={{ marginRight: "5px" }}>
+  //   <img
+  //     src="/images/c9.jpg"
+  //     onDragStart={handleDragStart}
+  //     class="yours-custom-class"
+  //     style={{ height: "12.5rem", width: "100%" }}
+  //   />
+  // </div>,
+  // <div style={{ marginRight: "5px" }}>
+  //   <img
+  //     src="/images/c10.jpg"
+  //     onDragStart={handleDragStart}
+  //     class="yours-custom-class"
+  //     style={{ height: "12.5rem", width: "100%" }}
+  //   />
+  // </div>,
 ];
 
 const slides = [
